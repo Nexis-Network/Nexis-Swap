@@ -15,7 +15,8 @@ export function useMultipleContractSingleData(
   ...args: SkipFirstTwoParams<typeof multicall.hooks.useMultipleContractSingleData>
 ) {
   const { chainId, latestBlock } = useCallContext()
-  return multicall.hooks.useMultipleContractSingleData(chainId, latestBlock, ...args)
+  const response = multicall.hooks.useMultipleContractSingleData(chainId, latestBlock, ...args)
+  return response;
 }
 
 export function useSingleCallResult(...args: SkipFirstTwoParams<typeof multicall.hooks.useSingleCallResult>) {

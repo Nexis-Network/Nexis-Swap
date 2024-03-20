@@ -8,6 +8,7 @@ import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { ReactComponent as arbitrum } from './ChainSymbols/arbitrum.svg'
 import { ReactComponent as avax } from './ChainSymbols/avax.svg'
 import { ReactComponent as base } from './ChainSymbols/base.svg'
+import { ReactComponent as nexis } from './ChainSymbols/nexis.svg'
 import { ReactComponent as bnb } from './ChainSymbols/bnb.svg'
 import { ReactComponent as celo } from './ChainSymbols/celo.svg'
 import { ReactComponent as celoLight } from './ChainSymbols/celo_light.svg'
@@ -79,6 +80,12 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
       return {
         Symbol: base,
         bgColor: '#0052FF33',
+        textColor: '#0052FF',
+      }
+    case ChainId.NEXIS:
+      return {
+        Symbol: nexis,
+        bgColor: 'white',
         textColor: '#0052FF',
       }
     default:

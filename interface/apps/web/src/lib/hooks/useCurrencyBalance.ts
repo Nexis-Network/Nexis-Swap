@@ -57,11 +57,14 @@ export function useTokenBalancesWithLoadingIndicator(
   tokens?: (Token | undefined)[]
 ): [{ [tokenAddress: string]: CurrencyAmount<Token> | undefined }, boolean] {
   const { chainId } = useWeb3React() // we cannot fetch balances cross-chain
+
   const validatedTokens: Token[] = useMemo(
     () => tokens?.filter((t?: Token): t is Token => isAddress(t?.address) !== false && t?.chainId === chainId) ?? [],
     [chainId, tokens]
   )
+
   const validatedTokenAddresses = useMemo(() => validatedTokens.map((vt) => vt.address), [validatedTokens])
+
 
   const balances = useMultipleContractSingleData(
     validatedTokenAddresses,
@@ -71,6 +74,7 @@ export function useTokenBalancesWithLoadingIndicator(
     tokenBalancesGasRequirement
   )
 
+
   const anyLoading: boolean = useMemo(() => balances.some((callState) => callState.loading), [balances])
 
   return useMemo(
@@ -78,10 +82,12 @@ export function useTokenBalancesWithLoadingIndicator(
       address && validatedTokens.length > 0
         ? validatedTokens.reduce<{ [tokenAddress: string]: CurrencyAmount<Token> | undefined }>((memo, token, i) => {
             const value = balances?.[i]?.result?.[0]
+            console.log("value",value)
             const amount = value ? JSBI.BigInt(value.toString()) : undefined
             if (amount) {
               memo[token.address] = CurrencyAmount.fromRawAmount(token, amount)
             }
+            console.log(address)
             return memo
           }, {})
         : {},

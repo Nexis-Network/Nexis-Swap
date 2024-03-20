@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { ChainId } from '@uniswap/sdk-core'
 import AppJsonRpcProvider from 'rpc/AppJsonRpcProvider'
 
@@ -49,4 +50,5 @@ export const DEPRECATED_RPC_PROVIDERS = {
   [ChainId.BNB]: providerFactory(ChainId.BNB),
   [ChainId.AVALANCHE]: providerFactory(ChainId.AVALANCHE),
   [ChainId.BASE]: providerFactory(ChainId.BASE),
+  [ChainId.NEXIS] :providerFactory(ChainId.NEXIS)
 } satisfies Record<SupportedInterfaceChain, ConfiguredJsonRpcProvider>

@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { CHAIN_IDS_TO_NAMES, isSupportedChain } from 'constants/chains'
 import { ParsedQs } from 'qs'

@@ -242,6 +242,18 @@ const CHAIN_INFO: ChainInfoMap = {
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_84531,
   },
+  [ChainId.NEXIS]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: 'https://bridge.nexis.network/',
+    defaultListUrl: BASE_LIST,
+    docs: 'https://docs.nexis.network/',
+    explorer: 'https://evm-testnet.nexscan.io/',
+    infoLink: 'https://info.uniswap.org/#/base/',
+    label: 'Nexis',
+    nativeCurrency: { name: 'Nexis', symbol: 'NZT', decimals: 18 },
+    color: darkTheme.chain_84531,
+  },
 } as const
 
 export function getChainInfo(

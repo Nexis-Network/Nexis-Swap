@@ -71,47 +71,58 @@ export function useUSDPrice(
   data?: number
   isLoading: boolean
 } {
-  const currency = currencyAmount?.currency ?? prefetchCurrency
-  const chainId = currency?.chainId
-  const chain = chainId ? chainIdToBackendName(chainId) : undefined
+  try {
+    
+    const currency = currencyAmount?.currency ?? prefetchCurrency
+    const chainId = currency?.chainId
+    console.log(prefetchCurrency)
+    const chain = chainId ? chainIdToBackendName(chainId) : undefined
 
-  // skip all pricing requests if the window is not focused
-  const isWindowVisible = useIsWindowVisible()
-
-  // Use ETH-based pricing if available.
-  const { data: tokenEthPrice, isLoading: isTokenEthPriceLoading } = useETHPrice(currency)
-  const isTokenEthPriced = Boolean(tokenEthPrice || isTokenEthPriceLoading)
-  const { data, networkStatus } = useTokenSpotPriceQuery({
-    variables: { chain: chain ?? Chain.Ethereum, address: getNativeTokenDBAddress(chain ?? Chain.Ethereum) },
-    skip: !isTokenEthPriced || !isWindowVisible,
-    pollInterval: PollingInterval.Normal,
-    notifyOnNetworkStatusChange: true,
-    fetchPolicy: 'cache-first',
-  })
-
-  // Use USDC-based pricing for chains not yet supported by backend (for ETH-based pricing).
-  const stablecoinPrice = useStablecoinPrice(isTokenEthPriced ? undefined : currency)
-
-  return useMemo(() => {
-    if (!currencyAmount) {
-      return { data: undefined, isLoading: false }
-    } else if (stablecoinPrice) {
-      return { data: parseFloat(stablecoinPrice.quote(currencyAmount).toSignificant()), isLoading: false }
-    } else {
-      // Otherwise, get the price of the token in ETH, and then multiply by the price of ETH.
-      const ethUSDPrice = data?.token?.project?.markets?.[0]?.price?.value
-      if (ethUSDPrice && tokenEthPrice) {
-        return { data: parseFloat(tokenEthPrice.quote(currencyAmount).toExact()) * ethUSDPrice, isLoading: false }
+  
+    // skip all pricing requests if the window is not focused
+    const isWindowVisible = useIsWindowVisible()
+  
+    // Use ETH-based pricing if available.
+    const { data: tokenEthPrice, isLoading: isTokenEthPriceLoading } = useETHPrice(currency)
+    const isTokenEthPriced = Boolean(tokenEthPrice || isTokenEthPriceLoading)
+    const { data, networkStatus } = useTokenSpotPriceQuery({
+      variables: { chain: chain ?? Chain.Ethereum, address: getNativeTokenDBAddress(chain ?? Chain.Ethereum) },
+      skip: !isTokenEthPriced || !isWindowVisible,
+      pollInterval: PollingInterval.Normal,
+      notifyOnNetworkStatusChange: true,
+      fetchPolicy: 'cache-first',
+    })
+  
+    // Use USDC-based pricing for chains not yet supported by backend (for ETH-based pricing).
+    const stablecoinPrice = useStablecoinPrice(isTokenEthPriced ? undefined : currency)
+  
+    return useMemo(() => {
+      if (!currencyAmount) {
+        return { data: undefined, isLoading: false }
+      } else if (stablecoinPrice) {
+        return { data: parseFloat(stablecoinPrice.quote(currencyAmount).toSignificant()), isLoading: false }
       } else {
-        return { data: undefined, isLoading: isTokenEthPriceLoading || networkStatus === NetworkStatus.loading }
+        // Otherwise, get the price of the token in ETH, and then multiply by the price of ETH.
+        const ethUSDPrice = data?.token?.project?.markets?.[0]?.price?.value
+        if (ethUSDPrice && tokenEthPrice) {
+          return { data: parseFloat(tokenEthPrice.quote(currencyAmount).toExact()) * ethUSDPrice, isLoading: false }
+        } else {
+          return { data: undefined, isLoading: isTokenEthPriceLoading || networkStatus === NetworkStatus.loading }
+        }
       }
+    }, [
+      currencyAmount,
+      data?.token?.project?.markets,
+      tokenEthPrice,
+      isTokenEthPriceLoading,
+      networkStatus,
+      stablecoinPrice,
+    ])
+  } catch (error) {
+    console.log(error)
+    return {
+      data:undefined,
+      isLoading:true
     }
-  }, [
-    currencyAmount,
-    data?.token?.project?.markets,
-    tokenEthPrice,
-    isTokenEthPriceLoading,
-    networkStatus,
-    stablecoinPrice,
-  ])
+  }
 }

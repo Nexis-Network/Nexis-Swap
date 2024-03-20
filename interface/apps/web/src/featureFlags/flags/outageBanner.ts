@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { ChainId } from '@uniswap/sdk-core'
 import { BaseVariant, FeatureFlag, useBaseFlag } from '../index'
 

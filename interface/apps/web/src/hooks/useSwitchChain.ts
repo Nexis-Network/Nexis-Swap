@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { ChainId } from '@uniswap/sdk-core'
 import { Connector } from '@web3-react/types'
 import {

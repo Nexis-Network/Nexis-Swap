@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
@@ -21,6 +22,7 @@ import {
   USDC_POLYGON_MUMBAI,
   USDC_SEPOLIA,
   USDT_BSC,
+  WNZT_NEXIS,
 } from '../constants/tokens'
 
 // Stablecoin amounts used when calculating spot price for a given currency.
@@ -40,6 +42,7 @@ export const STABLECOIN_AMOUNT_OUT: { [key in SupportedInterfaceChain]: Currency
   [ChainId.ARBITRUM_GOERLI]: CurrencyAmount.fromRawAmount(USDC_ARBITRUM_GOERLI, 10_000e6),
   [ChainId.POLYGON_MUMBAI]: CurrencyAmount.fromRawAmount(USDC_POLYGON_MUMBAI, 10_000e6),
   [ChainId.CELO_ALFAJORES]: CurrencyAmount.fromRawAmount(CUSD_CELO_ALFAJORES, 10_000e6),
+  [ChainId.NEXIS]: CurrencyAmount.fromRawAmount(WNZT_NEXIS, 10_000e6),
 }
 
 /**

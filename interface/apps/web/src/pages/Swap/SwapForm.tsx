@@ -81,6 +81,8 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
   const { swapState, setSwapState, derivedSwapInfo } = useSwapContext()
   const { typedValue, independentField } = swapState
 
+  console.log("derivedSwapInfo===",derivedSwapInfo)
+
   // token warning stuff
   const parsedQs = useParsedQueryString()
   const prefilledCurrencies = useMemo(() => {
@@ -191,15 +193,17 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
     return CurrencyAmount.fromRawAmount(currency, JSBI.BigInt(10 ** currency.decimals))
   }
 
-  const fiatValueInput = useUSDPrice(
-    parsedAmounts[Field.INPUT] ?? getSingleUnitAmount(currencies[Field.INPUT]),
-    currencies[Field.INPUT]
-  )
+  const fiatValueInput =  useUSDPrice(
+      parsedAmounts[Field.INPUT] ?? getSingleUnitAmount(currencies[Field.INPUT]),
+      currencies[Field.INPUT]
+    )
+
   const fiatValueOutput = useUSDPrice(
     parsedAmounts[Field.OUTPUT] ?? getSingleUnitAmount(currencies[Field.OUTPUT]),
     currencies[Field.OUTPUT]
   )
 
+  console.log(fiatValueOutput)
   const [routeNotFound, routeIsLoading, routeIsSyncing] = useMemo(
     () => [
       tradeState === TradeState.NO_ROUTE_FOUND,
@@ -316,7 +320,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
       (parsedAmounts[Field.INPUT]?.currency.isToken
         ? (parsedAmounts[Field.INPUT] as CurrencyAmount<Token>)
         : undefined),
-    isSupportedChain(chainId) ? UNIVERSAL_ROUTER_ADDRESS(chainId) : undefined,
+    isSupportedChain(chainId) && chainId!=2370 ? UNIVERSAL_ROUTER_ADDRESS(chainId) : undefined,
     trade?.fillType
   )
 

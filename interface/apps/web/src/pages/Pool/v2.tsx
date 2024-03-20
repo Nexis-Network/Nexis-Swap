@@ -107,6 +107,8 @@ export default function Pool() {
     liquidityTokens
   )
 
+  console.log("liquidityTokens===",tokenPairsWithLiquidityTokens)
+
   // fetch the reserves for all V2 pools in which the user has a balance
   const liquidityTokensWithBalances = useMemo(
     () =>
@@ -116,10 +118,10 @@ export default function Pool() {
     [tokenPairsWithLiquidityTokens, v2PairsBalances]
   )
 
+  console.log("liquidityTokensWithBalances",liquidityTokensWithBalances)
   const v2Pairs = useV2Pairs(liquidityTokensWithBalances.map(({ tokens }) => tokens))
   const v2IsLoading =
     fetchingV2PairBalances || v2Pairs?.length < liquidityTokensWithBalances.length || v2Pairs?.some((V2Pair) => !V2Pair)
-
   const allV2PairsWithLiquidity = v2Pairs.map(([, pair]) => pair).filter((v2Pair): v2Pair is Pair => Boolean(v2Pair))
 
   // show liquidity even if its deposited in rewards contract

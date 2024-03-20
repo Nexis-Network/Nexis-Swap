@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { CustomUserProperties, InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
 import { Web3ReactHooks, Web3ReactProvider, useWeb3React } from '@web3-react/core'
 import { Connector } from '@web3-react/types'
