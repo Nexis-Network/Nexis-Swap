@@ -1,0 +1,56 @@
+IPFS hash of the deployment:
+- CIDv0: `QmV8dNhZZhwARbFbRwX84c1qD5g1ByxuGSxegFdt4iLGWD`
+- CIDv1: `bafybeide5vkgujdy6vmvh2hzpkepm3lvyo3b7ed4vahlsf5nemuzjc3n4i`
+
+The latest release is always mirrored at [app.uniswap.org](https://app.uniswap.org).
+
+You can also access the Uniswap Interface from an IPFS gateway.
+**BEWARE**: The Uniswap interface uses [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to remember your settings, such as which tokens you have imported.
+**You should always use an IPFS gateway that enforces origin separation**, or our hosted deployment of the latest release at [app.uniswap.org](https://app.uniswap.org).
+Your Uniswap settings are never remembered across different URLs.
+
+IPFS gateways:
+- https://bafybeide5vkgujdy6vmvh2hzpkepm3lvyo3b7ed4vahlsf5nemuzjc3n4i.ipfs.dweb.link/
+- https://bafybeide5vkgujdy6vmvh2hzpkepm3lvyo3b7ed4vahlsf5nemuzjc3n4i.ipfs.cf-ipfs.com/
+- [ipfs://QmV8dNhZZhwARbFbRwX84c1qD5g1ByxuGSxegFdt4iLGWD/](ipfs://QmV8dNhZZhwARbFbRwX84c1qD5g1ByxuGSxegFdt4iLGWD/)
+
+## 5.19.0 (2024-03-18)
+
+
+### Features
+
+* **web:** add CurrencyInfo type to web (#6810) ffc3f51
+* **web:** add realtime feature flag (#6374) 7038b33
+* **web:** Add Unicons V2 to web behind flag (#5968) dc40653
+* **web:** gql token lists feature flag and boilerplate (#6857) 539001c
+* **web:** link PDP to LP positions page (#6838) 116eaf3
+* **web:** reinstate on-chain polling configuration (#6841) b020958
+* **web:** remove mobile app promo banner (#6917) (#6954) 0c1b9c3
+* **web:** update AppJsonRpcProvider to only use exp decay on fails (#6890) 37862f2
+
+
+### Bug Fixes
+
+* **web:** avoid polling current block timestamp (#6843) 5c65ef9
+* **web:** broken token logos (#6935) 522f176
+* **web:** configure Sentry source maps for rebased branches (#6923) e2b0872
+* **web:** downgrade zone.js to fix iOS 16 (#6920) e0266b7
+* **web:** fetch HMR paths (#6862) 734d772
+* **web:** fix isMobile to not pick up desktop, and fix service worker checks (#6936) 2daff12
+* **web:** fix miniflare after apollo/client upgrade (#6913) f152713
+* **web:** LimitsMenu overflowing cancel button bug (#6854) acf2f01
+* **web:** only poll for gas price when needed (#6845) e15f3c5
+* **web:** patch zone.js to allow wc modal (#6864) 5d595b2
+* **web:** reduce polling for health to 5m (#6842) 49391c8
+* **web:** should copy checksummed address (#6757) bbc2aca
+* **web:** show correct v2 fee (#6925) bad29f9
+* **web:** stop requesting order statuses w/ invalid request body (#6820) 29ea4cd
+* **web:** stop updating displayed quote after trade is submitted (#6819) c0ed816
+* **web:** use apollo provider w/o realtime (#6914) 47db20e
+
+
+### Code Refactoring
+
+* **web:** wrap apollo Provider (#6375) 50d4d64
+
+
