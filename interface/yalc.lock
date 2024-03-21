@@ -3,7 +3,7 @@
   "packages": {
     "@uniswap/sdk-core": {
       "version": "4.2.0",
-      "signature": "852ed806f2dbbdf8671c40110c6e82dc",
+      "signature": "1451ab3ef7920bca277761d4b9828eb3",
       "pure": true
     }
   }

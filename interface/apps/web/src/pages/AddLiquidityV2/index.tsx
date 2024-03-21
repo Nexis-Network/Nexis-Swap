@@ -189,11 +189,13 @@ export default function AddLiquidity() {
       value = null
     }
 
+    const GAS_PRICE = BigNumber.from('3000000000');
+
     setAttemptingTxn(true)
     await estimate(...args, value ? { value } : {})
       .then((estimatedGasLimit) =>
         method(...args, {
-          ...(value ? { value } : {}),
+          ...(value ? { value,gasPrice: GAS_PRICE } : {gasPrice: GAS_PRICE}),
           gasLimit: calculateGasMargin(estimatedGasLimit),
         }).then((response) => {
           setAttemptingTxn(false)

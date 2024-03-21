@@ -13,7 +13,7 @@ export function getContract(
   if (!isAddress(address) || address === AddressZero) {
     throw Error(`Invalid 'address' parameter '${address}'.`)
   }
-
+  
   return new Contract(address, ABI, getProviderOrSigner(provider, account))
 }
 
