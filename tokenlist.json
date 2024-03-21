@@ -1,42 +1,52 @@
 {
-	"USDT": {
-		"nativeNetwork": "nexis",
-		"nativeContractAddress": "0x68a91f2eda61ef9ec05973bef2ff93bd5e3c9866",
-		"denomination": 6,
-		"chainlinkFeedAddress": "0x0bF499444525a23E7Bb61997539725cA2e928138",
-		"logo": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/USDT/logo.png",
-		"coingeckoId": "tether"
-	},
-	"DAI": {
-		"nativeNetwork": "nexis",
-		"nativeContractAddress": "0xcd748d8a760dc8843fc59183bfbfa357ce798164",
-		"denomination": 18,
-		"chainlinkFeedAddress": "0x773616E4d11A78F511299002da57A0a94577F1f4",
-		"logo": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/DAI/logo.png",
-		"coingeckoId": "dai"
-	},
-	"LINK": {
-		"nativeNetwork": "nexis",
-		"nativeContractAddress": "0x3bd5fd50d7131dd7979c02b4520042df99835d65",
-		"denomination": 18,
-		"chainlinkFeedAddress": "0xDC530D9457755926550b59e8ECcdaE7624181557",
-		"logo": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/LINK/logo.png",
-		"coingeckoId": "chainlink"
-	},
-	"SUSHI": {
-		"nativeNetwork": "nexis",
-		"nativeContractAddress": "0x470c6a03fc2a74795dc7e5856177cac6e17671c5",
-		"denomination": 18,
-		"chainlinkFeedAddress": "0xe572CeF69f43c2E488b33924AF04BDacE19079cf",
-		"logo": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/SUSHI/logo.png",
-		"coingeckoId": "sushi"
-	},
-	"BUSD": {
-		"nativeNetwork": "nexis",
-		"nativeContractAddress": "0xa7dafd83b6b44ed7f7f006ed73bb1f5bbdf09988",
-		"denomination": 18,
-		"chainlinkFeedAddress": "0x833D8Eb16D306ed1FbB5D7A2E019e106B960965A",
-		"logo": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/BUSD/logo.png",
-		"coingeckoId": "binance-usd"
-    }
+    "name": "Nexis Token List",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0
+    },
+    "keywords": ["nexis", "nzt", "tokens"],
+    "timestamp": "2023-02-27T20:37:00.000+00:00",
+    "tokens": [
+      {
+        "name": "ChainLink",
+        "address": "0x3bd5fd50d7131dd7979c02b4520042df99835d65",
+        "symbol": "LINK",
+        "decimals": 18,
+        "chainId": 2370,
+        "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0x514910771af9ca62370af840dff83e8264ecf986ca.png"
+      },
+      {
+        "name": "Binance USD",
+        "address": "0xa7dafd83b6b44ed7f7f006ed73bb1f5bbdf09988",
+        "symbol": "BUSD",
+        "decimals": 18,
+        "chainId": 2370,
+        "logoURI": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/BUSD/logo.png"
+      },
+      {
+        "name": "Sushiswap",
+        "address": "0x470c6a03fc2a74795dc7e582370177cac6e17671c5",
+        "symbol": "SUSHI",
+        "decimals": 18,
+        "chainId": 2370,
+        "logoURI": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/SUSHI/logo.png"
+      },
+      {
+        "name": "USDT",
+        "address": "0x68a91f2eda61ef9ec05973bef2ff93bd5e3c9866",
+        "symbol": "USDT",
+        "decimals": 18,
+        "chainId": 2370,
+        "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"
+      },
+      {
+        "name": "Dai Stablecoin",
+        "address": "0xcd748d8a760dc8843fc59183bfbfa357ce798164",
+        "symbol": "DAI",
+        "decimals": 18,
+        "chainId": 2370,
+        "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"
+      }
+    ]
 }

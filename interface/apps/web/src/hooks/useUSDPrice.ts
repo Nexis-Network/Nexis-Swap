@@ -19,6 +19,7 @@ const ETH_AMOUNT_OUT: { [chainId: number]: CurrencyAmount<Currency> } = {
   [ChainId.OPTIMISM]: CurrencyAmount.fromRawAmount(nativeOnChain(ChainId.OPTIMISM), 10e18),
   [ChainId.POLYGON]: CurrencyAmount.fromRawAmount(nativeOnChain(ChainId.POLYGON), 10_000e18),
   [ChainId.CELO]: CurrencyAmount.fromRawAmount(nativeOnChain(ChainId.CELO), 10e18),
+  [ChainId.NEXIS]: CurrencyAmount.fromRawAmount(nativeOnChain(ChainId.NEXIS), 10e18),
 }
 
 function useETHPrice(currency?: Currency): {
@@ -75,7 +76,6 @@ export function useUSDPrice(
     
     const currency = currencyAmount?.currency ?? prefetchCurrency
     const chainId = currency?.chainId
-    console.log(prefetchCurrency)
     const chain = chainId ? chainIdToBackendName(chainId) : undefined
 
   
@@ -119,7 +119,6 @@ export function useUSDPrice(
       stablecoinPrice,
     ])
   } catch (error) {
-    console.log(error)
     return {
       data:undefined,
       isLoading:true

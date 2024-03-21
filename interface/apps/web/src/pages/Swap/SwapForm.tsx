@@ -81,8 +81,6 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
   const { swapState, setSwapState, derivedSwapInfo } = useSwapContext()
   const { typedValue, independentField } = swapState
 
-  console.log("derivedSwapInfo===",derivedSwapInfo)
-
   // token warning stuff
   const parsedQs = useParsedQueryString()
   const prefilledCurrencies = useMemo(() => {
@@ -203,7 +201,6 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
     currencies[Field.OUTPUT]
   )
 
-  console.log(fiatValueOutput)
   const [routeNotFound, routeIsLoading, routeIsSyncing] = useMemo(
     () => [
       tradeState === TradeState.NO_ROUTE_FOUND,

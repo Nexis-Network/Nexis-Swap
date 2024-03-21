@@ -44,6 +44,7 @@ import {
   WETH_POLYGON,
   WETH_POLYGON_MUMBAI,
   WRAPPED_NATIVE_CURRENCY,
+  WNZT_NEXIS,
   nativeOnChain,
 } from './tokens'
 
@@ -123,6 +124,7 @@ export const COMMON_BASES: ChainCurrencyList = {
   [ChainId.CELO_ALFAJORES]: [nativeOnChain(ChainId.CELO_ALFAJORES), CUSD_CELO_ALFAJORES, CEUR_CELO_ALFAJORES],
 
   [ChainId.BNB]: [nativeOnChain(ChainId.BNB), DAI_BSC, USDC_BSC, USDT_BSC, ETH_BSC, BTC_BSC, BUSD_BSC],
+  [ChainId.NEXIS]:[nativeOnChain(ChainId.NEXIS),WNZT_NEXIS],
 
   [ChainId.AVALANCHE]: [
     nativeOnChain(ChainId.AVALANCHE),

@@ -74,20 +74,22 @@ export function useTokenBalancesWithLoadingIndicator(
     tokenBalancesGasRequirement
   )
 
+  console.log(balances)
+
 
   const anyLoading: boolean = useMemo(() => balances.some((callState) => callState.loading), [balances])
+
+
 
   return useMemo(
     () => [
       address && validatedTokens.length > 0
         ? validatedTokens.reduce<{ [tokenAddress: string]: CurrencyAmount<Token> | undefined }>((memo, token, i) => {
             const value = balances?.[i]?.result?.[0]
-            console.log("value",value)
             const amount = value ? JSBI.BigInt(value.toString()) : undefined
             if (amount) {
               memo[token.address] = CurrencyAmount.fromRawAmount(token, amount)
             }
-            console.log(address)
             return memo
           }, {})
         : {},

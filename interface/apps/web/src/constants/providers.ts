@@ -33,6 +33,7 @@ export const RPC_PROVIDERS = {
   [ChainId.BNB]: getAppProvider(ChainId.BNB),
   [ChainId.AVALANCHE]: getAppProvider(ChainId.AVALANCHE),
   [ChainId.BASE]: getAppProvider(ChainId.BASE),
+  [ChainId.NEXIS]: getAppProvider(ChainId.NEXIS),
 } satisfies Record<SupportedInterfaceChain, AppJsonRpcProvider>
 
 export const DEPRECATED_RPC_PROVIDERS = {

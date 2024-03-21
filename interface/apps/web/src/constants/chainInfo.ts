@@ -3,7 +3,7 @@ import ms from 'ms'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
+import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, NEXIS_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms(`12s`)
 export const DEFAULT_MS_BEFORE_WARNING = ms(`10m`)
@@ -32,6 +32,8 @@ export function getBlocksPerMainnetEpochForChainId(chainId: number | undefined):
       return 6
     case ChainId.CELO:
       return 2
+    case ChainId.NEXIS:
+      return 2370
     default:
       return 1
   }
@@ -246,7 +248,7 @@ const CHAIN_INFO: ChainInfoMap = {
     networkType: NetworkType.L1,
     blockWaitMsBeforeWarning: ms(`25m`),
     bridge: 'https://bridge.nexis.network/',
-    defaultListUrl: BASE_LIST,
+    defaultListUrl: NEXIS_LIST,
     docs: 'https://docs.nexis.network/',
     explorer: 'https://evm-testnet.nexscan.io/',
     infoLink: 'https://info.uniswap.org/#/base/',
