@@ -9,6 +9,7 @@ import { NEVER_RELOAD, useMultipleContractSingleData } from 'lib/hooks/multicall
 import { useMemo } from 'react'
 
 import { DAI, UNI, USDC_MAINNET, USDT, WBTC, WRAPPED_NATIVE_CURRENCY } from '../../constants/tokens'
+import { PairVeevaa } from 'veevaa'
 
 const STAKING_REWARDS_INTERFACE = new Interface(StakingRewardsJSON.abi)
 
@@ -117,6 +118,8 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
     NEVER_RELOAD
   )
 
+  const {chainId:connectedChainId} = useWeb3React()
+
   return useMemo(() => {
     if (!chainId || !uni) return []
 
@@ -155,7 +158,12 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
 
         // get the LP token
         const tokens = info[index].tokens
-        const dummyPair = new Pair(
+        const dummyPair = connectedChainId==2370?
+        new PairVeevaa(
+          CurrencyAmount.fromRawAmount(tokens[0], '0'),
+          CurrencyAmount.fromRawAmount(tokens[1], '0')
+        )
+        :new Pair(
           CurrencyAmount.fromRawAmount(tokens[0], '0'),
           CurrencyAmount.fromRawAmount(tokens[1], '0')
         )

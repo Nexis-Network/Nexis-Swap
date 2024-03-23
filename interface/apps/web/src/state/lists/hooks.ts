@@ -43,7 +43,6 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
 // merge tokens contained within lists from urls
 export function useCombinedTokenMapFromUrls(urls: string[] | undefined): TokenAddressMap {
   const lists = useAllLists()
-  console.log(lists)
   return useMemo(() => {
     if (!urls) return {}
     return (

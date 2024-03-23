@@ -656,6 +656,7 @@ export enum SwapRouterNativeAssets {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ETH = 'ETH',
+  NEXIS = 'NZT'
 }
 
 export enum URAQuoteType {

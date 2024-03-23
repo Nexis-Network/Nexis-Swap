@@ -14,6 +14,7 @@ import {
 import { SwapFee, Trade } from 'wallet/src/features/transactions/swap/trade/types'
 import { QuoteType } from 'wallet/src/features/transactions/utils'
 import { ValueType, getCurrencyAmount } from 'wallet/src/utils/getCurrencyAmount'
+import { PairVeevaa } from '../tradingApi/utils'
 
 export function transformQuoteToTrade(
   tokenInIsNative: boolean,
@@ -147,11 +148,11 @@ export function computeRoutes(
           ? new V3Route(route.map(parsePool), parsedCurrencyIn, parsedCurrencyOut)
           : null,
         routev2: isOnlyV2
-          ? new V2Route(route.map(parsePair), parsedCurrencyIn, parsedCurrencyOut)
+          ? new V2Route(route.map(parsePairVeevaa), parsedCurrencyIn, parsedCurrencyOut)
           : null,
         mixedRoute:
           !isOnlyV3 && !isOnlyV2
-            ? new MixedRouteSDK(route.map(parsePoolOrPair), parsedCurrencyIn, parsedCurrencyOut)
+            ? new MixedRouteSDK(route.map(parsePoolOrPairVeevaa), parsedCurrencyIn, parsedCurrencyOut)
             : null,
         inputAmount,
         outputAmount,
@@ -183,9 +184,10 @@ const parseToken = ({
   )
 }
 
-const parsePoolOrPair = (pool: V3PoolInRoute | V2PoolInRoute): Pool | Pair => {
-  return pool.type === PoolType.V3Pool ? parsePool(pool) : parsePair(pool)
+const parsePoolOrPairVeevaa = (pool: V3PoolInRoute | V2PoolInRoute): Pool | Pair => {
+  return pool.type === PoolType.V3Pool ? parsePool(pool) : parsePairVeevaa(pool)
 }
+
 
 const parsePool = ({
   fee,
@@ -204,11 +206,18 @@ const parsePool = ({
     parseInt(tickCurrent, 10)
   )
 
+
 const parsePair = ({ reserve0, reserve1 }: V2PoolInRoute): Pair =>
   new Pair(
     CurrencyAmount.fromRawAmount(parseToken(reserve0.token), reserve0.quotient),
     CurrencyAmount.fromRawAmount(parseToken(reserve1.token), reserve1.quotient)
   )
+
+const parsePairVeevaa = ({ reserve0, reserve1 }: V2PoolInRoute): Pair =>
+  new PairVeevaa(
+    CurrencyAmount.fromRawAmount(parseToken(reserve0.token), reserve0.quotient),
+    CurrencyAmount.fromRawAmount(parseToken(reserve1.token), reserve1.quotient)
+  ) as any;
 
 function isV2OnlyRoute(route: (V3PoolInRoute | V2PoolInRoute)[]): route is V2PoolInRoute[] {
   return route.every((pool) => pool.type === PoolType.V2Pool)

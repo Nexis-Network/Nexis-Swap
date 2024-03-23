@@ -30,6 +30,7 @@ import { SwapHead } from './Head'
 import { SwapModal } from './Modal'
 import { Pending } from './Pending'
 import SwapProgressIndicator from './ProgressIndicator'
+import { useWeb3React } from '@web3-react/core'
 
 const Container = styled.div<{ $height?: string; $padding?: string }>`
   height: ${({ $height }) => $height ?? ''};
@@ -177,6 +178,7 @@ export function ConfirmSwapModal({
     // Popups are suppressed when modal is open; re-enable them on dismissal
     unsuppressPopups()
   }, [confirmModalState, doesTradeDiffer, onCancel, onDismiss, priceUpdate, unsuppressPopups, trade])
+  const {chainId} = useWeb3React();
 
   return (
     // Wrapping in a new theme provider resets any color extraction overriding on the current page. Swap modal should use default/non-overridden theme.
@@ -204,17 +206,18 @@ export function ConfirmSwapModal({
                   }}
                   trade={trade}
                   allowance={allowance}
-                  swapResult={swapResult}
+                  swapResult={swapResult} 
                   allowedSlippage={allowedSlippage}
-                  isLoading={isPreviewTrade(trade)}
+                  isLoading={ chainId == 2370? false:isPreviewTrade(trade)}
                   disabledConfirm={
+                    chainId == 2370? false:
                     showAcceptChanges || isPreviewTrade(trade) || allowance.state === AllowanceState.LOADING
                   }
                   fiatValueInput={fiatValueInput}
                   fiatValueOutput={fiatValueOutput}
                   showAcceptChanges={Boolean(showAcceptChanges)}
                   onAcceptChanges={onAcceptChanges}
-                  swapErrorMessage={swapFailed ? swapError?.message : undefined}
+                  swapErrorMessage={chainId!=2370 || swapFailed ? swapError?.message : undefined}
                 />
               </AutoColumn>
             </FadePresence>
@@ -254,7 +257,7 @@ export function ConfirmSwapModal({
         )}
         {/* Error screen handles all error types with custom messaging and retry logic */}
         {errorType && showError && (
-          <SwapError trade={trade} swapResult={swapResult} errorType={errorType} onRetry={startSwapFlow} />
+          <SwapError trade={trade} swapResult={swapResult} errorType={errorType} onRetry={()=>startSwapFlow()} />
         )}
       </SwapModal>
     </ThemeProvider>

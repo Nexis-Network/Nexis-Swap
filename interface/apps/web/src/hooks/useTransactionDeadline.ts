@@ -23,10 +23,12 @@ export function useGetTransactionDeadline(): () => Promise<BigNumber | undefined
   const { chainId } = useWeb3React()
   const ttl = useAppSelector((state) => state.user.userDeadline)
   const multicall = useInterfaceMulticall()
-  return useCallback(async () => {
+  const res = useCallback(async () => {
     const blockTimestamp = await multicall.getCurrentBlockTimestamp()
     return timestampToDeadline(chainId, blockTimestamp, ttl)
   }, [chainId, multicall, ttl])
+
+  return res;
 }
 
 function timestampToDeadline(chainId?: number, blockTimestamp?: BigNumber, ttl?: number) {

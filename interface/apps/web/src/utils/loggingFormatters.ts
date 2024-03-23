@@ -80,7 +80,9 @@ export const formatSwapButtonClickEventProperties = ({
   routes,
   fiatValueInput,
   fiatValueOutput,
-}: AnalyticsEventProps) => ({
+}: AnalyticsEventProps) => {
+ 
+  return ({
   estimated_network_fee_usd: isClassicTrade(trade) ? trade.gasUseEstimateUSD : undefined,
   transaction_hash: swapResult?.type === TradeFillType.Classic ? swapResult.response.hash : undefined,
   order_hash: swapResult?.type === TradeFillType.UniswapX ? swapResult.response.orderHash : undefined,
@@ -105,4 +107,4 @@ export const formatSwapButtonClickEventProperties = ({
       : undefined,
   swap_quote_block_number: isClassicTrade(trade) ? trade.blockNumber : undefined,
   ...formatRoutesEventProperties(routes),
-})
+})}

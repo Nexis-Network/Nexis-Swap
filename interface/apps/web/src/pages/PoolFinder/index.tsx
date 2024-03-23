@@ -47,7 +47,6 @@ export default function PoolFinder() {
   const query = useQuery()
 
   const { account, chainId } = useWeb3React()
-  console.log(chainId)
 
   const [showSearch, setShowSearch] = useState<boolean>(false)
   const [activeField, setActiveField] = useState<number>(Fields.TOKEN1)

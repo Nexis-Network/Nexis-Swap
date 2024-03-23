@@ -62,6 +62,9 @@ import { didUserReject } from 'utils/swapErrorToUserReadableMessage'
 
 import { getIsReviewableQuote } from '.'
 import { OutputTaxTooltipBody } from './TaxTooltipBody'
+import { useTokenContract, useV2RouterContract } from 'hooks/useContract'
+import { useGetTransactionDeadline } from 'hooks/useTransactionDeadline'
+import { BigNumber } from 'ethers'
 
 const SWAP_FORM_CURRENCY_SEARCH_FILTERS = {
   showCommonBases: true,
@@ -355,28 +358,48 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
     }))
   }, [])
 
+  const router = useV2RouterContract();
+
+  //@todo raebeatrose
+
+  const getDeadline = useGetTransactionDeadline()
+
+  const tokenAContract = useTokenContract("0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3")
+  const tokenBContract = useTokenContract("0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+
   const handleSwap = useCallback(() => {
+    
     if (!swapCallback) {
       return
     }
     if (preTaxStablecoinPriceImpact && !confirmPriceImpactWithoutFee(preTaxStablecoinPriceImpact)) {
       return
     }
-    swapCallback()
-      .then((result) => {
-        setSwapFormState((currentState) => ({
-          ...currentState,
-          swapError: undefined,
-          swapResult: result,
-        }))
-      })
-      .catch((error) => {
-        setSwapFormState((currentState) => ({
-          ...currentState,
-          swapError: error,
-          swapResult: undefined,
-        }))
-      })
+    if(chainId!=2370){
+      swapCallback()
+        .then((result) => {
+          setSwapFormState((currentState) => ({
+            ...currentState,
+            swapError: undefined,
+            swapResult: result,
+          }))
+        })
+        .catch((error) => {
+          setSwapFormState((currentState) => ({
+            ...currentState,
+            swapError: error,
+            swapResult: undefined,
+          }))
+        })
+    }else{
+      getDeadline().then((deadline)=>{
+        // tokenAContract?.approve("0xbf482817a0639cD504316017a538Ae1e66D7Fb00",BigNumber.from("100000000000000000000000000000"))
+        // tokenBContract?.approve("0xbf482817a0639cD504316017a538Ae1e66D7Fb00",BigNumber.from("100000000000000000000000000000"))
+        router?.swapTokensForExactTokens(trade?.outputAmount.quotient.toString(),trade?.inputAmount!.quotient.toString(),["0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3","0x470c6a03fc2a74795dc7e5856177cac6e17671c5"],"0x5e5d5b3f81CD11C080B8E9c46c61234238B4c1D9","1711745904").then((res:any)=>{
+          window.location.href="https://evm-testnet.nexscan.io/tx/"+res.hash
+        }).catch((err:any)=>console.log("asdf err===",err,deadline?.toString()))
+      });
+    }
   }, [swapCallback, preTaxStablecoinPriceImpact])
 
   const handleOnWrap = useCallback(async () => {
@@ -460,6 +483,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
   )
 
   const showPriceImpactWarning = isClassicTrade(trade) && largerPriceImpact && priceImpactSeverity > 3
+
 
   const prevTrade = usePrevious(trade)
   useEffect(() => {

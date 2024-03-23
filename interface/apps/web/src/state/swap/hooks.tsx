@@ -158,13 +158,14 @@ export function useDerivedSwapInfo(state: SwapState): SwapInfo {
     account
   )
 
-  const { data: outputFeeFiatValue } = useUSDPrice(
-    isSubmittableTrade(trade.trade) && trade.trade.swapFee
-      ? CurrencyAmount.fromRawAmount(trade.trade.outputAmount.currency, trade.trade.swapFee.amount)
-      : undefined,
-    trade.trade?.outputAmount.currency
-  )
 
+  // const { data: outputFeeFiatValue } = useUSDPrice(
+  //   isSubmittableTrade(trade.trade) && trade.trade.swapFee
+  //     ? CurrencyAmount.fromRawAmount(trade.trade.outputAmount.currency, trade.trade.swapFee.amount)
+  //     : undefined,
+  //   trade.trade?.outputAmount.currency
+  // )
+  const outputFeeFiatValue = "";
   const currencyBalances = useMemo(
     () => ({
       [Field.INPUT]: relevantTokenBalances[0],
@@ -220,7 +221,7 @@ export function useDerivedSwapInfo(state: SwapState): SwapInfo {
     return inputError
   }, [account, currencies, parsedAmount, currencyBalances, trade?.trade, allowedSlippage, connectionReady])
 
-  return useMemo(
+  const x = useMemo(
     () => ({
       currencies,
       currencyBalances,
@@ -246,6 +247,7 @@ export function useDerivedSwapInfo(state: SwapState): SwapInfo {
       outputTax,
     ]
   )
+  return x as any;
 }
 
 function parseCurrencyFromURLParameter(urlParam: ParsedQs[string]): string {

@@ -48,7 +48,6 @@ interface SwapDetailsProps {
 
 export default function SwapDetailsDropdown(props: SwapDetailsProps) {
   const { trade, syncing, loading, allowedSlippage } = props
-  console.log(props)
   const theme = useTheme()
   const [showDetails, setShowDetails] = useState(false)
   const trace = useTrace()

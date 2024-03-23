@@ -71,6 +71,8 @@ export const quickRouteApi = createApi({
           }
 
           const quickRouteResponse = response.data as QuickRouteResponse
+
+          console.log("args===",quickRouteResponse)
           const previewTrade = transformQuickRouteToTrade(args, quickRouteResponse)
           return {
             data: {

@@ -14,6 +14,7 @@ class TokenLogoLookupTable {
       if (!listData) {
         return
       }
+      if(listData.error==undefined && listData.current?.tokens!=undefined)
       listData.current?.tokens.forEach((token) => {
         if (token.logoURI) {
           const lowercaseAddress = token.address.toLowerCase()

@@ -1,14 +1,16 @@
-import { Currency, CurrencyAmount, Percent, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import { useMemo } from 'react'
-import { ClassicTrade, InterfaceTrade, QuoteMethod, RouterPreference, TradeState } from 'state/routing/types'
-import { usePreviewTrade } from 'state/routing/usePreviewTrade'
+import { ClassicTrade, InterfaceTrade, PreviewTrade, QuoteMethod, RouterPreference, TradeState } from 'state/routing/types'
+import { usePreviewTrade, useQuickRouteArguments } from 'state/routing/usePreviewTrade'
 import { useRoutingAPITrade } from 'state/routing/useRoutingAPITrade'
 import { useRouterPreference } from 'state/user/hooks'
 
 import useAutoRouterSupported from './useAutoRouterSupported'
 import useDebounce from './useDebounce'
+import { transformQuickRouteToTrade } from 'state/routing/utils'
 
 // Prevents excessive quote requests between keystrokes.
 const DEBOUNCE_TIME = 350
@@ -99,6 +101,7 @@ export function useDebouncedTrade(
     inputTax,
     outputTax
   )
+
   const routingApiTradeResult = useRoutingAPITrade(
     skipRoutingFetch,
     tradeType,
@@ -110,7 +113,9 @@ export function useDebouncedTrade(
     outputTax
   )
 
-  return previewTradeResult.currentTrade && !routingApiTradeResult.currentTrade
+  const x = previewTradeResult.currentTrade && !routingApiTradeResult.currentTrade
     ? previewTradeResult
     : routingApiTradeResult
+
+  return x;
 }

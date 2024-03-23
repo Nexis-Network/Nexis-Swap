@@ -22,6 +22,7 @@ import {
   updateUserSlippageTolerance,
 } from './reducer'
 import { SerializedPair, SerializedToken, SlippageTolerance } from './types'
+import { computePairAddressVeevaa } from 'veevaa'
 
 export function serializeToken(token: Token): SerializedToken {
   return {
@@ -217,6 +218,7 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
 
   return new Token(
     tokenA.chainId,
+    tokenA.chainId==2370?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }):
     computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }),
     18,
     'UNI-V2',

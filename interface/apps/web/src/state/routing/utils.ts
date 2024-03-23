@@ -5,7 +5,7 @@ import { DutchOrderInfo, DutchOrderInfoJSON } from '@uniswap/uniswapx-sdk'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'
 import { BIPS_BASE } from 'constants/misc'
-import { isAvalanche, isBsc, isPolygon, nativeOnChain } from 'constants/tokens'
+import { isAvalanche, isBsc, isNexis, isPolygon, nativeOnChain } from 'constants/tokens'
 import { toSlippagePercent } from 'utils/slippage'
 
 import { getApproveInfo, getWrapInfo } from './gas'
@@ -37,6 +37,8 @@ import {
   V3PoolInRoute,
   isClassicQuoteResponse,
 } from './types'
+import { PairVeevaa } from 'veevaa'
+import { useWeb3React } from '@web3-react/core'
 
 interface RouteResult {
   routev3: V3Route<Currency, Currency> | null
@@ -68,12 +70,12 @@ export function computeRoutes(args: GetQuoteArgs, routes: ClassicQuoteData['rout
 
       const isOnlyV2 = isVersionedRoute<V2PoolInRoute>(PoolType.V2Pool, route)
       const isOnlyV3 = isVersionedRoute<V3PoolInRoute>(PoolType.V3Pool, route)
-
+      const { chainId: connectedChainId } = useWeb3React()
       return {
         routev3: isOnlyV3 ? new V3Route(route.map(parsePool), currencyIn, currencyOut) : null,
-        routev2: isOnlyV2 ? new V2Route(route.map(parsePair), currencyIn, currencyOut) : null,
+        routev2: isOnlyV2 ? new V2Route(route.map(connectedChainId==2370?parsePairVeevaa as any: parsePair), currencyIn, currencyOut) : null,
         mixedRoute:
-          !isOnlyV3 && !isOnlyV2 ? new MixedRouteSDK(route.map(parsePoolOrPair), currencyIn, currencyOut) : null,
+          !isOnlyV3 && !isOnlyV2 ? new MixedRouteSDK(route.map(connectedChainId==2370?parsePoolOrPairVeevaa as any: parsePoolOrPair ), currencyIn, currencyOut) : null,
         inputAmount: CurrencyAmount.fromRawAmount(currencyIn, rawAmountIn),
         outputAmount: CurrencyAmount.fromRawAmount(currencyOut, rawAmountOut),
       }
@@ -86,6 +88,10 @@ export function computeRoutes(args: GetQuoteArgs, routes: ClassicQuoteData['rout
 
 const parsePoolOrPair = (pool: V3PoolInRoute | V2PoolInRoute): Pool | Pair => {
   return pool.type === PoolType.V3Pool ? parsePool(pool) : parsePair(pool)
+}
+
+const parsePoolOrPairVeevaa = (pool: V3PoolInRoute | V2PoolInRoute): Pool | PairVeevaa => {
+  return pool.type === PoolType.V3Pool ? parsePool(pool) : parsePairVeevaa(pool)
 }
 
 function isVersionedRoute<T extends V2PoolInRoute | V3PoolInRoute>(
@@ -332,6 +338,12 @@ const parsePair = ({ reserve0, reserve1 }: V2PoolInRoute): Pair =>
     CurrencyAmount.fromRawAmount(parseToken(reserve1.token), reserve1.quotient)
   )
 
+const parsePairVeevaa = ({ reserve0, reserve1 }: V2PoolInRoute): PairVeevaa =>
+  new PairVeevaa(
+    CurrencyAmount.fromRawAmount(parseToken(reserve0.token), reserve0.quotient),
+    CurrencyAmount.fromRawAmount(parseToken(reserve1.token), reserve1.quotient)
+  )
+
 // TODO(WEB-2050): Convert other instances of tradeType comparison to use this utility function
 export function isExactInput(tradeType: TradeType): boolean {
   return tradeType === TradeType.EXACT_INPUT
@@ -341,10 +353,10 @@ export function currencyAddressForSwapQuote(currency: Currency): string {
   if (currency.isNative) {
     if (isPolygon(currency.chainId)) return SwapRouterNativeAssets.MATIC
     if (isBsc(currency.chainId)) return SwapRouterNativeAssets.BNB
+    if (isNexis(currency.chainId)) return SwapRouterNativeAssets.NEXIS
     if (isAvalanche(currency.chainId)) return SwapRouterNativeAssets.AVAX
     return SwapRouterNativeAssets.ETH
   }
-
   return currency.address
 }
 

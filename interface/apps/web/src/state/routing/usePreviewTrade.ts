@@ -1,19 +1,26 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { ChainId, Currency, CurrencyAmount, Percent, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, Percent, Token, TradeType, V2_FACTORY_ADDRESSES } from '@uniswap/sdk-core'
 import { ZERO_PERCENT } from 'constants/misc'
 import { useGatewayDNSUpdateAllEnabled } from 'featureFlags/flags/gatewayDNSUpdate'
 import { useQuickRouteMainnetEnabled } from 'featureFlags/flags/quickRouteMainnet'
 import useIsWindowVisible from 'hooks/useIsWindowVisible'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
+import IUniswapV2PairJSON from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 
 import { useGetQuickRouteQuery, useGetQuickRouteQueryState } from './quickRouteSlice'
 import { GetQuickQuoteArgs, PreviewTrade, QuoteState, TradeState } from './types'
-import { currencyAddressForSwapQuote } from './utils'
+import { currencyAddressForSwapQuote, transformQuickRouteToTrade } from './utils'
+import { useV2RouterContract } from 'hooks/useContract'
+import { computePairAddressVeevaa } from 'veevaa'
+import { WNZT_NEXIS } from 'constants/tokens'
+import { useMultipleContractSingleData } from 'lib/hooks/multicall'
+import { Interface } from 'ethers/lib/utils'
+import { BigNumber } from 'ethers'
 
 const TRADE_NOT_FOUND = { state: TradeState.NO_ROUTE_FOUND, trade: undefined } as const
 const TRADE_LOADING = { state: TradeState.LOADING, trade: undefined } as const
 
-function useQuickRouteArguments({
+export function useQuickRouteArguments({
   tokenIn,
   tokenOut,
   amount,
@@ -73,6 +80,10 @@ export function usePreviewTrade(
         : [otherCurrency, amountSpecified?.currency],
     [amountSpecified, otherCurrency, tradeType]
   )
+  const [poolAddress,setPoolAddress]=useState<string|undefined>();
+  const [amountOutVal,setAmountOutVal]=useState<string>("0");
+  const PAIR_INTERFACE = new Interface(IUniswapV2PairJSON.abi)
+  const results = useMultipleContractSingleData([poolAddress], PAIR_INTERFACE, 'getReserves')
 
   const queryArgs = useQuickRouteArguments({
     tokenIn: currencyIn,
@@ -83,8 +94,79 @@ export function usePreviewTrade(
     outputTax,
   })
   const isWindowVisible = useIsWindowVisible()
+  const router = useV2RouterContract();
 
   const { isError, data: tradeResult, error, currentData } = useGetQuickRouteQueryState(queryArgs)
+  let raeCustom:any=undefined;
+  if(currencyIn?.chainId==2370 && currencyIn!=undefined && currencyOut!=undefined){
+    let _tokenA = {
+      chainId:currencyIn.chainId,
+      address:currencyAddressForSwapQuote(currencyIn!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyIn!),
+      decimals:currencyIn.decimals
+    }
+    let _tokenB = {
+      chainId:currencyOut.chainId,
+      address:currencyAddressForSwapQuote(currencyOut!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyOut!),
+      decimals:currencyOut.decimals
+    }
+    const tokenA = new Token(_tokenA.chainId,_tokenA.address,_tokenA.decimals);
+    const tokenB = new Token(_tokenB.chainId,_tokenB.address,_tokenB.decimals);
+    if(!poolAddress){
+      setPoolAddress(computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn.chainId], tokenA, tokenB }))
+    }
+    // const results:any=[{result:undefined}]
+
+    const { result: reserves } = results[0];
+    if(!reserves){
+    }else{
+      const {reserve0,reserve1} = reserves;
+      try {
+        router?.getAmountOut(BigNumber.from(amountSpecified!.quotient.toString()),BigNumber.from(reserve0.toString()),BigNumber.from(reserve1.toString())).then((val:any)=>{
+          setAmountOutVal(val);
+        })
+        const args={
+          amount:amountSpecified!.quotient.toString(),
+          gatewayDNSUpdateAllEnabled:false,
+          inputTax,
+          outputTax,
+          tokenInAddress:currencyAddressForSwapQuote(currencyIn!),
+          tokenInChainId:currencyIn?.chainId,
+          tokenInDecimals:currencyIn?.decimals,
+            tokenInSymbol:currencyIn?.symbol,
+            tokenOutAddress: currencyAddressForSwapQuote(currencyOut!),
+            tokenOutChainId: currencyOut!.wrapped.chainId,
+            tokenOutDecimals: currencyOut!.wrapped.decimals,
+            tokenOutSymbol: currencyOut!.wrapped.symbol,
+            tradeType,
+        };
+        console.log("poolAddress===",poolAddress)
+        const data = {
+          quote:{
+            amount: BigNumber.from(amountOutVal.toString()),
+            path:"[v2] "+poolAddress
+          },
+          tokenIn:{
+            address:currencyAddressForSwapQuote(currencyIn!),
+            decimals:currencyIn.decimals,
+            name:currencyIn.name,
+            symbol:currencyIn.symbol,
+          },
+          tokenOut:{
+            address:currencyAddressForSwapQuote(currencyOut!),
+            decimals:currencyOut.decimals,
+            name:currencyOut.name,
+            symbol:currencyOut.symbol,
+          },
+          tradeType:"EXACT_IN"
+        }
+        raeCustom = transformQuickRouteToTrade(args as any,data as any);
+      } catch (error) {
+        console.log("ERR===",error)
+      }
+    }
+    
+
+  }
   useGetQuickRouteQuery(skipFetch || !isWindowVisible ? skipToken : queryArgs, {
     // If latest quote from cache was fetched > 2m ago, instantly repoll for another instead of waiting for next poll period
     refetchOnMountOrArgChange: 2 * 60,
@@ -93,6 +175,16 @@ export function usePreviewTrade(
   const isFetching = currentData !== tradeResult || !currentData
 
   return useMemo(() => {
+    if(raeCustom!=undefined) {
+      const res = {
+        state: TradeState.VALID,
+        trade: raeCustom,
+        currentTrade: raeCustom,
+        swapQuoteLatency: 100,
+      }
+      console.log("raeCustom===",res)
+      return res;
+    }
     if (amountSpecified && otherCurrency && queryArgs === skipToken) {
       return {
         state: TradeState.STALE,
@@ -130,5 +222,6 @@ export function usePreviewTrade(
     tradeResult?.trade,
     currentData?.trade,
     otherCurrency,
+    raeCustom
   ])
 }
