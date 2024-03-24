@@ -4,7 +4,7 @@ import { Currency } from '@uniswap/sdk-core'
 export const getTokenPageTitle = (currency?: Currency) => {
   const tokenName = currency?.name
   const tokenSymbol = currency?.symbol
-  const baseTitle = t`Buy, sell, and trade on Uniswap`
+  const baseTitle = t`Nexis Swap`
   if (!tokenName && !tokenSymbol) {
     return baseTitle
   }

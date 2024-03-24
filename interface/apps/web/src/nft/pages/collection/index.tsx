@@ -184,7 +184,7 @@ const Collection = () => {
   return (
     <>
       <Helmet>
-        <title>{t`Buy, sell & trade ${collectionStats.name} on Uniswap`}</title>
+        <title>{t`Buy, sell & trade ${collectionStats.name} on NexisSwap`}</title>
       </Helmet>
       <Trace
         page={InterfacePageName.NFT_COLLECTION_PAGE}

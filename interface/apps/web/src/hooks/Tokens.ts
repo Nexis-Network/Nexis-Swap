@@ -119,6 +119,7 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
 
     const unsupportedSet = new Set(Object.keys(unsupportedTokens))
 
+    if(!list.tokens)return [];
     return list.tokens.reduce((acc, tokenInfo) => {
       const bridgeInfo = tokenInfo.extensions?.bridgeInfo as unknown as BridgeInfo
       if (
@@ -140,6 +141,7 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
 
 export function useSearchInactiveTokenLists(search: string | undefined, minResults = 10): TokenFromList[] {
   const lists = useAllLists()
+  console.log(lists)
   const inactiveUrls = DEFAULT_INACTIVE_LIST_URLS
   const { chainId } = useWeb3React()
   const activeTokens = useDefaultActiveTokens(chainId)
@@ -151,6 +153,7 @@ export function useSearchInactiveTokenLists(search: string | undefined, minResul
     for (const url of inactiveUrls) {
       const list = lists[url]?.current
       if (!list) continue
+      if(!list.tokens)continue;
       for (const tokenInfo of list.tokens) {
         if (tokenInfo.chainId === chainId && tokenFilter(tokenInfo)) {
           try {

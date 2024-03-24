@@ -5,7 +5,7 @@ export const getPoolDetailPageTitle = (poolData?: PoolData) => {
   const token0Symbol = poolData?.token0.symbol
   const token1Symbol = poolData?.token1.symbol
 
-  const baseTitle = t`Buy, sell, and trade on Uniswap`
+  const baseTitle = t`Nexis Swap`
   if (!token0Symbol || !token1Symbol) {
     return baseTitle
   }

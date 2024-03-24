@@ -77,6 +77,6 @@ export default async function fetchTokenList(
       continue
     }
   }
-
+  
   throw new Error(`No valid token list found at any URLs derived from ${listUrl}.`)
 }

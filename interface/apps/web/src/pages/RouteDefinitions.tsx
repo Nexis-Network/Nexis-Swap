@@ -90,7 +90,7 @@ function createRouteDefinition(route: Partial<RouteDefinition>): RouteDefinition
   }
 }
 
-const SwapTitle = t`Buy, sell & trade Ethereum and other top tokens on Uniswap`
+const SwapTitle = t`Nexis Swap`
 
 export const routes: RouteDefinition[] = [
   createRouteDefinition({
