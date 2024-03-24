@@ -356,7 +356,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
                               maxFontSizeMultiplier={1.2}
                               style={
                                 {
-                                  "color": "#FC72FF",
+                                  "color": "#2892D7",
                                   "fontFamily": "Basel-Medium",
                                   "fontSize": 13,
                                   "fontWeight": "500",
@@ -384,7 +384,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
                                     "borderWidth": 0,
                                   },
                                   {
-                                    "color": "#FC72FF",
+                                    "color": "#2892D7",
                                     "height": 16,
                                     "width": 16,
                                   },
@@ -395,7 +395,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
                                   },
                                 ]
                               }
-                              tintColor="#FC72FF"
+                              tintColor="#2892D7"
                               vbHeight={16}
                               vbWidth={16}
                             >
@@ -642,7 +642,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#FC72FF",
+                  "backgroundColor": "#2892D7",
                   "borderBottomColor": "transparent",
                   "borderBottomLeftRadius": 16,
                   "borderBottomRightRadius": 16,

@@ -11,7 +11,7 @@ import { useCallback, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { RowBetween, RowFixed } from '../Row'
 import SettingsTab from '../Settings'
-import SwapBuyFiatButton from './SwapBuyFiatButton'
+// import SwapBuyFiatButton from './SwapBuyFiatButton'
 import { SwapTab } from './constants'
 import { SwapHeaderTabButton } from './styled'
 
@@ -105,7 +105,7 @@ export default function SwapHeader({ compact, syncTabToUrl }: { compact: boolean
             <Trans>Send</Trans>
           </SwapHeaderTabButton>
         )}
-        <SwapBuyFiatButton />
+        {/* <SwapBuyFiatButton /> */}
       </HeaderButtonContainer>
       {currentTab === SwapTab.Swap && (
         <RowFixed>

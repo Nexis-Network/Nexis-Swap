@@ -122,8 +122,8 @@ const Navbar = ({ blur }: { blur: boolean }) => {
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer}>
               <UniIcon
-                width="48"
-                height="48"
+                width="32"
+                height="32"
                 data-testid="uniswap-logo"
                 className={styles.logo}
                 clickable={!account}

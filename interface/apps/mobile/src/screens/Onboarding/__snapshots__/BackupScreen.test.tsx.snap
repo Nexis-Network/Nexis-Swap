@@ -234,7 +234,7 @@ exports[`BackupScreen renders backup options when none are completed 1`] = `
                             "borderWidth": 0,
                           },
                           {
-                            "color": "#FC72FF",
+                            "color": "#2892D7",
                             "height": 16,
                             "width": 16,
                           },
@@ -245,7 +245,7 @@ exports[`BackupScreen renders backup options when none are completed 1`] = `
                           },
                         ]
                       }
-                      tintColor="#FC72FF"
+                      tintColor="#2892D7"
                       vbHeight={24}
                       vbWidth={24}
                     >
@@ -414,7 +414,7 @@ exports[`BackupScreen renders backup options when none are completed 1`] = `
                     }
                   >
                     <svg
-                      color="#FC72FF"
+                      color="#2892D7"
                       data-file-name="SvgPaperStack"
                       height={16}
                     />
@@ -903,7 +903,7 @@ exports[`BackupScreen renders backup options when some are completed 1`] = `
                             "borderWidth": 0,
                           },
                           {
-                            "color": "#FC72FF",
+                            "color": "#2892D7",
                             "height": 16,
                             "width": 16,
                           },
@@ -914,7 +914,7 @@ exports[`BackupScreen renders backup options when some are completed 1`] = `
                           },
                         ]
                       }
-                      tintColor="#FC72FF"
+                      tintColor="#2892D7"
                       vbHeight={24}
                       vbWidth={24}
                     >
@@ -1083,7 +1083,7 @@ exports[`BackupScreen renders backup options when some are completed 1`] = `
                     }
                   >
                     <svg
-                      color="#FC72FF"
+                      color="#2892D7"
                       data-file-name="SvgPaperStack"
                       height={16}
                     />
