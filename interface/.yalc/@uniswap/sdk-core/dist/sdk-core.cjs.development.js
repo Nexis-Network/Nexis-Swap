@@ -925,7 +925,6 @@ var Token = /*#__PURE__*/function (_BaseCurrency) {
 
   _proto.sortsBefore = function sortsBefore(other) {
     !(this.chainId === other.chainId) ?  invariant(false, 'CHAIN_IDS')  : void 0;
-    !(this.address.toLowerCase() !== other.address.toLowerCase()) ?  invariant(false, 'ADDRESSES')  : void 0;
     return this.address.toLowerCase() < other.address.toLowerCase();
   }
   /**
