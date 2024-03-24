@@ -5,6 +5,8 @@ import 'inter-ui'
 import 'polyfills'
 import 'tracing'
 import 'connection/eagerlyConnect'
+import { Analytics } from "@vercel/analytics/react"
+
 /* eslint-enable prettier/prettier */
 
 import { FeatureFlagsProvider } from 'featureFlags'
