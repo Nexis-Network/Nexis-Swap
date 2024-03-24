@@ -22,15 +22,19 @@
    cd ..
    cd interface
    yarn install
-   yalc add @uniswap/sdk-core@4.2.0
-   yalc link @uniswap/sdk-core@4.2.0
-   yarn lfg
-   yarn install
-   rm interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
-   mv types-and-hooks.ts interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
-   yarn web start
    ```
-5. build
+
+5. If the above stuff fails run this
+    ```bash
+     yalc add @uniswap/sdk-core@4.2.0
+     yalc link @uniswap/sdk-core@4.2.0
+     yarn lfg
+     yarn install
+     rm interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
+     mv types-and-hooks.ts interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
+     yarn web start
+    ```
+6. build
    ```
    yarn build:production
    ```
