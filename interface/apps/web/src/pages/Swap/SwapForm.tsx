@@ -364,8 +364,9 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
 
   const getDeadline = useGetTransactionDeadline()
 
-  const tokenAContract = useTokenContract("0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3")
-  const tokenBContract = useTokenContract("0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+  const tokenAContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[0]=="NZT"?"0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3":(trade as any).pair[0]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+  const tokenBContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[1]=="NZT"?"0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3":(trade as any).pair[1]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+
 
   const handleSwap = useCallback(() => {
     
@@ -392,12 +393,21 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
           }))
         })
     }else{
+      let tradePair:any = [];
+      for(let i=0;i<(trade as any).pair.length;i++){
+        if((trade as any).pair[i]=="NZT")tradePair.push("0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3");
+        else{
+          tradePair.push((trade as any).pair[i]);
+        }
+      }
       getDeadline().then((deadline)=>{
-        // tokenAContract?.approve("0xbf482817a0639cD504316017a538Ae1e66D7Fb00",BigNumber.from("100000000000000000000000000000"))
-        // tokenBContract?.approve("0xbf482817a0639cD504316017a538Ae1e66D7Fb00",BigNumber.from("100000000000000000000000000000"))
-        router?.swapTokensForExactTokens(trade?.outputAmount.quotient.toString(),trade?.inputAmount!.quotient.toString(),["0x7D27ed0343b3B24283bdC224b5fd0fFCDeB413F3","0x470c6a03fc2a74795dc7e5856177cac6e17671c5"],"0x5e5d5b3f81CD11C080B8E9c46c61234238B4c1D9","1711745904").then((res:any)=>{
-          window.location.href="https://evm-testnet.nexscan.io/tx/"+res.hash
-        }).catch((err:any)=>console.log("asdf err===",err,deadline?.toString()))
+        tokenAContract?.approve(router?.address!,BigNumber.from("10000000000000000000000000000000000")).then((_hashTx1)=>{
+          tokenBContract?.approve(router?.address!,BigNumber.from("10000000000000000000000000000000000")).then((_hashTx2)=>{
+            router?.swapTokensForExactTokens(trade?.outputAmount.quotient.toString(),trade?.inputAmount!.quotient.toString(),tradePair,"0x5e5d5b3f81CD11C080B8E9c46c61234238B4c1D9","1805864834").then((res:any)=>{
+              window.location.href="https://evm-testnet.nexscan.io/tx/"+res.hash
+            }).catch((err:any)=>console.log("asdf err===",err))
+          })
+        })
       });
     }
   }, [swapCallback, preTaxStablecoinPriceImpact])
@@ -562,7 +572,8 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
             />
           </Trace>
         </SwapSection>
-        <ArrowWrapper clickable={isSupportedChain(chainId)}>
+        <br />
+        {/* <ArrowWrapper clickable={isSupportedChain(chainId)}>
           <TraceEvent
             events={[BrowserEvent.onClick]}
             name={SwapEventName.SWAP_TOKENS_REVERSED}
@@ -583,7 +594,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
               <ArrowDown size="16" color={theme.neutral1} />
             </ArrowContainer>
           </TraceEvent>
-        </ArrowWrapper>
+        </ArrowWrapper> */}
       </div>
       <AutoColumn gap="xs">
         <div>
@@ -592,7 +603,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
               <SwapCurrencyInputPanel
                 value={formattedAmounts[Field.OUTPUT]}
                 disabled={disableTokenInputs}
-                onUserInput={handleTypeOutput}
+                onUserInput={()=>console.log("sd")}
                 label={<Trans>You receive</Trans>}
                 showMaxButton={false}
                 hideBalance={false}
@@ -618,6 +629,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
               />
             </Trace>
           </OutputSwapSection>
+          <br />
         </div>
 
         {showPriceImpactWarning && <PriceImpactWarning priceImpact={largerPriceImpact} />}

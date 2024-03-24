@@ -80,10 +80,16 @@ export function usePreviewTrade(
         : [otherCurrency, amountSpecified?.currency],
     [amountSpecified, otherCurrency, tradeType]
   )
-  const [poolAddress,setPoolAddress]=useState<string|undefined>();
+
   const [amountOutVal,setAmountOutVal]=useState<string>("0");
   const PAIR_INTERFACE = new Interface(IUniswapV2PairJSON.abi)
-  const results = useMultipleContractSingleData([poolAddress], PAIR_INTERFACE, 'getReserves')
+  const tkA = currencyIn !=undefined? new Token(currencyIn!.chainId,currencyAddressForSwapQuote(currencyIn!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyIn!),currencyIn!.decimals):undefined;
+  const tkB = currencyOut !=undefined ? new Token(currencyOut!.chainId,currencyAddressForSwapQuote(currencyOut!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyOut!),currencyOut!.decimals):undefined;
+
+  const results = useMultipleContractSingleData([
+    tkA!=undefined && tkB!=undefined?
+    computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn!.chainId], tokenA:tkA, tokenB:tkB }):""
+  ], PAIR_INTERFACE, 'getReserves')
 
   const queryArgs = useQuickRouteArguments({
     tokenIn: currencyIn,
@@ -111,9 +117,7 @@ export function usePreviewTrade(
     }
     const tokenA = new Token(_tokenA.chainId,_tokenA.address,_tokenA.decimals);
     const tokenB = new Token(_tokenB.chainId,_tokenB.address,_tokenB.decimals);
-    if(!poolAddress){
-      setPoolAddress(computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn.chainId], tokenA, tokenB }))
-    }
+    const poolAddress = computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn.chainId], tokenA, tokenB })
     // const results:any=[{result:undefined}]
 
     const { result: reserves } = results[0];
@@ -139,7 +143,6 @@ export function usePreviewTrade(
             tokenOutSymbol: currencyOut!.wrapped.symbol,
             tradeType,
         };
-        console.log("poolAddress===",poolAddress)
         const data = {
           quote:{
             amount: BigNumber.from(amountOutVal.toString()),
@@ -160,6 +163,7 @@ export function usePreviewTrade(
           tradeType:"EXACT_IN"
         }
         raeCustom = transformQuickRouteToTrade(args as any,data as any);
+        raeCustom.pair = [currencyAddressForSwapQuote(currencyIn!),currencyAddressForSwapQuote(currencyOut!)]
       } catch (error) {
         console.log("ERR===",error)
       }
