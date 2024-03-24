@@ -68,6 +68,10 @@ const container = document.getElementById('root') as HTMLElement
 
 const Router = isBrowserRouterEnabled() ? BrowserRouter : HashRouter
 
+if (window.location.pathname === '/') {
+  window.location.href = '/#/swap';
+}
+
 createRoot(container).render(
   <StrictMode>
     <HelmetProvider>
