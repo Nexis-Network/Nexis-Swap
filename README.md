@@ -30,8 +30,8 @@
      yalc link @uniswap/sdk-core@4.2.0
      yarn lfg
      yarn install
-     rm interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
-     mv types-and-hooks.ts interface/apps/web/src/graphql/data/__generated__/types-and-hooks.ts
+     rm apps/web/src/graphql/data/__generated__/types-and-hooks.ts
+     mv types-and-hooks.ts apps/web/src/graphql/data/__generated__/types-and-hooks.ts
      yarn web start
     ```
 6. build
