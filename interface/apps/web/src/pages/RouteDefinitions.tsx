@@ -81,7 +81,7 @@ export interface RouteDefinition {
 function createRouteDefinition(route: Partial<RouteDefinition>): RouteDefinition {
   return {
     getElement: () => null,
-    getTitle: () => 'Nexis Swap',
+    getTitle: () => 'Uniswap Interface',
     enabled: () => true,
     path: '/',
     nestedPaths: [],

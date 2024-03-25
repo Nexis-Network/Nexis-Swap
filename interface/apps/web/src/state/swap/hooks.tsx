@@ -188,7 +188,7 @@ export function useDerivedSwapInfo(state: SwapState): SwapInfo {
   // slippage for uniswapx trades is defined by the quote response
   const uniswapXAutoSlippage = isUniswapXTrade(trade.trade) ? trade.trade.slippageTolerance : undefined
 
-  // Nexis Swap recommended slippage amount
+  // Uniswap interface recommended slippage amount
   const autoSlippage = uniswapXAutoSlippage ?? classicAutoSlippage
   const classicAllowedSlippage = useUserSlippageToleranceWithDefault(autoSlippage)
 

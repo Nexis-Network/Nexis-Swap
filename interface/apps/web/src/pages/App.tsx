@@ -150,7 +150,7 @@ export default function App() {
           you can set it later in the page component itself, since react-helmet-async prefers the most recently rendered title.
         */}
         <Helmet>
-          <title>{findRouteByPath(pathname)?.getTitle(pathname) ?? 'Nexis Swap'}</title>
+          <title>{findRouteByPath(pathname)?.getTitle(pathname) ?? 'Uniswap Interface'}</title>
         </Helmet>
         <StatsigProvider
           user={statsigUser}
