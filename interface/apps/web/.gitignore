@@ -18,7 +18,6 @@
 /.swc
 
 # builds
-/build
 /dts
 
 # misc

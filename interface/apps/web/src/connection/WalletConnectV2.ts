@@ -31,7 +31,7 @@ export class WalletConnectV2 extends WalletConnect {
         chains: [defaultChainId],
         metadata: {
           name: 'Uniswap',
-          description: 'Uniswap Interface',
+          description: 'Nexis Swap',
           url: 'https://app.uniswap.org',
           icons: ['https://app.uniswap.org/favicon.png'],
         },
