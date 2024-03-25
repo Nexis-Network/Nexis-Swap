@@ -50,6 +50,7 @@ function Updaters() {
         <link rel="canonical" href={getCanonicalUrl(location.pathname)} />
       </Helmet>
       <RadialGradientByChainUpdater />
+      <Analytics />
       <ListsUpdater />
       <SystemThemeUpdater />
       <ThemeColorMetaUpdater />
