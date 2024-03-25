@@ -93,6 +93,7 @@ export function CurrencySearch({
     otherSelectedCurrency,
   })
 
+
   const { balanceMap, loading: balancesAreLoading } = useTokenBalances()
 
   const isLoading = Boolean(balancesAreLoading && !tokenLoaderTimerElapsed)

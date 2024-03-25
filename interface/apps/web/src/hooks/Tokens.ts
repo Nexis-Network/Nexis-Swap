@@ -141,7 +141,6 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
 
 export function useSearchInactiveTokenLists(search: string | undefined, minResults = 10): TokenFromList[] {
   const lists = useAllLists()
-  console.log(lists)
   const inactiveUrls = DEFAULT_INACTIVE_LIST_URLS
   const { chainId } = useWeb3React()
   const activeTokens = useDefaultActiveTokens(chainId)

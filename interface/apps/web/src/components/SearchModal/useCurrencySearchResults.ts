@@ -3,6 +3,7 @@ import { Currency, Token } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { CurrencyListRow, CurrencyListSectionTitle } from 'components/SearchModal/CurrencyList'
 import { CurrencySearchFilters } from 'components/SearchModal/CurrencySearch'
+import { NEXIS_LIST } from 'constants/lists'
 import { useDefaultActiveTokens, useSearchInactiveTokenLists, useToken } from 'hooks/Tokens'
 import { useTokenBalances } from 'hooks/useTokenBalances'
 import { getTokenFilter } from 'lib/hooks/useTokenList/filtering'
@@ -56,6 +57,7 @@ export function useCurrencySearchResults({
       hideSmallBalances: false,
       hideSpam: true,
     })
+
     const mergedTokens = [...(portfolioTokens ?? []), ...filteredListTokens]
 
     const tokenFilter = (token: Token) => {
@@ -63,9 +65,15 @@ export function useCurrencySearchResults({
         if (token.isNative && token.symbol) {
           return balanceMap[token.symbol]?.usdValue > 0
         }
-
         return balanceMap[token.address?.toLowerCase()]?.usdValue > 0
       }
+
+      // fetch(NEXIS_LIST,{ credentials: 'omit' }).then((val)=>{val.json().then((r:any)=>{
+      //   // r.tokens.filter((v:any)=>v.address==props.currency?.wrapped.address)
+      //   for(let i=0;i<r.tokens.length;i++){
+      //     if(r.tokens[i].address.toLowerCase()===token.address.toLowerCase()){token.logoURI = (r.tokens[i].logoURI)}
+      //   }
+      // })});
 
       if (token.isNative && filters?.disableNonToken) {
         return false
@@ -74,7 +82,7 @@ export function useCurrencySearchResults({
       // If there is no query, filter out unselected user-added tokens with no balance.
       if (!searchQuery && token instanceof UserAddedToken) {
         if (selectedCurrency?.equals(token) || otherSelectedCurrency?.equals(token)) return true
-        return balanceMap[token.address.toLowerCase()]?.usdValue > 0
+        return true
       }
 
       return true
@@ -101,6 +109,7 @@ export function useCurrencySearchResults({
     selectedCurrency,
     otherSelectedCurrency,
   ])
+
 
   // if no results on main list, expand into inactive
   const filteredInactiveTokens = useSearchInactiveTokenLists(

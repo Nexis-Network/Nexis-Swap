@@ -193,7 +193,7 @@ export function CurrencyRow({
             <Row>
               <CurrencyName title={currency.name}>{currency.name}</CurrencyName>
               <WarningContainer>
-                <TokenSafetyIcon warning={warning} />
+                {/* <TokenSafetyIcon warning={warning} /> */}
               </WarningContainer>
             </Row>
             <ThemedText.LabelMicro ml="0px">{currency.symbol}</ThemedText.LabelMicro>
