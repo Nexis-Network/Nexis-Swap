@@ -111,16 +111,16 @@ export function Menu({ close }: { close: () => void }) {
             closeMenu={close}
           />
         ))}
-        <Separator />
-        <StyledRow
+        {/* <Separator /> */}
+        {/* <StyledRow
           height="45px"
           gap="md"
           onClick={() => {
             close()
             openGetTheAppModal()
           }}
-        >
-          <MobileAppLogo />
+        > */}
+          {/* <MobileAppLogo />
           <Column gap="xs">
             <Text lineHeight="20px">
               <Trans>Download Uniswap</Trans>
@@ -128,9 +128,9 @@ export function Menu({ close }: { close: () => void }) {
             <ThemedText.LabelSmall lineHeight="18px">
               <Trans>Available on iOS and Android</Trans>
             </ThemedText.LabelSmall>
-          </Column>
-        </StyledRow>
-        <StyledSocials iconSize="25px" />
+          </Column> */}
+        {/* </StyledRow> */}
+        {/* <StyledSocials iconSize="25px" /> */}
       </Column>
     </Container>
   )

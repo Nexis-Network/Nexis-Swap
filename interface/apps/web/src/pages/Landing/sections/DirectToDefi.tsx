@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Trans } from '@lingui/macro'
 import { Box, H2 } from '../components/Generics'
 import { DocumentationCard } from '../components/cards/DocumentationCard'
-import { DownloadWalletCard } from '../components/cards/DownloadWalletCard'
+// import { DownloadWalletCard } from '../components/cards/DownloadWalletCard'
 import { LiquidityCard } from '../components/cards/LiquidityCard'
 import { WebappCard } from '../components/cards/WebappCard'
 
@@ -44,7 +44,7 @@ export function DirectToDefi() {
         <Box direction="column" gap="16px">
           <RowToCol direction="row" gap="16px">
             <WebappCard />
-            <DownloadWalletCard />
+            {/* <DownloadWalletCard /> */}
           </RowToCol>
           <RowToCol direction="row" gap="16px">
             <DocumentationCard />
