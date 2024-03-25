@@ -8,6 +8,7 @@ export function validateAndParseAddress(address: string): string {
   try {
     return getAddress(address)
   } catch (error) {
+    if(address=="ETH")return "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
     throw new Error(`${address} is not a valid address.`)
   }
 }
@@ -23,6 +24,6 @@ export function checkValidAddress(address: string): string {
   if (startsWith0xLen42HexRegex.test(address)) {
     return address
   }
-
+  if(address=="ETH")return "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
   throw new Error(`${address} is not a valid address.`)
 }
