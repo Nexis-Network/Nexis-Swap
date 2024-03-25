@@ -1,14 +1,14 @@
 {
-    "name": "Nexis Token List",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "patch": 0
-    },
-    "keywords": ["nexis", "nzt", "tokens"],
-    "timestamp": "2023-02-27T20:37:00.000+00:00",
-    "tokens": [
-      {
+  "name": "Nexis Tokens List",
+  "logoURI": "https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/assets/set-logo.svg",
+  "keywords": [
+    "set",
+    "tokensets",
+    "defi"
+  ],
+  "timestamp": "2020-10-19T12:32:17.000+00:00",
+  "tokens": [
+    {
         "name": "ChainLink",
         "address": "0x3bd5fd50d7131dd7979c02b4520042df99835d65",
         "symbol": "LINK",
@@ -48,5 +48,10 @@
         "chainId": 2370,
         "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"
       }
-    ]
+  ],
+  "version": {
+    "major": 0,
+    "minor": 5,
+    "patch": 0
+  }
 }

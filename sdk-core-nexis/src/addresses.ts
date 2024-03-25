@@ -48,7 +48,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
-  [ChainId.NEXIS] :'0xF6CE0D01C0A4De20dF0203748B106cA79df73673'
+  [ChainId.NEXIS] :'0xb7dcc36875ffca129e2934cf2221566d42d45be0'
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -64,7 +64,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
-  [ChainId.NEXIS]:'0xbf482817a0639cD504316017a538Ae1e66D7Fb00'
+  [ChainId.NEXIS]:'0x293983734f2cc3a5b3b576c806bcb1489a59092d'
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -83,7 +83,7 @@ const MAINNET_ADDRESSES: ChainAddresses = {
 const NEXIS_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   quoterAddress:'0xC71D2c5cf93b8814cbde79a0360EE5e495281d05',
-  multicallAddress:'0xe14b0f91972ffbf57862dbcff500072fac767367',
+  multicallAddress:'0x7edbdb96aabd5f07a499f248dde70948bdbec16a',
   v1MixedRouteQuoterAddress: '0xfCDbaBd8dD262D5Fb00fb78852F0a53aCA303Af7'
 }
 const GOERLI_ADDRESSES: ChainAddresses = {
