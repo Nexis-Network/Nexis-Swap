@@ -843,6 +843,7 @@ function validateAndParseAddress(address$1) {
   try {
     return address.getAddress(address$1);
   } catch (error) {
+    if (address$1 == "ETH") return "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
     throw new Error(address$1 + " is not a valid address.");
   }
 } // Checks a string starts with 0x, is 42 characters long and contains only hex characters after 0x
@@ -858,6 +859,7 @@ function checkValidAddress(address) {
     return address;
   }
 
+  if (address == "ETH") return "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
   throw new Error(address + " is not a valid address.");
 }
 

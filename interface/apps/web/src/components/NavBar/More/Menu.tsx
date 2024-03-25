@@ -98,7 +98,7 @@ function Section({ title, items, closeMenu }: MenuSection) {
   )
 }
 export function Menu({ close }: { close: () => void }) {
-  const openGetTheAppModal = useOpenModal(ApplicationModal.GET_THE_APP)
+  // const openGetTheAppModal = useOpenModal(ApplicationModal.GET_THE_APP)
 
   return (
     <Container data-testid="nav-more-menu">
