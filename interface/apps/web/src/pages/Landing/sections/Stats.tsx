@@ -140,7 +140,7 @@ const LearnMoreArrow = styled(ArrowRightCircle)`
 `
 const ProtocolDescription = () => (
   <Trans>
-    Uniswap products are powered by the Uniswap Protocol. The protocol is the largest onchain marketplace, with billions
+    Nexis products are powered by the Nexis Network. The protocol is the largest onchain marketplace, with billions
     of dollars in weekly volume across thousands of tokens on Ethereum and 7+ additional chains.
   </Trans>
 )

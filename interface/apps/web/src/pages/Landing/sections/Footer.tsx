@@ -72,12 +72,12 @@ export function Socials({ iconSize }: { iconSize?: string }) {
   return (
     <Box gap="24px">
       <SocialIcon $hoverColor="#00C32B">
-        <StyledExternalLink href="https://github.com/Uniswap">
+        <StyledExternalLink href="https://github.com/Nexis">
           <Github size={iconSize} fill="inherit" />
         </StyledExternalLink>
       </SocialIcon>
       <SocialIcon $hoverColor="#20BAFF">
-        <StyledExternalLink href="https://twitter.com/Uniswap">
+        <StyledExternalLink href="https://twitter.com/Nexis">
           <Twitter size={iconSize} fill="inherit" />
         </StyledExternalLink>
       </SocialIcon>
@@ -101,7 +101,7 @@ export function Footer() {
           <Box direction="column" height="100%" gap="64px">
             <Box direction="column" gap="10px">
               <H3>© 2024</H3>
-              <H3>Uniswap Labs</H3>
+              <H3>Nexis Labs</H3>
             </Box>
             <HideWhenSmall>
               <Socials />
@@ -147,7 +147,7 @@ export function Footer() {
                 <StyledExternalLink href="https://blog.uniswap.org/">
                   <Trans>Blog</Trans>
                 </StyledExternalLink>
-                <DownloadLink href="https://github.com/Uniswap/brand-assets/raw/main/Uniswap%20Brand%20Assets.zip">
+                <DownloadLink href="https://github.com/Nexis/brand-assets/raw/main/Nexis%20Brand%20Assets.zip">
                   <Trans>Brand Assets</Trans>
                 </DownloadLink>
                 <ModalItem onClick={togglePrivacyPolicy}>

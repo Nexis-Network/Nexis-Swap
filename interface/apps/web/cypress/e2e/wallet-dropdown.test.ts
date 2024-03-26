@@ -25,7 +25,7 @@ describe('Wallet Dropdown', () => {
 
   function itChangesLocale({ featureFlag = false }: { featureFlag?: boolean } = {}) {
     it('should change locale', () => {
-      cy.contains('Uniswap available in: English').should('not.exist')
+      cy.contains('Nexis available in: English').should('not.exist')
 
       if (featureFlag) {
         cy.get(getTestSelector('language-settings-button')).click()
@@ -33,11 +33,11 @@ describe('Wallet Dropdown', () => {
 
       cy.get(getTestSelector('wallet-language-item')).contains('Afrikaans').click({ force: true })
       cy.location('search').should('match', /\?lng=af-ZA$/)
-      cy.contains('Uniswap available in: English')
+      cy.contains('Nexis available in: English')
 
       cy.get(getTestSelector('wallet-language-item')).contains('English').click({ force: true })
       cy.location('search').should('match', /\?lng=en-US$/)
-      cy.contains('Uniswap available in: English').should('not.exist')
+      cy.contains('Nexis available in: English').should('not.exist')
     })
   }
 

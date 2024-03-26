@@ -124,7 +124,7 @@
 		078E794E2A55EB3300F59CF2 /* WidgetIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 078E79452A55EB3300F59CF2 /* WidgetIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		07B0676C2A7D6EC8001DD9B9 /* RNWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0676A2A7D6EC8001DD9B9 /* RNWidgets.swift */; };
 		07B0676D2A7D6EC8001DD9B9 /* RNWidgets.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0676B2A7D6EC8001DD9B9 /* RNWidgets.m */; };
-		07C2AC36457A05B810F60317 /* libPods-Uniswap-UniswapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F50809BC52FC9A48453E6976 /* libPods-Uniswap-UniswapTests.a */; };
+		07C2AC36457A05B810F60317 /* libPods-Nexis-UniswapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F50809BC52FC9A48453E6976 /* libPods-Nexis-UniswapTests.a */; };
 		07F0C28F2A5F3E2E00D5353E /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0C28E2A5F3E2E00D5353E /* Env.swift */; };
 		07F136402A575EC00067004F /* DataQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1363F2A575EC00067004F /* DataQueries.swift */; };
 		07F136422A5763480067004F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F136412A5763480067004F /* Network.swift */; };
@@ -190,7 +190,7 @@
 		B8649A8D70B018E583494128 /* libPods-WidgetsCoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B12416ED2E83444B0936B2 /* libPods-WidgetsCoreTests.a */; };
 		C9E623221156415BD176C348 /* libPods-Widgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0750E42001CAEA9359159B7F /* libPods-Widgets.a */; };
 		D3B63ACA9B0C42F68080B080 /* InputMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1834199AFFB04D91B05FFB64 /* InputMono-Regular.ttf */; };
-		F2867EBF8C9DE41CF466D17C /* libPods-Uniswap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76700FCF2F2249D9C52E6A4C /* libPods-Uniswap.a */; };
+		F2867EBF8C9DE41CF466D17C /* libPods-Nexis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76700FCF2F2249D9C52E6A4C /* libPods-Nexis.a */; };
 		F35AFD3E27EE49990011A725 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35AFD3D27EE49990011A725 /* NotificationService.swift */; };
 		F35AFD4227EE49990011A725 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F35AFD3B27EE49990011A725 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD54D51D296C79A4007A37E9 /* GoogleServiceInfo in Resources */ = {isa = PBXBuildFile; fileRef = FD54D51C296C79A4007A37E9 /* GoogleServiceInfo */; };
@@ -205,7 +205,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Uniswap;
+			remoteInfo = Nexis;
 		};
 		0703EE082A57355400AED1DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -226,7 +226,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Uniswap;
+			remoteInfo = Nexis;
 		};
 		072F6C2F2A44A32F00DA720A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -418,19 +418,19 @@
 		07F5CF702A6AD97D00C648A5 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		07F5CF742A7020FD00C648A5 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		0DC6ADEF2B1E2C0F0092909C /* PortfolioValueModifier.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioValueModifier.graphql.swift; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Uniswap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uniswap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Uniswap/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Uniswap/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Uniswap/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Uniswap/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Nexis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Nexis/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Nexis/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Nexis/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Nexis/main.m; sourceTree = "<group>"; };
 		1834199AFFB04D91B05FFB64 /* InputMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "InputMono-Regular.ttf"; path = "../src/assets/fonts/InputMono-Regular.ttf"; sourceTree = "<group>"; };
 		1A4F128CAFB3E71F3B2F3D90 /* Pods-WidgetIntentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetIntentExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetIntentExtension/Pods-WidgetIntentExtension.release.xcconfig"; sourceTree = "<group>"; };
 		1FB4F5FD2BB9AE4452EA8476 /* Pods-Widgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.debug.xcconfig"; path = "Target Support Files/Pods-Widgets/Pods-Widgets.debug.xcconfig"; sourceTree = "<group>"; };
 		26CB04CC7EAFA26FBB06896D /* libPods-WidgetsCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WidgetsCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F65370E45F33BCA37F7E02 /* Pods-WidgetsCore.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCore.dev.xcconfig"; path = "Target Support Files/Pods-WidgetsCore/Pods-WidgetsCore.dev.xcconfig"; sourceTree = "<group>"; };
 		378A735DFD72359F5CC16F29 /* Pods-WidgetsCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCore.debug.xcconfig"; path = "Target Support Files/Pods-WidgetsCore/Pods-WidgetsCore.debug.xcconfig"; sourceTree = "<group>"; };
-		407451BE42C5147EBB181687 /* Pods-Uniswap-UniswapTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap-UniswapTests.dev.xcconfig"; path = "Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests.dev.xcconfig"; sourceTree = "<group>"; };
-		4DF5F26A06553EFDD4D99214 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Uniswap/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		407451BE42C5147EBB181687 /* Pods-Nexis-UniswapTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis-UniswapTests.dev.xcconfig"; path = "Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests.dev.xcconfig"; sourceTree = "<group>"; };
+		4DF5F26A06553EFDD4D99214 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Nexis/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		4E788CB77B4CFEAC6E8FFB3A /* Pods-WidgetIntentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetIntentExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetIntentExtension/Pods-WidgetIntentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		5EFB78352B1E585000E77EAC /* ConvertQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertQuery.graphql.swift; sourceTree = "<group>"; };
 		63F7391CE0D5231AE38192F9 /* Pods-WidgetIntentExtension.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetIntentExtension.beta.xcconfig"; path = "Target Support Files/Pods-WidgetIntentExtension/Pods-WidgetIntentExtension.beta.xcconfig"; sourceTree = "<group>"; };
@@ -449,7 +449,7 @@
 		6CA91BDE2A95226200C4063E /* RNCloudStorageBackupsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCloudStorageBackupsManager.m; sourceTree = "<group>"; };
 		6CA91BDF2A95226200C4063E /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
 		6CA91BE02A95226200C4063E /* RNCloudStorageBackupsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCloudStorageBackupsManager.swift; sourceTree = "<group>"; };
-		76700FCF2F2249D9C52E6A4C /* libPods-Uniswap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Uniswap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76700FCF2F2249D9C52E6A4C /* libPods-Nexis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nexis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C41378CE69EDD92DFAD177 /* Pods-OneSignalNotificationServiceExtension.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.dev.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.dev.xcconfig"; sourceTree = "<group>"; };
 		811E7ED33487936333408382 /* Pods-OneSignalNotificationServiceExtension.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.beta.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.beta.xcconfig"; sourceTree = "<group>"; };
 		8816FB4EC77AF22919705454 /* Pods-WidgetsCoreTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCoreTests.beta.xcconfig"; path = "Target Support Files/Pods-WidgetsCoreTests/Pods-WidgetsCoreTests.beta.xcconfig"; sourceTree = "<group>"; };
@@ -478,47 +478,47 @@
 		9F813E9F2AA8FB7500438D89 /* TransactionDetails.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetails.graphql.swift; sourceTree = "<group>"; };
 		9F813EA12AA8FB8C00438D89 /* SwapOrderDetails.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapOrderDetails.graphql.swift; sourceTree = "<group>"; };
 		9F813EA32AA8FBCF00438D89 /* TransactionType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionType.graphql.swift; sourceTree = "<group>"; };
-		9FCEBEFD2A95A8E00079EDDB /* RNWalletConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNWalletConnect.h; path = Uniswap/WalletConnect/RNWalletConnect.h; sourceTree = "<group>"; };
-		9FCEBEFE2A95A8E00079EDDB /* RNWalletConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNWalletConnect.m; path = Uniswap/WalletConnect/RNWalletConnect.m; sourceTree = "<group>"; };
-		9FCEBEFF2A95A8E00079EDDB /* RNWalletConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNWalletConnect.swift; path = Uniswap/WalletConnect/RNWalletConnect.swift; sourceTree = "<group>"; };
+		9FCEBEFD2A95A8E00079EDDB /* RNWalletConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNWalletConnect.h; path = Nexis/WalletConnect/RNWalletConnect.h; sourceTree = "<group>"; };
+		9FCEBEFE2A95A8E00079EDDB /* RNWalletConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNWalletConnect.m; path = Nexis/WalletConnect/RNWalletConnect.m; sourceTree = "<group>"; };
+		9FCEBEFF2A95A8E00079EDDB /* RNWalletConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RNWalletConnect.swift; path = Nexis/WalletConnect/RNWalletConnect.swift; sourceTree = "<group>"; };
 		9FCEBF022A95A99B0079EDDB /* RCTThemeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTThemeModule.h; path = Appearance/RCTThemeModule.h; sourceTree = "<group>"; };
 		9FCEBF032A95A99B0079EDDB /* RCTThemeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTThemeModule.m; path = Appearance/RCTThemeModule.m; sourceTree = "<group>"; };
-		9FEC9B8A2A858CF1003CD019 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Uniswap/AppDelegate.m; sourceTree = "<group>"; };
+		9FEC9B8A2A858CF1003CD019 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Nexis/AppDelegate.m; sourceTree = "<group>"; };
 		A32F9FBC272343C8002CFCDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3F0A5B0272B1DFA00895B25 /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 		A721D9DBF345F037F45E92BE /* Pods-WidgetsCore.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCore.beta.xcconfig"; path = "Target Support Files/Pods-WidgetsCore/Pods-WidgetsCore.beta.xcconfig"; sourceTree = "<group>"; };
 		A82B0304EEE753C6DEB3943E /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87B4C3727F6D91B4DAABF14 /* Pods-Uniswap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap.debug.xcconfig"; path = "Target Support Files/Pods-Uniswap/Pods-Uniswap.debug.xcconfig"; sourceTree = "<group>"; };
+		A87B4C3727F6D91B4DAABF14 /* Pods-Nexis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis.debug.xcconfig"; path = "Target Support Files/Pods-Nexis/Pods-Nexis.debug.xcconfig"; sourceTree = "<group>"; };
 		AEE498F52A85AD86000DDF8E /* Basel-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Basel-Book.ttf"; path = "../src/assets/fonts/Basel-Book.ttf"; sourceTree = "<group>"; };
 		AEE498F62A85AD86000DDF8E /* Basel-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Basel-Medium.ttf"; path = "../src/assets/fonts/Basel-Medium.ttf"; sourceTree = "<group>"; };
-		B398F0A4DA17159EA0E2D6DF /* Pods-Uniswap.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap.dev.xcconfig"; path = "Target Support Files/Pods-Uniswap/Pods-Uniswap.dev.xcconfig"; sourceTree = "<group>"; };
+		B398F0A4DA17159EA0E2D6DF /* Pods-Nexis.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis.dev.xcconfig"; path = "Target Support Files/Pods-Nexis/Pods-Nexis.dev.xcconfig"; sourceTree = "<group>"; };
 		B4CFF4B2DE4CB59FAD9E8C27 /* Pods-Widgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.release.xcconfig"; path = "Target Support Files/Pods-Widgets/Pods-Widgets.release.xcconfig"; sourceTree = "<group>"; };
 		BD152738B3E6969A7A42D13E /* Pods-WidgetsCoreTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCoreTests.dev.xcconfig"; path = "Target Support Files/Pods-WidgetsCoreTests/Pods-WidgetsCoreTests.dev.xcconfig"; sourceTree = "<group>"; };
 		BD41390986108FC8CFA45445 /* Pods-Widgets.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.dev.xcconfig"; path = "Target Support Files/Pods-Widgets/Pods-Widgets.dev.xcconfig"; sourceTree = "<group>"; };
-		BF9176E944C84910B1C0B057 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Uniswap/SplashScreen.storyboard; sourceTree = "<group>"; };
-		C26D739993D5C939C6FBB58A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Uniswap-UniswapTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		BF9176E944C84910B1C0B057 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Nexis/SplashScreen.storyboard; sourceTree = "<group>"; };
+		C26D739993D5C939C6FBB58A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Nexis-UniswapTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		C286F39E616497EA6E1C3010 /* Pods-WidgetsCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCore.release.xcconfig"; path = "Target Support Files/Pods-WidgetsCore/Pods-WidgetsCore.release.xcconfig"; sourceTree = "<group>"; };
 		C7C23EDACE3BC348607A0E83 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA37BC1BA471C071B5090928 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		DB423A22FFE9EFFCA11E9E1A /* Pods-Uniswap.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap.beta.xcconfig"; path = "Target Support Files/Pods-Uniswap/Pods-Uniswap.beta.xcconfig"; sourceTree = "<group>"; };
-		E8A8C1523EA65F88E3DC16CD /* Pods-Uniswap-UniswapTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap-UniswapTests.beta.xcconfig"; path = "Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests.beta.xcconfig"; sourceTree = "<group>"; };
-		EC813AD85060898D4DD580C5 /* Pods-Uniswap-UniswapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap-UniswapTests.debug.xcconfig"; path = "Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB423A22FFE9EFFCA11E9E1A /* Pods-Nexis.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis.beta.xcconfig"; path = "Target Support Files/Pods-Nexis/Pods-Nexis.beta.xcconfig"; sourceTree = "<group>"; };
+		E8A8C1523EA65F88E3DC16CD /* Pods-Nexis-UniswapTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis-UniswapTests.beta.xcconfig"; path = "Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests.beta.xcconfig"; sourceTree = "<group>"; };
+		EC813AD85060898D4DD580C5 /* Pods-Nexis-UniswapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis-UniswapTests.debug.xcconfig"; path = "Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F35AFD3627EE49230011A725 /* Uniswap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Uniswap.entitlements; path = Uniswap/Uniswap.entitlements; sourceTree = "<group>"; };
+		F35AFD3627EE49230011A725 /* Nexis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Nexis.entitlements; path = Nexis/Nexis.entitlements; sourceTree = "<group>"; };
 		F35AFD3B27EE49990011A725 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35AFD3D27EE49990011A725 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		F35AFD3F27EE49990011A725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F35AFD4727EE4B400011A725 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
-		F50809BC52FC9A48453E6976 /* libPods-Uniswap-UniswapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Uniswap-UniswapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5F2751F56BDA3D0330E56BE /* Pods-Uniswap-UniswapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap-UniswapTests.release.xcconfig"; path = "Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests.release.xcconfig"; sourceTree = "<group>"; };
+		F50809BC52FC9A48453E6976 /* libPods-Nexis-UniswapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nexis-UniswapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F2751F56BDA3D0330E56BE /* Pods-Nexis-UniswapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis-UniswapTests.release.xcconfig"; path = "Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests.release.xcconfig"; sourceTree = "<group>"; };
 		F88A7DA00DA4A893EE80B183 /* Pods-Widgets.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widgets.beta.xcconfig"; path = "Target Support Files/Pods-Widgets/Pods-Widgets.beta.xcconfig"; sourceTree = "<group>"; };
 		F9B12416ED2E83444B0936B2 /* libPods-WidgetsCoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WidgetsCoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D639068E109DD74CBEDF92 /* Pods-WidgetsCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetsCoreTests.release.xcconfig"; path = "Target Support Files/Pods-WidgetsCoreTests/Pods-WidgetsCoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD21B73B081B800A44E7F682 /* libPods-WidgetIntentExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WidgetIntentExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD54D51C296C79A4007A37E9 /* GoogleServiceInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleServiceInfo; sourceTree = SOURCE_ROOT; };
-		FD72162492D6B68BBC15F3ED /* Pods-Uniswap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniswap.release.xcconfig"; path = "Target Support Files/Pods-Uniswap/Pods-Uniswap.release.xcconfig"; sourceTree = "<group>"; };
-		FD7304CD28A364FC0085BDEA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Uniswap/Colors.xcassets; sourceTree = "<group>"; };
-		FD7304CF28A3650A0085BDEA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Uniswap/Colors.swift; sourceTree = "<group>"; };
+		FD72162492D6B68BBC15F3ED /* Pods-Nexis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexis.release.xcconfig"; path = "Target Support Files/Pods-Nexis/Pods-Nexis.release.xcconfig"; sourceTree = "<group>"; };
+		FD7304CD28A364FC0085BDEA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Nexis/Colors.xcassets; sourceTree = "<group>"; };
+		FD7304CF28A3650A0085BDEA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Nexis/Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,7 +526,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C2AC36457A05B810F60317 /* libPods-Uniswap-UniswapTests.a in Frameworks */,
+				07C2AC36457A05B810F60317 /* libPods-Nexis-UniswapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3500842A8AAAF50077BFC5 /* libreact-native-splash-screen.a in Frameworks */,
-				F2867EBF8C9DE41CF466D17C /* libPods-Uniswap.a in Frameworks */,
+				F2867EBF8C9DE41CF466D17C /* libPods-Nexis.a in Frameworks */,
 				9F7898142A819D62004D5A98 /* WidgetsCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,10 +874,10 @@
 				07B0676B2A7D6EC8001DD9B9 /* RNWidgets.m */,
 			);
 			name = Widget;
-			path = Uniswap/Widget;
+			path = Nexis/Widget;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Uniswap */ = {
+		13B07FAE1A68108700A75B9A /* Nexis */ = {
 			isa = PBXGroup;
 			children = (
 				8EA8AB3F2AB7ED76004E7EF3 /* Icons */,
@@ -885,7 +885,7 @@
 				07B067692A7D6EC8001DD9B9 /* Widget */,
 				03DD298C2A4CE34B00E3E0F5 /* Appearance */,
 				E3C8C9DD291C4D2C000E00EA /* RiveAssets */,
-				F35AFD3627EE49230011A725 /* Uniswap.entitlements */,
+				F35AFD3627EE49230011A725 /* Nexis.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				9FEC9B8A2A858CF1003CD019 /* AppDelegate.m */,
 				6C84F055283D83CF0071FA2E /* Onboarding */,
@@ -900,7 +900,7 @@
 				FD7304CD28A364FC0085BDEA /* Colors.xcassets */,
 				FD7304CF28A3650A0085BDEA /* Colors.swift */,
 			);
-			name = Uniswap;
+			name = Nexis;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -913,8 +913,8 @@
 				072F6C222A44A32E00DA720A /* SwiftUI.framework */,
 				078E79462A55EB3300F59CF2 /* Intents.framework */,
 				A82B0304EEE753C6DEB3943E /* libPods-OneSignalNotificationServiceExtension.a */,
-				76700FCF2F2249D9C52E6A4C /* libPods-Uniswap.a */,
-				F50809BC52FC9A48453E6976 /* libPods-Uniswap-UniswapTests.a */,
+				76700FCF2F2249D9C52E6A4C /* libPods-Nexis.a */,
+				F50809BC52FC9A48453E6976 /* libPods-Nexis-UniswapTests.a */,
 				FD21B73B081B800A44E7F682 /* libPods-WidgetIntentExtension.a */,
 				0750E42001CAEA9359159B7F /* libPods-Widgets.a */,
 				26CB04CC7EAFA26FBB06896D /* libPods-WidgetsCore.a */,
@@ -934,7 +934,7 @@
 		5754C6A1B51170788A63F6F3 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				9759A762F61D6B2F01C79DBF /* Uniswap */,
+				9759A762F61D6B2F01C79DBF /* Nexis */,
 				47914D9EE3A4DE926EFC5089 /* UniswapTests */,
 			);
 			name = ExpoModulesProviders;
@@ -948,7 +948,7 @@
 				6BC7D07D2B5FF02400617C95 /* EncryptionUtils.swift */,
 			);
 			name = Scantastic;
-			path = Uniswap/Onboarding/Scantastic;
+			path = Nexis/Onboarding/Scantastic;
 			sourceTree = "<group>";
 		};
 		6C84F055283D83CF0071FA2E /* Onboarding */ = {
@@ -970,7 +970,7 @@
 				6CA91BDA2A95223C00C4063E /* RnEthersRS.m */,
 			);
 			name = RNEthersRs;
-			path = Uniswap/RNEthersRs;
+			path = Nexis/RNEthersRs;
 			sourceTree = "<group>";
 		};
 		6CA91BDD2A95226200C4063E /* RNCloudBackupsManager */ = {
@@ -981,7 +981,7 @@
 				6CA91BE02A95226200C4063E /* RNCloudStorageBackupsManager.swift */,
 			);
 			name = RNCloudBackupsManager;
-			path = Uniswap/RNCloudBackupsManager;
+			path = Nexis/RNCloudBackupsManager;
 			sourceTree = "<group>";
 		};
 		6CE631B928186D4500716D29 /* WalletConnect */ = {
@@ -1006,7 +1006,7 @@
 			children = (
 				074321872A82BA2700F8518D /* Fonts */,
 				FD54D51C296C79A4007A37E9 /* GoogleServiceInfo */,
-				13B07FAE1A68108700A75B9A /* Uniswap */,
+				13B07FAE1A68108700A75B9A /* Nexis */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* UniswapTests */,
 				F35AFD3C27EE49990011A725 /* OneSignalNotificationServiceExtension */,
@@ -1028,7 +1028,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Uniswap.app */,
+				13B07F961A680F5B00A75B9A /* Nexis.app */,
 				00E356EE1AD99517003FC87E /* UniswapTests.xctest */,
 				F35AFD3B27EE49990011A725 /* OneSignalNotificationServiceExtension.appex */,
 				072F6C1F2A44A32E00DA720A /* Widgets.appex */,
@@ -1060,7 +1060,7 @@
 				8E89C3AD2AB8AAA400C84DE5 /* RNSwiftUI-Bridging-Header.h */,
 			);
 			name = Backup;
-			path = Uniswap/Onboarding/Backup;
+			path = Nexis/Onboarding/Backup;
 			sourceTree = "<group>";
 		};
 		8EA8AB2F2AB7ED3C004E7EF3 /* Import */ = {
@@ -1072,7 +1072,7 @@
 				8EA8AB332AB7ED3C004E7EF3 /* SeedPhraseInputManager.swift */,
 			);
 			name = Import;
-			path = Uniswap/Onboarding/Import;
+			path = Nexis/Onboarding/Import;
 			sourceTree = "<group>";
 		};
 		8EA8AB3F2AB7ED76004E7EF3 /* Icons */ = {
@@ -1082,15 +1082,15 @@
 				8EBFB1542ABA6AA6006B32A8 /* PasteIcon.swift */,
 			);
 			name = Icons;
-			path = Uniswap/Icons;
+			path = Nexis/Icons;
 			sourceTree = "<group>";
 		};
-		9759A762F61D6B2F01C79DBF /* Uniswap */ = {
+		9759A762F61D6B2F01C79DBF /* Nexis */ = {
 			isa = PBXGroup;
 			children = (
 				4DF5F26A06553EFDD4D99214 /* ExpoModulesProvider.swift */,
 			);
-			name = Uniswap;
+			name = Nexis;
 			sourceTree = "<group>";
 		};
 		C2C18ECBEF5A4489BF3A314C /* Resources */ = {
@@ -1108,16 +1108,16 @@
 			children = (
 				C7C23EDACE3BC348607A0E83 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				CA37BC1BA471C071B5090928 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
-				A87B4C3727F6D91B4DAABF14 /* Pods-Uniswap.debug.xcconfig */,
-				FD72162492D6B68BBC15F3ED /* Pods-Uniswap.release.xcconfig */,
-				EC813AD85060898D4DD580C5 /* Pods-Uniswap-UniswapTests.debug.xcconfig */,
-				F5F2751F56BDA3D0330E56BE /* Pods-Uniswap-UniswapTests.release.xcconfig */,
+				A87B4C3727F6D91B4DAABF14 /* Pods-Nexis.debug.xcconfig */,
+				FD72162492D6B68BBC15F3ED /* Pods-Nexis.release.xcconfig */,
+				EC813AD85060898D4DD580C5 /* Pods-Nexis-UniswapTests.debug.xcconfig */,
+				F5F2751F56BDA3D0330E56BE /* Pods-Nexis-UniswapTests.release.xcconfig */,
 				78C41378CE69EDD92DFAD177 /* Pods-OneSignalNotificationServiceExtension.dev.xcconfig */,
 				811E7ED33487936333408382 /* Pods-OneSignalNotificationServiceExtension.beta.xcconfig */,
-				B398F0A4DA17159EA0E2D6DF /* Pods-Uniswap.dev.xcconfig */,
-				DB423A22FFE9EFFCA11E9E1A /* Pods-Uniswap.beta.xcconfig */,
-				407451BE42C5147EBB181687 /* Pods-Uniswap-UniswapTests.dev.xcconfig */,
-				E8A8C1523EA65F88E3DC16CD /* Pods-Uniswap-UniswapTests.beta.xcconfig */,
+				B398F0A4DA17159EA0E2D6DF /* Pods-Nexis.dev.xcconfig */,
+				DB423A22FFE9EFFCA11E9E1A /* Pods-Nexis.beta.xcconfig */,
+				407451BE42C5147EBB181687 /* Pods-Nexis-UniswapTests.dev.xcconfig */,
+				E8A8C1523EA65F88E3DC16CD /* Pods-Nexis-UniswapTests.beta.xcconfig */,
 				4E788CB77B4CFEAC6E8FFB3A /* Pods-WidgetIntentExtension.debug.xcconfig */,
 				1A4F128CAFB3E71F3B2F3D90 /* Pods-WidgetIntentExtension.release.xcconfig */,
 				68FD07BE7700B63D569EB256 /* Pods-WidgetIntentExtension.dev.xcconfig */,
@@ -1271,9 +1271,9 @@
 			productReference = 078E79452A55EB3300F59CF2 /* WidgetIntentExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		13B07F861A680F5B00A75B9A /* Uniswap */ = {
+		13B07F861A680F5B00A75B9A /* Nexis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Uniswap" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Nexis" */;
 			buildPhases = (
 				7053AB6470927D4AFEB0A4F6 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -1297,9 +1297,9 @@
 				078E794D2A55EB3300F59CF2 /* PBXTargetDependency */,
 				9F7898172A819D62004D5A98 /* PBXTargetDependency */,
 			);
-			name = Uniswap;
-			productName = Uniswap;
-			productReference = 13B07F961A680F5B00A75B9A /* Uniswap.app */;
+			name = Nexis;
+			productName = Nexis;
+			productReference = 13B07F961A680F5B00A75B9A /* Nexis.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F35AFD3A27EE49990011A725 /* OneSignalNotificationServiceExtension */ = {
@@ -1355,7 +1355,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Uniswap" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Nexis" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1368,7 +1368,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Uniswap */,
+				13B07F861A680F5B00A75B9A /* Nexis */,
 				00E356ED1AD99517003FC87E /* UniswapTests */,
 				F35AFD3A27EE49990011A725 /* OneSignalNotificationServiceExtension */,
 				072F6C1E2A44A32E00DA720A /* Widgets */,
@@ -1493,15 +1493,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1C9BDBE6A5CAB72EB7B13D63 /* [CP] Embed Pods Frameworks */ = {
@@ -1510,15 +1510,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1E1D08469926D25C5C2BD365 /* [CP] Check Pods Manifest.lock */ = {
@@ -1593,7 +1593,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Uniswap-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Nexis-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1628,15 +1628,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uniswap/Pods-Uniswap-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nexis/Pods-Nexis-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D219B3D5B50538611181454 /* [CP] Check Pods Manifest.lock */ = {
@@ -1654,7 +1654,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Uniswap-UniswapTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Nexis-UniswapTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1667,15 +1667,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uniswap-UniswapTests/Pods-Uniswap-UniswapTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nexis-UniswapTests/Pods-Nexis-UniswapTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7B84E3C2FDEB51A179E3876 /* [CP] Check Pods Manifest.lock */ = {
@@ -1966,7 +1966,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Uniswap */;
+			target = 13B07F861A680F5B00A75B9A /* Nexis */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		0703EE092A57355400AED1DA /* PBXTargetDependency */ = {
@@ -1981,7 +1981,7 @@
 		};
 		072E23922A44D5BD006AD6C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Uniswap */;
+			target = 13B07F861A680F5B00A75B9A /* Nexis */;
 			targetProxy = 072E23912A44D5BD006AD6C9 /* PBXContainerItemProxy */;
 		};
 		072F6C302A44A32F00DA720A /* PBXTargetDependency */ = {
@@ -2014,7 +2014,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC813AD85060898D4DD580C5 /* Pods-Uniswap-UniswapTests.debug.xcconfig */;
+			baseConfigurationReference = EC813AD85060898D4DD580C5 /* Pods-Nexis-UniswapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2038,13 +2038,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/Nexis";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5F2751F56BDA3D0330E56BE /* Pods-Uniswap-UniswapTests.release.xcconfig */;
+			baseConfigurationReference = F5F2751F56BDA3D0330E56BE /* Pods-Nexis-UniswapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2065,7 +2065,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/Nexis";
 			};
 			name = Release;
 		};
@@ -2311,7 +2311,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nexis";
 			};
 			name = Debug;
 		};
@@ -2346,7 +2346,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nexis";
 			};
 			name = Release;
 		};
@@ -2381,7 +2381,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nexis";
 			};
 			name = Dev;
 		};
@@ -2416,7 +2416,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nexis";
 			};
 			name = Beta;
 		};
@@ -2776,20 +2776,20 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A87B4C3727F6D91B4DAABF14 /* Pods-Uniswap.debug.xcconfig */;
+			baseConfigurationReference = A87B4C3727F6D91B4DAABF14 /* Pods-Nexis.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				BUNDLE_ID_SUFFIX = .dev;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Uniswap/Uniswap.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Nexis/Nexis.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH3UHGZD75;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Uniswap/Info.plist;
+				INFOPLIST_FILE = Nexis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2803,9 +2803,9 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uniswap.mobile${BUNDLE_ID_SUFFIX}";
-				PRODUCT_NAME = Uniswap;
+				PRODUCT_NAME = Nexis;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Uniswap/RNEthersRs/RNEthersRS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nexis/RNEthersRs/RNEthersRS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2814,20 +2814,20 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD72162492D6B68BBC15F3ED /* Pods-Uniswap.release.xcconfig */;
+			baseConfigurationReference = FD72162492D6B68BBC15F3ED /* Pods-Nexis.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Uniswap/Uniswap.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Nexis/Nexis.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH3UHGZD75;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Uniswap/Info.plist;
+				INFOPLIST_FILE = Nexis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2841,9 +2841,9 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uniswap.mobile${BUNDLE_ID_SUFFIX}";
-				PRODUCT_NAME = Uniswap;
+				PRODUCT_NAME = Nexis;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.uniswap.mobile";
-				SWIFT_OBJC_BRIDGING_HEADER = "Uniswap/RNEthersRs/RNEthersRS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nexis/RNEthersRs/RNEthersRS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -3124,20 +3124,20 @@
 		};
 		FDB6FD3D294D3A6E00C7B822 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB423A22FFE9EFFCA11E9E1A /* Pods-Uniswap.beta.xcconfig */;
+			baseConfigurationReference = DB423A22FFE9EFFCA11E9E1A /* Pods-Nexis.beta.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				BUNDLE_ID_SUFFIX = .beta;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Uniswap/Uniswap.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Nexis/Nexis.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH3UHGZD75;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Uniswap/Info.plist;
+				INFOPLIST_FILE = Nexis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3151,9 +3151,9 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uniswap.mobile${BUNDLE_ID_SUFFIX}";
-				PRODUCT_NAME = Uniswap;
+				PRODUCT_NAME = Nexis;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.uniswap.mobile.beta";
-				SWIFT_OBJC_BRIDGING_HEADER = "Uniswap/RNEthersRs/RNEthersRS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nexis/RNEthersRs/RNEthersRS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -3161,7 +3161,7 @@
 		};
 		FDB6FD3E294D3A6E00C7B822 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8A8C1523EA65F88E3DC16CD /* Pods-Uniswap-UniswapTests.beta.xcconfig */;
+			baseConfigurationReference = E8A8C1523EA65F88E3DC16CD /* Pods-Nexis-UniswapTests.beta.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -3182,7 +3182,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/Nexis";
 			};
 			name = Beta;
 		};
@@ -3291,20 +3291,20 @@
 		};
 		FDB6FD41294D3A8200C7B822 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B398F0A4DA17159EA0E2D6DF /* Pods-Uniswap.dev.xcconfig */;
+			baseConfigurationReference = B398F0A4DA17159EA0E2D6DF /* Pods-Nexis.dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				BUNDLE_ID_SUFFIX = .dev;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Uniswap/Uniswap.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Nexis/Nexis.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH3UHGZD75;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Uniswap/Info.plist;
+				INFOPLIST_FILE = Nexis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3318,9 +3318,9 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uniswap.mobile${BUNDLE_ID_SUFFIX}";
-				PRODUCT_NAME = Uniswap;
+				PRODUCT_NAME = Nexis;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.uniswap.mobile.dev";
-				SWIFT_OBJC_BRIDGING_HEADER = "Uniswap/RNEthersRs/RNEthersRS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nexis/RNEthersRs/RNEthersRS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -3328,7 +3328,7 @@
 		};
 		FDB6FD42294D3A8200C7B822 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 407451BE42C5147EBB181687 /* Pods-Uniswap-UniswapTests.dev.xcconfig */;
+			baseConfigurationReference = 407451BE42C5147EBB181687 /* Pods-Nexis-UniswapTests.dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -3349,7 +3349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uniswap.app/Uniswap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nexis.app/Nexis";
 			};
 			name = Dev;
 		};
@@ -3454,7 +3454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Uniswap" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Nexis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -3465,7 +3465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Uniswap" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Nexis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

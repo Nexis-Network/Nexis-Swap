@@ -86,7 +86,7 @@ export const generateTweetForPurchase = (assets: UpdatedGenieAsset[], txHashUrl:
   const collectionUrl = assets.length > 0 && !multipleCollections ? `collection/${assets[0].address}` : ''
   const tweetText = `I just purchased ${
     multipleCollections ? `${assets.length} NFTs` : `${assets.length} ${assets[0].collectionName ?? 'NFT'}`
-  } with @Uniswap 🦄\n\nhttps://app.uniswap.org/nfts/${collectionUrl}\n${txHashUrl}`
+  } with @Nexis 🦄\n\nhttps://app.uniswap.org/nfts/${collectionUrl}\n${txHashUrl}`
   return `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`
 }
 
@@ -116,10 +116,10 @@ export const generateTweetForList = (assets: WalletAsset[]): string => {
             : `${assets[0].collection?.name} ` ?? ''
         }${assets[0].name} for ${getMinListingPrice(assets[0].newListings ?? [])} ETH on ${assets[0].marketplaces
           ?.map((market) => market.name)
-          .join(', ')}. Buy it on @Uniswap at https://app.uniswap.org/${getAssetHref(assets[0])}`
+          .join(', ')}. Buy it on @Nexis at https://app.uniswap.org/${getAssetHref(assets[0])}`
       : `I just listed ${
           assets.length
-        } items on @Uniswap at https://app.uniswap.org/nfts/profile\n\nCollections: ${mapAssetsToCollections(assets)
+        } items on @Nexis at https://app.uniswap.org/nfts/profile\n\nCollections: ${mapAssetsToCollections(assets)
           .map(({ collection, items }) => `${collection} ${items.map((item) => item).join(', ')}`)
           .join(', ')} \n\nMarketplaces: ${assets[0].marketplaces?.map((market) => market.name).join(', ')}`
   return `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`

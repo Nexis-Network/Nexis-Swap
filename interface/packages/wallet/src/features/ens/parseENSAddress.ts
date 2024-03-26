@@ -1,4 +1,4 @@
-// Copied from https://github.com/Uniswap/interface/blob/main/src/utils/parseENSAddress.ts
+// Copied from https://github.com/Nexis/interface/blob/main/src/utils/parseENSAddress.ts
 
 const ENS_DOMAIN_REGEX = /^[a-zA-Z0-9-.]+\.eth$/
 

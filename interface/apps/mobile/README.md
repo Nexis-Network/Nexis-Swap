@@ -1,8 +1,8 @@
-# Uniswap Wallet
+# Nexis Wallet
 
-[Uniswap Wallet](https://wallet.uniswap.org/) is the simplest, safest, and most powerful self-custodial crypto wallet. It is developed by the Uniswap Labs team, inventors of the Uniswap Protocol.
+[Nexis Wallet](https://wallet.uniswap.org/) is the simplest, safest, and most powerful self-custodial crypto wallet. It is developed by the Nexis Labs team, inventors of the Nexis Network.
 
-If you have suggestions on how we can improve the app, or would like to report a bug or a problem, check out the [Uniswap Help Center](https://support.uniswap.org/).
+If you have suggestions on how we can improve the app, or would like to report a bug or a problem, check out the [Nexis Help Center](https://support.uniswap.org/).
 
 ## Setup
 
@@ -147,7 +147,7 @@ Or you can use one command to run them all one after the other: `yarn && yarn po
 
 You can also run the app from Xcode, which is necessary for any Swift related changes. Xcode will automatically start the metro bundler.
 
-Hopefully you now (after a few minutes) see the Uniswap Wallet running in the iOS Simulator!
+Hopefully you now (after a few minutes) see the Nexis Wallet running in the iOS Simulator!
 
 ### Enabling Flipper
 
@@ -193,7 +193,7 @@ Anytime a required property is added or any property is renamed or deleted to/fr
 - `zsh: command not found: [package name]`
 This means whichever package you're trying to run (`[package name]`) wasn’t correctly installed, or your Terminal can’t figure out how to run it. If you just installed it, try quitting terminal and re-opening it. Otherwise try reinstalling the package.
 
-- `unable to open file (in target "OneSignalNotificationServiceExtension" in project "Uniswap")`.
+- `unable to open file (in target "OneSignalNotificationServiceExtension" in project "Nexis")`.
 Resolve this issue by navigating to the `ios/` directory and running `pod update`.
 
 ### Common fixes

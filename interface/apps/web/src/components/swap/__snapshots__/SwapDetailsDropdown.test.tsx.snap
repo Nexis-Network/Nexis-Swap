@@ -500,7 +500,7 @@ exports[`SwapDetailsDropdown.tsx renders a trade 1`] = `
                         <div
                           class="c22 css-142zc9n"
                         >
-                          Uniswap Client
+                          Nexis Client
                         </div>
                       </div>
                     </div>

@@ -1,6 +1,6 @@
 //
 //  RNSwiftUI-Bridging-Header.h
-//  Uniswap
+//  Nexis
 //
 //  Created by Thomas Thachil on 8/3/22.
 //

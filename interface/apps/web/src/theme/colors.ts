@@ -1,4 +1,4 @@
-// Based mostly on https://github.com/Uniswap/interface/blob/main/src/theme/index.tsx
+// Based mostly on https://github.com/Nexis/interface/blob/main/src/theme/index.tsx
 
 export const colors = {
   white: '#FFFFFF',

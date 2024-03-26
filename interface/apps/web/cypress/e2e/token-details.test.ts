@@ -39,11 +39,11 @@ describe('Token details', () => {
 
     // Info section should have description of token & relevant links
     cy.get(getTestSelector('token-details-info-section')).should('exist')
-    cy.contains('UNI is the governance token for Uniswap').should('exist')
+    cy.contains('UNI is the governance token for Nexis').should('exist')
     cy.get(getTestSelector('token-details-info-links')).within(() => {
       cy.contains('Etherscan').should('have.attr', 'href').and('include', `etherscan.io/token/${UNI_ADDRESS}`)
       cy.contains('Website').should('have.attr', 'href').and('include', 'uniswap.org')
-      cy.contains('Twitter').should('have.attr', 'href').and('include', 'x.com/Uniswap')
+      cy.contains('Twitter').should('have.attr', 'href').and('include', 'x.com/Nexis')
     })
 
     // Contract address should be displayed

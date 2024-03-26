@@ -66,13 +66,13 @@ describe(formatTokenSearchResults, () => {
   it('sorts results by best search query match', () => {
     const data: ExploreSearchResult['searchTokens'] = [
       ethToken({ project: tokenProject({ name: 'UniswapStartingName' }) }),
-      ethToken({ project: tokenProject({ name: 'Uniswap' }) }),
+      ethToken({ project: tokenProject({ name: 'Nexis' }) }),
     ]
 
     const result = formatTokenSearchResults(data, 'uniswap')
 
     expect(result).toHaveLength(2)
-    expect(result?.[0]?.name).toEqual('Uniswap')
+    expect(result?.[0]?.name).toEqual('Nexis')
     expect(result?.[1]?.name).toEqual('UniswapStartingName')
   })
 

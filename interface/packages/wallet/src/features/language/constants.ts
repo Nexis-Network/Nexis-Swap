@@ -1,7 +1,7 @@
 /**
  * List of supported languages in app, represented by ISO 639 language code.
  * If you add a new locale here, be sure to add polyfills for it in intl.js,
- * resource strings in i18n.ts, and supported localizations in the Uniswap Xcode project.
+ * resource strings in i18n.ts, and supported localizations in the Nexis Xcode project.
  */
 export enum Language {
   ChineseSimplified = 'zh', // Defaulting overarching Chinese language code to Simplified

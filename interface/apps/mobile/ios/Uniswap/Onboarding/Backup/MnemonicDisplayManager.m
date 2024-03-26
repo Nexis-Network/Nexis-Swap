@@ -1,11 +1,11 @@
 //
 //  RNTMnemonicManager.m
-//  Uniswap
+//  Nexis
 //
 //  Created by Spencer Yen on 5/24/22.
 //
 
-#import "Uniswap-Swift.h"
+#import "Nexis-Swift.h"
 #import <React/RCTViewManager.h>
 #import "RNSwiftUI-Bridging-Header.h"
 

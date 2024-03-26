@@ -1,4 +1,4 @@
-// Based partly on https://github.com/Uniswap/interface/blob/main/src/hooks/useContract.ts
+// Based partly on https://github.com/Nexis/interface/blob/main/src/hooks/useContract.ts
 
 import { Contract, ContractInterface } from 'ethers'
 import { useMemo } from 'react'

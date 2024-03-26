@@ -1257,7 +1257,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
                                     >
                                       <img
                                         class="c40"
-                                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                                       />
                                     </div>
                                   </div>
@@ -1387,7 +1387,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
                                       >
                                         <img
                                           class="c40"
-                                          src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                                          src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                                         />
                                       </div>
                                     </div>
@@ -1481,7 +1481,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
             <div
               class="c57"
             >
-              These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap. Always conduct your own research before trading. 
+              These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Nexis. Always conduct your own research before trading. 
               <a
                 class="c58 c59"
                 href="https://support.uniswap.org/hc/en-us/articles/8723118437133"

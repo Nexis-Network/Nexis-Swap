@@ -1,6 +1,6 @@
 //
 //  Colors.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Thomas Thachil on 8/8/22.
 //

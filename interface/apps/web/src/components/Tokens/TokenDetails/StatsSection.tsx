@@ -116,7 +116,7 @@ export default function StatsSection(props: StatsSectionProps) {
               value={TVL}
               description={
                 <Trans>
-                  Total value locked (TVL) is the aggregate amount of the asset available across all Uniswap v3
+                  Total value locked (TVL) is the aggregate amount of the asset available across all Nexis v3
                   liquidity pools.
                 </Trans>
               }
@@ -143,7 +143,7 @@ export default function StatsSection(props: StatsSectionProps) {
               value={volume24H}
               description={
                 <Trans>
-                  1 day volume is the amount of the asset that has been traded on Uniswap v3 during the past 24 hours.
+                  1 day volume is the amount of the asset that has been traded on Nexis v3 during the past 24 hours.
                 </Trans>
               }
               title={<Trans>1 day volume</Trans>}

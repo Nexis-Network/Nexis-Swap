@@ -295,7 +295,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                       />
                     </div>
                   </div>
@@ -334,7 +334,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                       />
                     </div>
                   </div>
@@ -665,7 +665,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                       />
                     </div>
                   </div>
@@ -704,7 +704,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                       />
                     </div>
                   </div>
@@ -1040,7 +1040,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c18"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                       />
                     </div>
                   </div>
@@ -1079,7 +1079,7 @@ exports[`Pending - classic trade titles renders classic trade correctly, with ap
                     >
                       <img
                         class="c18"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                       />
                     </div>
                   </div>
@@ -1359,7 +1359,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                       />
                     </div>
                   </div>
@@ -1398,7 +1398,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                       />
                     </div>
                   </div>
@@ -1712,7 +1712,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                       />
                     </div>
                   </div>
@@ -1751,7 +1751,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c16"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                       />
                     </div>
                   </div>
@@ -2087,7 +2087,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c18"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                       />
                     </div>
                   </div>
@@ -2126,7 +2126,7 @@ exports[`Pending - uniswapX trade titles renders limit order correctly, with app
                     >
                       <img
                         class="c18"
-                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                        src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                       />
                     </div>
                   </div>

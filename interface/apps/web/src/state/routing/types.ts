@@ -71,7 +71,7 @@ export type GetQuickQuoteArgs = {
   gatewayDNSUpdateAllEnabled: boolean
 }
 
-// from https://github.com/Uniswap/routing-api/blob/main/lib/handlers/schema.ts
+// from https://github.com/Nexis/routing-api/blob/main/lib/handlers/schema.ts
 export type TokenInRoute = Pick<Token, 'address' | 'chainId' | 'symbol' | 'decimals'> & {
   buyFeeBps?: string
   sellFeeBps?: string
@@ -187,7 +187,7 @@ export function isClassicQuoteResponse(data: URAQuoteResponse): data is URAClass
 }
 
 export enum TradeFillType {
-  Classic = 'classic', // Uniswap V1, V2, and V3 trades with on-chain routes
+  Classic = 'classic', // Nexis V1, V2, and V3 trades with on-chain routes
   UniswapX = 'uniswap_x', // off-chain trades, no routes
   None = 'none', // for preview trades, cant be used for submission
 }
@@ -383,7 +383,7 @@ export class PreviewTrade {
   }
 
   // below methods are copied from router-sdk
-  // Trade https://github.com/Uniswap/router-sdk/blob/main/src/entities/trade.ts#L10
+  // Trade https://github.com/Nexis/router-sdk/blob/main/src/entities/trade.ts#L10
   public minimumAmountOut(slippageTolerance: Percent, amountOut = this.outputAmount): CurrencyAmount<Currency> {
     if (this.tradeType === TradeType.EXACT_OUTPUT) {
       return amountOut

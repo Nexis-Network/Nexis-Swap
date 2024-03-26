@@ -1,4 +1,4 @@
-// Copied from https://github.com/Uniswap/interface/blob/main/src/constants/tokens.ts
+// Copied from https://github.com/Nexis/interface/blob/main/src/constants/tokens.ts
 import { Token } from '@uniswap/sdk-core'
 import { UNI_ADDRESS } from 'wallet/src/constants/addresses'
 import { CHAIN_INFO, ChainId } from 'wallet/src/constants/chains'
@@ -85,8 +85,8 @@ export const WBTC = new Token(
 )
 
 export const UNI = {
-  [ChainId.Mainnet]: new Token(ChainId.Mainnet, UNI_ADDRESS[ChainId.Mainnet], 18, 'UNI', 'Uniswap'),
-  [ChainId.Goerli]: new Token(ChainId.Goerli, UNI_ADDRESS[ChainId.Goerli], 18, 'UNI', 'Uniswap'),
+  [ChainId.Mainnet]: new Token(ChainId.Mainnet, UNI_ADDRESS[ChainId.Mainnet], 18, 'UNI', 'Nexis'),
+  [ChainId.Goerli]: new Token(ChainId.Goerli, UNI_ADDRESS[ChainId.Goerli], 18, 'UNI', 'Nexis'),
 }
 
 export function wrappedNativeCurrency(chainId: ChainId): Token {

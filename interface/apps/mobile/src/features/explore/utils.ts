@@ -11,7 +11,7 @@ import {
  * Returns server and client orderBy values to use for topTokens query and client side sorting
  *
  * Uses server side sort by Volume if applying a client side sort after
- * ex. % change sorting use the top 100 tokens by Uniswap Volume, then sorts by % change
+ * ex. % change sorting use the top 100 tokens by Nexis Volume, then sorts by % change
  *
  * Note that server side sort by Volume (TokenSortableField.Volume) requires an
  * additional client side sort because there may be a discrepancy in the server's

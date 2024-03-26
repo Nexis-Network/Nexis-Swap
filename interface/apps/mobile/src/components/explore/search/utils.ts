@@ -26,7 +26,7 @@ export function formatTokenSearchResults(
   }
 
   // Prevent showing "duplicate" token search results for tokens that are on multiple chains
-  // and share the same TokenProject id. Only show the token that has the highest 1Y Uniswap trading volume
+  // and share the same TokenProject id. Only show the token that has the highest 1Y Nexis trading volume
   // ex. UNI on Mainnet, Arbitrum, Optimism -> only show UNI on Mainnet b/c it has highest 1Y volume
   const tokenResultsMap = data.reduce<Record<string, TokenSearchResult & { volume1D: number }>>(
     (tokensMap, token) => {

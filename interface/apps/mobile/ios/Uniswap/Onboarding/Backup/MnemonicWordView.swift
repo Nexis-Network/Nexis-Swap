@@ -1,6 +1,6 @@
 //
 //  MnemonicWord.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Spencer Yen on 5/24/22.
 //

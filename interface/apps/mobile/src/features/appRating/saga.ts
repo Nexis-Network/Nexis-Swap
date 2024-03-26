@@ -142,7 +142,7 @@ function* maybeRequestAppRating() {
 async function openRatingOptionsAlert() {
   return new Promise((resolve) => {
     Alert.alert(
-      'Enjoying Uniswap Wallet?',
+      'Enjoying Nexis Wallet?',
       "Let us know if you're having a good experience with this app",
       [
         {

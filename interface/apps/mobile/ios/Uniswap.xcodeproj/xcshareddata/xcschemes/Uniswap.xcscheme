@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Uniswap.app"
-               BlueprintName = "Uniswap"
-               ReferencedContainer = "container:Uniswap.xcodeproj">
+               BuildableName = "Nexis.app"
+               BlueprintName = "Nexis"
+               ReferencedContainer = "container:Nexis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "UniswapTests.xctest"
                BlueprintName = "UniswapTests"
-               ReferencedContainer = "container:Uniswap.xcodeproj">
+               ReferencedContainer = "container:Nexis.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,7 +46,7 @@
                BlueprintIdentifier = "072E238C2A44D5BD006AD6C9"
                BuildableName = "WidgetsCoreTests.xctest"
                BlueprintName = "WidgetsCoreTests"
-               ReferencedContainer = "container:Uniswap.xcodeproj">
+               ReferencedContainer = "container:Nexis.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Uniswap.app"
-            BlueprintName = "Uniswap"
-            ReferencedContainer = "container:Uniswap.xcodeproj">
+            BuildableName = "Nexis.app"
+            BlueprintName = "Nexis"
+            ReferencedContainer = "container:Nexis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Uniswap.app"
-            BlueprintName = "Uniswap"
-            ReferencedContainer = "container:Uniswap.xcodeproj">
+            BuildableName = "Nexis.app"
+            BlueprintName = "Nexis"
+            ReferencedContainer = "container:Nexis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

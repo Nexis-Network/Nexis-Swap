@@ -12,13 +12,13 @@ module.exports = {
   apps: {
     'ios.debug': {
       type: "ios.app",
-      binaryPath: "ios/build/Build/Products/Debug-iphonesimulator/Uniswap.app",
-      build: "RN_SRC_EXT=e2e.js,e2e.ts xcodebuild -workspace ios/Uniswap.xcworkspace -scheme Uniswap -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES -arch x86_64"
+      binaryPath: "ios/build/Build/Products/Debug-iphonesimulator/Nexis.app",
+      build: "RN_SRC_EXT=e2e.js,e2e.ts xcodebuild -workspace ios/Nexis.xcworkspace -scheme Nexis -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES -arch x86_64"
     },
     'ios.release': {
       type: 'ios.app',
-      binaryPath: "ios/build/Build/Products/Dev-iphonesimulator/Uniswap.app",
-      build: "RN_SRC_EXT=e2e.js,e2e.ts xcodebuild -workspace ios/Uniswap.xcworkspace -scheme Uniswap -configuration Dev -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES -arch x86_64"
+      binaryPath: "ios/build/Build/Products/Dev-iphonesimulator/Nexis.app",
+      build: "RN_SRC_EXT=e2e.js,e2e.ts xcodebuild -workspace ios/Nexis.xcworkspace -scheme Nexis -configuration Dev -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=YES -arch x86_64"
     },
     'android.debug': {
       type: 'android.apk',

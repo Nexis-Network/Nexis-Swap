@@ -50,9 +50,9 @@ export async function initializeWeb3Wallet(): Promise<void> {
     wcWeb3Wallet = await Web3Wallet.init({
       core: wcCore,
       metadata: {
-        name: 'Uniswap Wallet',
+        name: 'Nexis Wallet',
         description:
-          'Built by the most trusted team in DeFi, Uniswap Wallet allows you to maintain full custody and control of your assets.',
+          'Built by the most trusted team in DeFi, Nexis Wallet allows you to maintain full custody and control of your assets.',
         url: 'https://uniswap.org/app',
         icons: ['https://gateway.pinata.cloud/ipfs/QmR1hYqhDMoyvJtwrQ6f1kVyfEKyK65XH3nbCimXBMkHJg'],
       },

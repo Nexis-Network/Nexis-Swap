@@ -1,6 +1,6 @@
 # @uniswap/eslint-config
 
-Uniswap ESLint config to enforce coding standards and best practices.
+Nexis ESLint config to enforce coding standards and best practices.
 
 - TypeScript and Jest support
 - Seamless Prettier integration

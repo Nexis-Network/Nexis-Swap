@@ -339,7 +339,7 @@ module.exports = {
               'Let’s',
               'Moonpay',
               'Onboarding',
-              'Uniswap',
+              'Nexis',
               'We’ll',
               'What’s',
               'aren’t',

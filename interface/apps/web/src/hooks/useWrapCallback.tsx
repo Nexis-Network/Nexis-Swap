@@ -113,7 +113,7 @@ export default function useWrapCallback(
                       type: WrapType.WRAP,
                     })
                     const error = new Error(`Invalid WETH contract
-Please file a bug detailing how this happened - https://github.com/Uniswap/interface/issues/new?labels=bug&template=bug-report.md&title=Invalid%20WETH%20contract`)
+Please file a bug detailing how this happened - https://github.com/Nexis/interface/issues/new?labels=bug&template=bug-report.md&title=Invalid%20WETH%20contract`)
                     setError(error)
                     trace.setError(error, 'out_of_range')
                     throw error

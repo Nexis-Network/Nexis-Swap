@@ -108,7 +108,7 @@ export function computeRoutesTradingApi(
       outputAmount: CurrencyAmount<Currency>
     }[]
   | undefined {
-  // TODO : remove quote type check for Uniswap X integration
+  // TODO : remove quote type check for Nexis X integration
   if (!quoteResponse || !quoteResponse.quote || !isClassicQuote(quoteResponse.quote)) {
     return
   }
@@ -256,7 +256,7 @@ export class PairVeevaa {
       PairVeevaa.getAddress(tokenAmounts[0]!.currency, tokenAmounts[1]!.currency),
       18,
       'UNI-V2',
-      'Uniswap V2'
+      'Nexis V2'
     )
     this.tokenAmounts = tokenAmounts as [CurrencyAmount<Token>, CurrencyAmount<Token>]
   }

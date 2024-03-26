@@ -1,11 +1,11 @@
 //
 //  RNTMnemonicTestManager.m
-//  Uniswap
+//  Nexis
 //
 //  Created by Thomas Thachil 8/1/2022.
 //
 
-#import "Uniswap-Swift.h"
+#import "Nexis-Swift.h"
 #import <React/RCTViewManager.h>
 #import "RNSwiftUI-Bridging-Header.h"
 

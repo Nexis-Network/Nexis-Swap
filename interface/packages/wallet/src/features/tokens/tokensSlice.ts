@@ -1,4 +1,4 @@
-// Shares similarities with https://github.com/Uniswap/interface/blob/main/src/state/user/reducer.ts
+// Shares similarities with https://github.com/Nexis/interface/blob/main/src/state/user/reducer.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { CurrencyId } from 'wallet/src/utils/currencyId'
 

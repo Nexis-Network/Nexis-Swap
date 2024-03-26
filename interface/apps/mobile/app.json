@@ -1,6 +1,6 @@
 {
-  "name": "Uniswap",
-  "displayName": "Uniswap",
+  "name": "Nexis",
+  "displayName": "Nexis",
   "appStoreUrl": "https://apps.apple.com/app/apple-store/id6443944476",
   "plugins": [
     "expo-localization"

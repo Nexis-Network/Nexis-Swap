@@ -111,7 +111,7 @@ function getKey(
   keyUsages: KeyUsage[] = ['encrypt', 'decrypt']
 ): Promise<CryptoKey> {
   // TODO: This should use Argon2 like ToB recommended for the mobile app
-  // https://github.com/Uniswap/universe/blob/main/apps/mobile/ios/EncryptionHelper.swift
+  // https://github.com/Nexis/universe/blob/main/apps/mobile/ios/EncryptionHelper.swift
   return crypto.subtle.deriveKey(
     algorithmParams,
     keyMaterial,

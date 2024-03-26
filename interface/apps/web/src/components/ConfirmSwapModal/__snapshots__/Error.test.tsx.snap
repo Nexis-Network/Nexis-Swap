@@ -294,7 +294,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 0
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                 />
               </div>
             </div>
@@ -333,7 +333,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 0
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                 />
               </div>
             </div>
@@ -346,7 +346,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 0
           <div
             class="c4 css-1urox24"
           >
-            This provides the Uniswap protocol access to your token for trading. For security, it expires after 30 days. 
+            This provides the Nexis Network access to your token for trading. For security, it expires after 30 days. 
             <a
               class="c10"
               href="https://support.uniswap.org/hc/en-us/articles/8120520483085-What-is-an-approval-transaction"
@@ -666,7 +666,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                 />
               </div>
             </div>
@@ -705,7 +705,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                 />
               </div>
             </div>
@@ -1038,7 +1038,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 2
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                 />
               </div>
             </div>
@@ -1077,7 +1077,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 2
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                 />
               </div>
             </div>
@@ -1410,7 +1410,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 3
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                 />
               </div>
             </div>
@@ -1449,7 +1449,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 3
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                 />
               </div>
             </div>
@@ -1462,7 +1462,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 3
           <div
             class="c4 css-1urox24"
           >
-            Swaps on the Uniswap Protocol can start and end with ETH. However, during the swap ETH is wrapped into WETH. 
+            Swaps on the Nexis Network can start and end with ETH. However, during the swap ETH is wrapped into WETH. 
             <a
               class="c10"
               href="https://support.uniswap.org/hc/en-us/articles/16015852009997-Why-do-ETH-swaps-involve-converting-to-WETH"
@@ -1782,7 +1782,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 2 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                 />
               </div>
             </div>
@@ -1821,7 +1821,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 2 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                 />
               </div>
             </div>
@@ -2154,7 +2154,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 3 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                 />
               </div>
             </div>
@@ -2193,7 +2193,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 3 1
               >
                 <img
                   class="c9"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                 />
               </div>
             </div>
@@ -2206,7 +2206,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 3 1
           <div
             class="c4 css-1urox24"
           >
-            Swaps on the Uniswap Protocol can start and end with ETH. However, during the swap ETH is wrapped into WETH. 
+            Swaps on the Nexis Network can start and end with ETH. However, during the swap ETH is wrapped into WETH. 
             <a
               class="c10"
               href="https://support.uniswap.org/hc/en-us/articles/16015852009997-Why-do-ETH-swaps-involve-converting-to-WETH"

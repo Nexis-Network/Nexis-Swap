@@ -115,7 +115,7 @@ describe('Ordered Connections', () => {
     expect(item1.getByText('Recent')).toBeInTheDocument()
 
     const item2 = render(test.result.current.orderedConnections[1])
-    expect(item2.getByText('Uniswap Wallet')).toBeInTheDocument() // Uniswap wallet should come second under recent
+    expect(item2.getByText('Nexis Wallet')).toBeInTheDocument() // Nexis wallet should come second under recent
 
     const item3 = render(test.result.current.orderedConnections[2])
     expect(item3.getByText('OtherWallet')).toBeInTheDocument() // Remaining eip6963 wallets should come under recent

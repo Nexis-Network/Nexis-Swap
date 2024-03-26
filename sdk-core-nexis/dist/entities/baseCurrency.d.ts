@@ -9,7 +9,7 @@ export declare abstract class BaseCurrency {
      */
     abstract readonly isNative: boolean;
     /**
-     * Returns whether the currency is a token that is usable in Uniswap without wrapping
+     * Returns whether the currency is a token that is usable in Nexis without wrapping
      */
     abstract readonly isToken: boolean;
     /**
@@ -42,8 +42,8 @@ export declare abstract class BaseCurrency {
      */
     abstract equals(other: Currency): boolean;
     /**
-     * Return the wrapped version of this currency that can be used with the Uniswap contracts. Currencies must
-     * implement this to be used in Uniswap
+     * Return the wrapped version of this currency that can be used with the Nexis contracts. Currencies must
+     * implement this to be used in Nexis
      */
     abstract get wrapped(): Token;
 }

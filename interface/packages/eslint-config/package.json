@@ -1,10 +1,10 @@
 {
   "name": "@uniswap/eslint-config",
   "version": "0.0.1",
-  "description": "Uniswap ESLint config",
-  "repository": "https://github.com/Uniswap/eslint-config",
-  "homepage": "https://github.com/Uniswap/eslint-config#readme",
-  "bugs": "https://github.com/Uniswap/eslint-config/issues",
+  "description": "Nexis ESLint config",
+  "repository": "https://github.com/Nexis/eslint-config",
+  "homepage": "https://github.com/Nexis/eslint-config#readme",
+  "bugs": "https://github.com/Nexis/eslint-config/issues",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",

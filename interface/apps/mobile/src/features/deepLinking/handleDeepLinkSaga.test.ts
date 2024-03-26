@@ -116,7 +116,7 @@ describe(handleDeepLink, () => {
       .silentRun()
   })
 
-  it('Handles WalletConnect connection using Uniswap URL scheme with WalletConnect URI as query param', () => {
+  it('Handles WalletConnect connection using Nexis URL scheme with WalletConnect URI as query param', () => {
     return expectSaga(handleDeepLink, {
       payload: { url: wcAsParamInUniwapScheme, coldStart: false },
       type: '',
@@ -128,7 +128,7 @@ describe(handleDeepLink, () => {
       .silentRun()
   })
 
-  it('Handles WalletConnect connection using Uniswap URL scheme with WalletConnect URI', () => {
+  it('Handles WalletConnect connection using Nexis URL scheme with WalletConnect URI', () => {
     return expectSaga(handleDeepLink, {
       payload: { url: wcInUniwapScheme, coldStart: false },
       type: '',

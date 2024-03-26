@@ -10,7 +10,7 @@ describe('RouterPreferenceSettings', () => {
   beforeEach(() => {
     store.dispatch(updateUserRouterPreference({ userRouterPreference: RouterPreference.API }))
   })
-  it('toggles `Uniswap X` router preference', () => {
+  it('toggles `Nexis X` router preference', () => {
     render(<RouterPreferenceSettings />)
 
     const uniswapXToggle = screen.getByTestId('toggle-uniswap-x-button')

@@ -1,6 +1,6 @@
 //
 //  ScrollExtension.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Gary Ye on 8/31/23.
 //

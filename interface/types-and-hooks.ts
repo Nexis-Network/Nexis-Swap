@@ -866,7 +866,7 @@ export type PageInfo = {
   readonly startCursor?: Maybe<Scalars['String']>;
 };
 
-/**   v2 pool parameters as defined by https://github.com/Uniswap/v2-sdk/blob/main/src/entities/pair.ts */
+/**   v2 pool parameters as defined by https://github.com/Nexis/v2-sdk/blob/main/src/entities/pair.ts */
 export type PairInput = {
   readonly tokenAmountA: TokenAmountInput;
   readonly tokenAmountB: TokenAmountInput;
@@ -886,7 +886,7 @@ export type PermitInput = {
   readonly spender: Scalars['String'];
 };
 
-/**   v3 pool parameters as defined by https://github.com/Uniswap/v3-sdk/blob/main/src/entities/pool.ts */
+/**   v3 pool parameters as defined by https://github.com/Nexis/v3-sdk/blob/main/src/entities/pool.ts */
 export type PoolInput = {
   readonly fee: Scalars['Int'];
   readonly liquidity: Scalars['String'];

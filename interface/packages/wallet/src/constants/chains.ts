@@ -1,4 +1,4 @@
-// Based on https://github.com/Uniswap/interface/blob/main/src/constants/chains.ts
+// Based on https://github.com/Nexis/interface/blob/main/src/constants/chains.ts
 
 import { ImageSourcePropType } from 'react-native'
 import { GeneratedIcon, Logos } from 'ui/src'

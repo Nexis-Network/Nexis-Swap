@@ -1,6 +1,6 @@
 //
 //  AlertTriangleIcon.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Gary Ye on 9/16/23.
 //

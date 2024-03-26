@@ -234,7 +234,7 @@ export function* handleDeepLink(action: ReturnType<typeof openDeepLink>) {
       return
     }
 
-    // Handles deep links from Uniswap Widgets (ex. uniswap://widget/#/tokens/ethereum/0x...)
+    // Handles deep links from Nexis Widgets (ex. uniswap://widget/#/tokens/ethereum/0x...)
     if (action.payload.url.startsWith(UNISWAP_URL_SCHEME_WIDGET)) {
       yield* call(handleUniswapAppDeepLink, url.hash, action.payload.url, LinkSource.Widget)
       return

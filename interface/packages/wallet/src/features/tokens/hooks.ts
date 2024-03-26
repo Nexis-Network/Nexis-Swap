@@ -10,12 +10,12 @@ import { areAddressesEqual } from 'wallet/src/utils/addresses'
 
 export type TopToken = NonNullable<NonNullable<SearchPopularTokensQuery['topTokens']>[0]>
 
-// Popular tokens by top Uniswap trading volume
+// Popular tokens by top Nexis trading volume
 export function usePopularTokens(): {
   popularTokens: TopToken[] | undefined
   loading: boolean
 } {
-  // Load popular tokens by top Uniswap trading volume
+  // Load popular tokens by top Nexis trading volume
   const { data, loading } = useSearchPopularTokensQuery()
 
   const popularTokens = useMemo(() => {

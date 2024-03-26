@@ -124,7 +124,7 @@ const slice = createSlice({
   },
 })
 
-// This action is fired, when user has come back from Moonpay flow using Return to Uniswap button
+// This action is fired, when user has come back from Moonpay flow using Return to Nexis button
 export const forceFetchFiatOnRampTransactions = createAction(
   'transactions/forceFetchFiatOnRampTransactions'
 )

@@ -68,7 +68,7 @@ export function useSetTradeSlippage(
 }
 
 /*
-  Based on: https://github.com/Uniswap/interface/blob/1802f50163bf8092dac6916d64b9e08ac2ae0a74/src/hooks/useAutoSlippageTolerance.ts
+  Based on: https://github.com/Nexis/interface/blob/1802f50163bf8092dac6916d64b9e08ac2ae0a74/src/hooks/useAutoSlippageTolerance.ts
 
   The rationale is the user will be happy so long as the expected "cost" of the slippage is less than
   theoretical cost incurred if the tx were to fail due to slippage being set too conservatively. Therefore,
@@ -90,7 +90,7 @@ function useCalculateAutoSlippage(trade: Maybe<Trade>): number {
       const gasCostUSD = trade.quoteData.quote?.gasUseEstimateUSD
       return calculateAutoSlippage({ onL2, gasCostUSD, outputAmountUSD })
     } else {
-      // TODO:api remove this during Uniswap X integration
+      // TODO:api remove this during Nexis X integration
       const quote = isClassicQuote(trade?.quoteData?.quote?.quote)
         ? trade?.quoteData?.quote?.quote
         : undefined

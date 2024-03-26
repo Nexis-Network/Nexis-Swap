@@ -42,7 +42,7 @@ export default function UniwalletModal() {
   const { activationState, cancelActivation } = useActivationState()
   const [uri, setUri] = useState<string>()
 
-  // Displays the modal if not on iOS/Android, a Uniswap Wallet Connection is pending, & qrcode URI is available
+  // Displays the modal if not on iOS/Android, a Nexis Wallet Connection is pending, & qrcode URI is available
   const onLaunchedMobilePlatform = isIOS || isAndroid
   const open =
     !onLaunchedMobilePlatform &&
@@ -67,7 +67,7 @@ export default function UniwalletModal() {
       <UniwalletConnectWrapper>
         <HeaderRow>
           <ThemedText.SubHeader>
-            <Trans>Scan with Uniswap Wallet</Trans>
+            <Trans>Scan with Nexis Wallet</Trans>
           </ThemedText.SubHeader>
           <CloseIcon onClick={cancelActivation} />
         </HeaderRow>
@@ -107,10 +107,10 @@ function InfoSection() {
     <InfoSectionWrapper>
       <AutoColumn gap="4px">
         <ThemedText.SubHeaderSmall color="neutral1">
-          <Trans>Don&apos;t have a Uniswap wallet?</Trans>
+          <Trans>Don&apos;t have a Nexis wallet?</Trans>
         </ThemedText.SubHeaderSmall>
         <ThemedText.BodySmall color="neutral2">
-          <Trans>Safely store and swap tokens with the Uniswap app. Available on iOS and Android.</Trans>
+          <Trans>Safely store and swap tokens with the Nexis app. Available on iOS and Android.</Trans>
         </ThemedText.BodySmall>
       </AutoColumn>
       <Column>

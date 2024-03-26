@@ -48,7 +48,7 @@ export function DownloadWalletCard() {
       button={
         <PillButton
           color={theme.accent1}
-          label={t`Uniswap wallet`}
+          label={t`Nexis wallet`}
           icon={<Wallet size="24px" fill={theme.accent1} />}
         />
       }

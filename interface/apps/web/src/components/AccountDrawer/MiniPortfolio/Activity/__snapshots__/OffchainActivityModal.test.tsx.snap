@@ -318,11 +318,11 @@ exports[`OrderContent should render without error, filled order 1`] = `
             >
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
               />
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
               />
             </div>
           </div>
@@ -380,7 +380,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                 />
               </div>
             </div>
@@ -439,7 +439,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                 />
               </div>
             </div>
@@ -943,11 +943,11 @@ exports[`OrderContent should render without error, limit order 1`] = `
             >
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
               />
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
               />
             </div>
           </div>
@@ -1005,7 +1005,7 @@ exports[`OrderContent should render without error, limit order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                 />
               </div>
             </div>
@@ -1064,7 +1064,7 @@ exports[`OrderContent should render without error, limit order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                 />
               </div>
             </div>
@@ -1570,11 +1570,11 @@ exports[`OrderContent should render without error, open order 1`] = `
             >
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
               />
               <img
                 class="c5"
-                src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
               />
             </div>
           </div>
@@ -1632,7 +1632,7 @@ exports[`OrderContent should render without error, open order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
                 />
               </div>
             </div>
@@ -1691,7 +1691,7 @@ exports[`OrderContent should render without error, open order 1`] = `
               >
                 <img
                   class="c15"
-                  src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                  src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                 />
               </div>
             </div>

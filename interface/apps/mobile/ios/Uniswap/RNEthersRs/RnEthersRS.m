@@ -1,6 +1,6 @@
 //
 //  RnEthersBridge.m
-//  Uniswap
+//  Nexis
 //
 //  Created by Connor McEwen on 10/28/21.
 //

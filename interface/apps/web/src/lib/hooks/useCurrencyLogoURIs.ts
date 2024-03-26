@@ -72,7 +72,7 @@ function getTokenLogoURI(address: string, chainId: ChainId = ChainId.MAINNET): s
   }
 
   if (networksWithUrls.includes(chainId)) {
-    return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
+    return `https://raw.githubusercontent.com/Nexis/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
 }
 

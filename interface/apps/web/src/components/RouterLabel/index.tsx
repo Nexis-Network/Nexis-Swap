@@ -9,14 +9,14 @@ export default function RouterLabel({ trade, color }: { trade: SubmittableTrade;
   if (isUniswapXTrade(trade)) {
     return (
       <UniswapXRouterLabel>
-        <ThemedText.BodySmall>Uniswap X</ThemedText.BodySmall>
+        <ThemedText.BodySmall>Nexis X</ThemedText.BodySmall>
       </UniswapXRouterLabel>
     )
   }
 
   if (trade.quoteMethod === QuoteMethod.CLIENT_SIDE_FALLBACK) {
-    return <ThemedText.BodySmall color={color}>Uniswap Client</ThemedText.BodySmall>
+    return <ThemedText.BodySmall color={color}>Nexis Client</ThemedText.BodySmall>
   }
 
-  return <ThemedText.BodySmall color={color}>Uniswap API</ThemedText.BodySmall>
+  return <ThemedText.BodySmall color={color}>Nexis API</ThemedText.BodySmall>
 }

@@ -90,7 +90,7 @@ Our tests use a local hardhat node to simulate blockchain transactions. This can
 
 By default, automining is turned on, so that any transaction that you send to the blockchain is mined immediately. If you want to assert on intermediate states (between sending a transaction and mining it), you can turn off automining: `cy.hardhat({ automine: false })`.
 
-The hardhat integration has built-in utilities to let you modify and assert on balances, approvals, and permits, and should be fully typed. Check it out at [Uniswap/cypress-hardhat](https://github.com/Uniswap/cypress-hardhat).
+The hardhat integration has built-in utilities to let you modify and assert on balances, approvals, and permits, and should be fully typed. Check it out at [Nexis/cypress-hardhat](https://github.com/Nexis/cypress-hardhat).
 
 ### Asserting on wallet methods
 

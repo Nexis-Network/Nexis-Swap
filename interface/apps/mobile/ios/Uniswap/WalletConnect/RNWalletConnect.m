@@ -1,6 +1,6 @@
 //
 //  RNWalletConnect.m
-//  Uniswap
+//  Nexis
 //
 //  Created by Tina Zheng on 3/7/22.
 //

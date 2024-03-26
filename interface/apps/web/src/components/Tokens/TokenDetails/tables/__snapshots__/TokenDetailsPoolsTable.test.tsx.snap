@@ -622,7 +622,7 @@ exports[`TDPPoolTable renders data filled state 1`] = `
                             <img
                               class="c23"
                               size="28"
-                              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                              src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                             />
                             <img
                               class="c23"

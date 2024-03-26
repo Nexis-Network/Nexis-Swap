@@ -561,7 +561,7 @@ exports[`SwapLineItem.tsx dutch order eth input 1`] = `
               <div
                 class="c10 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c16"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -678,7 +678,7 @@ exports[`SwapLineItem.tsx dutch order eth input 1`] = `
                     <div
                       class="c3 css-142zc9n"
                     >
-                      Uniswap X
+                      Nexis X
                     </div>
                   </div>
                 </div>
@@ -1509,7 +1509,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -1588,7 +1588,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
                 <div
                   class="c20 css-142zc9n"
                 >
-                  Uniswap Client
+                  Nexis Client
                 </div>
               </div>
             </div>
@@ -1621,7 +1621,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                       </div>
@@ -1686,7 +1686,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -1703,7 +1703,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -1743,7 +1743,7 @@ exports[`SwapLineItem.tsx exact input 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                           />
                         </div>
                       </div>
@@ -2551,7 +2551,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -2630,7 +2630,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
                 <div
                   class="c20 css-142zc9n"
                 >
-                  Uniswap API
+                  Nexis API
                 </div>
               </div>
             </div>
@@ -2663,7 +2663,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                       </div>
@@ -2728,7 +2728,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -2745,7 +2745,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -2785,7 +2785,7 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                           />
                         </div>
                       </div>
@@ -3593,7 +3593,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -3672,7 +3672,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
                 <div
                   class="c20 css-142zc9n"
                 >
-                  Uniswap Client
+                  Nexis Client
                 </div>
               </div>
             </div>
@@ -3705,7 +3705,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                       </div>
@@ -3770,7 +3770,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000003/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000003/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -3787,7 +3787,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -3827,7 +3827,7 @@ exports[`SwapLineItem.tsx exact output 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000003/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000003/logo.png"
                           />
                         </div>
                       </div>
@@ -4515,7 +4515,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                Some tokens take a fee when they are bought or sold, which is set by the token issuer. Uniswap does not receive any of these fees. 
+                Some tokens take a fee when they are bought or sold, which is set by the token issuer. Nexis does not receive any of these fees. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/18673568523789-What-is-a-token-fee-"
@@ -4688,7 +4688,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -4767,7 +4767,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
                 <div
                   class="c20 css-142zc9n"
                 >
-                  Uniswap API
+                  Nexis API
                 </div>
               </div>
             </div>
@@ -4800,7 +4800,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                       </div>
@@ -4865,7 +4865,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -4882,7 +4882,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -4922,7 +4922,7 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                           />
                         </div>
                       </div>
@@ -5610,7 +5610,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                Some tokens take a fee when they are bought or sold, which is set by the token issuer. Uniswap does not receive any of these fees. 
+                Some tokens take a fee when they are bought or sold, which is set by the token issuer. Nexis does not receive any of these fees. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/18673568523789-What-is-a-token-fee-"
@@ -5783,7 +5783,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
               <div
                 class="c11 css-obwv3p"
               >
-                This fee is applied on select token pairs to ensure the best experience with Uniswap. There is no fee associated with this swap. 
+                This fee is applied on select token pairs to ensure the best experience with Nexis. There is no fee associated with this swap. 
                 <a
                   class="c15"
                   href="https://support.uniswap.org/hc/en-us/articles/20131678274957"
@@ -5862,7 +5862,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
                 <div
                   class="c20 css-142zc9n"
                 >
-                  Uniswap API
+                  Nexis API
                 </div>
               </div>
             </div>
@@ -5895,7 +5895,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                           />
                         </div>
                       </div>
@@ -5960,7 +5960,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -5977,7 +5977,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
                                         >
                                           <img
                                             class="c27"
-                                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
+                                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000001/logo.png"
                                           />
                                         </div>
                                       </div>
@@ -6017,7 +6017,7 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
                         >
                           <img
                             class="c27"
-                            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
+                            src="https://raw.githubusercontent.com/Nexis/assets/master/blockchains/ethereum/assets/0x0000000000000000000000000000000000000002/logo.png"
                           />
                         </div>
                       </div>

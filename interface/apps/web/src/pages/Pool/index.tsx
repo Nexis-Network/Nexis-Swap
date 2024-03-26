@@ -242,16 +242,16 @@ export default function Pool() {
       link: '/pools/v2',
       external: false,
     },
-    {
-      content: (
-        <PoolMenuItem>
-          <Trans>Learn</Trans>
-          <BookOpen size={16} />
-        </PoolMenuItem>
-      ),
-      link: 'https://support.uniswap.org/hc/en-us/categories/8122334631437-Providing-Liquidity-',
-      external: true,
-    },
+    // {
+    //   content: (
+    //     <PoolMenuItem>
+    //       <Trans>Learn</Trans>
+    //       <BookOpen size={16} />
+    //     </PoolMenuItem>
+    //   ),
+    //   link: 'https://support.uniswap.org/hc/en-us/categories/8122334631437-Providing-Liquidity-',
+    //   external: true,
+    // },
   ]
 
   return (

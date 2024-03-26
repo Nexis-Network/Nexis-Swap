@@ -1,4 +1,4 @@
-// Copied from https://github.com/Uniswap/interface/blob/main/src/utils/parseENSAddress.test.ts
+// Copied from https://github.com/Nexis/interface/blob/main/src/utils/parseENSAddress.test.ts
 
 import { parseENSAddress } from './parseENSAddress'
 

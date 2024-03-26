@@ -1,6 +1,6 @@
 //
 //  MnemonicConfirmationView.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Thomas Thachil on 8/1/22.
 //

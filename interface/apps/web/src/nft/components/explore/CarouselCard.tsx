@@ -251,7 +251,7 @@ export const CarouselCard = ({ collection, onClick }: CarouselCardProps) => {
             <TableElement>
               <UniswapMagentaIcon width="20" height="20" />
               <FirstColumnTextWrapper>
-                <ThemedText.SubHeaderSmall color="userThemeColor">Uniswap</ThemedText.SubHeaderSmall>
+                <ThemedText.SubHeaderSmall color="userThemeColor">Nexis</ThemedText.SubHeaderSmall>
               </FirstColumnTextWrapper>
             </TableElement>
             <TableElement>

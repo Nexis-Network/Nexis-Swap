@@ -123,7 +123,7 @@
         "viewOnly": "View only wallets"
       },
       "remove": {
-        "check": "I backed up my recovery phrase and understand that Uniswap Labs can’t help me recover my wallets if I failed to do so.",
+        "check": "I backed up my recovery phrase and understand that Nexis Labs can’t help me recover my wallets if I failed to do so.",
         "viewOnly": "You can always add back view-only wallets by entering the wallet’s address."
       },
       "restore": {
@@ -157,7 +157,7 @@
     }
   },
   "common": {
-    "app": "Uniswap Wasllet",
+    "app": "Nexis Wasllet",
     "button": {
       "accept": "Accept",
       "back": "Back",
@@ -346,8 +346,8 @@
           "marketCap": "Market cap",
           "priceDecrease": "Price decrease (24H)",
           "priceIncrease": "Price increase (24H)",
-          "totalValueLocked": "Uniswap TVL",
-          "volume": "Uniswap volume (24H)"
+          "totalValueLocked": "Nexis TVL",
+          "volume": "Nexis volume (24H)"
         }
       },
       "top": {
@@ -384,7 +384,7 @@
         "error": "Wrong password. Try again",
         "reset": {
           "description": {
-            "default": "To reset your password, enter your wallet’s recovery phrase. Uniswap cannot help recover your password.",
+            "default": "To reset your password, enter your wallet’s recovery phrase. Nexis cannot help recover your password.",
             "inProgress": "Follow the instructions on the browser web page to reset your password"
           },
           "title": "Forgot password?"
@@ -448,7 +448,7 @@
       "confirm": "Update app",
       "recoveryPhrase": "View recovery phrase"
     },
-    "description": "The version of Uniswap Wallet you’re using is out of date and is missing critical upgrades. If you don’t update the app or you don’t have your recovery phrase written down, you won’t be able to access your assets.",
+    "description": "The version of Nexis Wallet you’re using is out of date and is missing critical upgrades. If you don’t update the app or you don’t have your recovery phrase written down, you won’t be able to access your assets.",
     "label": {
       "recoveryPhrase": "Recovery phrase"
     },
@@ -474,7 +474,7 @@
     },
     "extension": {
       "error": "Error loading accounts",
-      "pin": "Pin Uniswap Wallet to your browser toolbar by clicking on the <puzzleIcon />"
+      "pin": "Pin Nexis Wallet to your browser toolbar by clicking on the <puzzleIcon />"
     },
     "feed": {
       "empty": {
@@ -629,7 +629,7 @@
   },
   "notifications": {
     "scantastic": {
-      "subtitle": "Continue on Uniswap Extension",
+      "subtitle": "Continue on Nexis Extension",
       "title": "Success"
     }
   },
@@ -660,7 +660,7 @@
         "new": "Choose a backup method"
       },
       "view": {
-        "disclaimer": "I understand that if I lose my recovery phrase, Uniswap Labs cannot help me restore it",
+        "disclaimer": "I understand that if I lose my recovery phrase, Nexis Labs cannot help me restore it",
         "subtitle": {
           "write": "Read the following carefully before continuing"
         },
@@ -698,7 +698,7 @@
         }
       },
       "description": "Your wallet is ready! Start by funding your wallet by buying or transferring crypto to your wallet.",
-      "footer": "Learn how to use the Uniswap Wallet",
+      "footer": "Learn how to use the Nexis Wallet",
       "pin": "<text>Pin the extension to your browser window</text><container><text>by clicking on the </text><puzzleIcon /><text> icon, and then the pin</text></container>"
     },
     "editName": {
@@ -713,7 +713,7 @@
     "extension": {
       "connectMobile": {
         "button": "Import from your phone",
-        "title": "Have the Uniswap mobile app?"
+        "title": "Have the Nexis mobile app?"
       },
       "password": {
         "subtitle": "You’ll need this to unlock your wallet and access your recovery phrase",
@@ -772,7 +772,7 @@
     },
     "notification": {
       "permission": {
-        "message": "To receive notifications, turn on notifications for Uniswap Wallet in your device’s settings.",
+        "message": "To receive notifications, turn on notifications for Nexis Wallet in your device’s settings.",
         "title": "Notifications permission"
       },
       "subtitle": "Get notified when your transfers, swaps, and approvals complete.",
@@ -810,15 +810,15 @@
       }
     },
     "scan": {
-      "button": "Scan with Uniswap app",
+      "button": "Scan with Nexis app",
       "error": "Sorry, we are unable to load the QR code right now. Please try another onboarding method.",
       "otp": {
         "error": "The code you submitted is incorrect, or there was an error submitting. Please try again.",
         "failed": "Failed attempts: {{count}}",
-        "subtitle": "Check your Uniswap mobile app for the 6-character code",
+        "subtitle": "Check your Nexis mobile app for the 6-character code",
         "title": "Enter one-time code"
       },
-      "subtitle": "Scan the QR code with the Uniswap app to import your wallet",
+      "subtitle": "Scan the QR code with the Nexis app to import your wallet",
       "title": "Sync from your phone"
     },
     "security": {
@@ -922,7 +922,7 @@
     "title": "Scan a QR code",
     "wallet": {
       "networks": {
-        "description": "Uniswap Wallet supports tokens on Ethereum, Polygon, Arbitrum, Optimism, Base, and BNB Chain. Right now, we only support NFTs on Ethereum.",
+        "description": "Nexis Wallet supports tokens on Ethereum, Polygon, Arbitrum, Optimism, Base, and BNB Chain. Right now, we only support NFTs on Ethereum.",
         "title": "Supported Networks"
       },
       "title": "You can send tokens on all of our supported networks to this address."
@@ -931,7 +931,7 @@
   "scantastic": {
     "code": {
       "expired": "Expired",
-      "subtitle": "Enter this code in the Uniswap Extension. Your recovery phrase will be safely encrypted and transferred.",
+      "subtitle": "Enter this code in the Nexis Extension. Your recovery phrase will be safely encrypted and transferred.",
       "timeRemaining": {
         "shorthand": {
           "hours": "New code in {{hours}}h {{minutes}}m {{seconds}}s",
@@ -939,7 +939,7 @@
           "seconds": "New code in {{seconds}}s"
         }
       },
-      "title": "Uniswap one-time code"
+      "title": "Nexis one-time code"
     },
     "confirmation": {
       "button": {
@@ -949,14 +949,14 @@
         "browser": "Browser",
         "device": "Device"
       },
-      "subtitle": "Only continue if you are syncing with the Uniswap Extension on a trusted device.",
+      "subtitle": "Only continue if you are syncing with the Nexis Extension on a trusted device.",
       "title": "Is this your device?"
     },
     "error": {
       "encryption": "Failed to prepare seed phrase.",
       "noCode": "No OTP received. Please try again.",
       "timeout": {
-        "message": "Scan the QR code on the Uniswap Extension again to continue syncing your wallet.",
+        "message": "Scan the QR code on the Nexis Extension again to continue syncing your wallet.",
         "title": "Your connection timed out"
       }
     }
@@ -1010,7 +1010,7 @@
       "blocked": {
         "default": "This wallet is blocked",
         "modal": {
-          "message": "This address is blocked on Uniswap Wallet because it is associated with one or more blocked activities. If you believe this is an error, please email compliance@uniswap.org.",
+          "message": "This address is blocked on Nexis Wallet because it is associated with one or more blocked activities. If you believe this is an error, please email compliance@uniswap.org.",
           "title": "Blocked address"
         },
         "recipient": "Recipient wallet is blocked"
@@ -1045,7 +1045,7 @@
       "remove": {
         "button": "Remove recovery phrase",
         "confirm": {
-          "subtitle": "I understand that Uniswap Labs can’t help me recover my wallet if I failed to do so",
+          "subtitle": "I understand that Nexis Labs can’t help me recover my wallet if I failed to do so",
           "title": "I saved my recovery phrase"
         },
         "initial": {
@@ -1141,7 +1141,7 @@
             "message": "Because these wallets share a recovery phrase, it will also delete the backups for these wallets below",
             "title": "Are you sure?"
           },
-          "warning": "If you delete your {{cloudProviderName}} backup, you’ll only be able to recover your wallet with a manual backup of your recovery phrase. Uniswap Labs can’t recover your assets if you lose your recovery phrase."
+          "warning": "If you delete your {{cloudProviderName}} backup, you’ll only be able to recover your wallet with a manual backup of your recovery phrase. Nexis Labs can’t recover your assets if you lose your recovery phrase."
         },
         "error": {
           "message": {
@@ -1155,7 +1155,7 @@
           "title": "Back up recovery phrase to {{cloudProviderName}}?"
         },
         "password": {
-          "disclaimer": "Uniswap Labs does not store your password and can’t recover it, so it’s crucial you remember it.",
+          "disclaimer": "Nexis Labs does not store your password and can’t recover it, so it’s crucial you remember it.",
           "error": {
             "mismatch": "Passwords do not match",
             "weak": "Weak password"
@@ -1196,8 +1196,8 @@
         "auth": "Please authenticate",
         "off": {
           "message": {
-            "android": "Biometrics is currently turned off for Uniswap Wallet—you can turn it on in your system settings.",
-            "ios": "{{biometricsMethod}} is currently turned off for Uniswap Wallet—you can turn it on in your system settings."
+            "android": "Biometrics is currently turned off for Nexis Wallet—you can turn it on in your system settings.",
+            "ios": "{{biometricsMethod}} is currently turned off for Nexis Wallet—you can turn it on in your system settings."
           },
           "title": {
             "android": "Biometrics is turned off",
@@ -1224,8 +1224,8 @@
         },
         "warning": {
           "message": {
-            "android": "If you don’t turn on {{biometricsMethod}}, anyone who gains access to your device can open Uniswap Wallet and make transactions.",
-            "ios": "If you don’t turn on biometrics, anyone who gains access to your device can open Uniswap Wallet and make transactions."
+            "android": "If you don’t turn on {{biometricsMethod}}, anyone who gains access to your device can open Nexis Wallet and make transactions.",
+            "ios": "If you don’t turn on biometrics, anyone who gains access to your device can open Nexis Wallet and make transactions."
           },
           "title": "Are you sure?"
         }
@@ -1240,7 +1240,7 @@
         "button": {
           "navigate": "Go to settings"
         },
-        "description": "Uniswap defaults to your device‘s language settings. To change your preferred language, go to “Uniswap” in your device settings and tap on “Language”",
+        "description": "Nexis defaults to your device‘s language settings. To change your preferred language, go to “Nexis” in your device settings and tap on “Language”",
         "title": "Language"
       },
       "password": {
@@ -1248,7 +1248,7 @@
       },
       "privacy": {
         "analytics": {
-          "description": "We use anonymous usage data to enhance your experience across Uniswap Labs products. When disabled, we only track errors and essential usage.",
+          "description": "We use anonymous usage data to enhance your experience across Nexis Labs products. When disabled, we only track errors and essential usage.",
           "title": "Allow analytics"
         },
         "title": "Privacy"
@@ -1387,7 +1387,7 @@
     "warning": {
       "expectedFailure": "This transaction is expected to fail",
       "feeOnTransfer": {
-        "message": "Some tokens take a fee when they are bought or sold, which is set by the token issuer. Uniswap does not receive any share of these fees.",
+        "message": "Some tokens take a fee when they are bought or sold, which is set by the token issuer. Nexis does not receive any share of these fees.",
         "title": "Why is there an additional fee?"
       },
       "insufficientBalance": {
@@ -1407,7 +1407,7 @@
         "title": "Not enough liquidity"
       },
       "networkFee": {
-        "message": "This is the cost to process your transaction on the blockchain. Uniswap does not receive any share of these fees."
+        "message": "This is the cost to process your transaction on the blockchain. Nexis does not receive any share of these fees."
       },
       "offline": {
         "message": "You may have lost internet connection or the network may be down. Please check your internet connection and try again.",
@@ -1427,8 +1427,8 @@
       },
       "uniswapFee": {
         "message": {
-          "default": "Fees are applied on a few select tokens to ensure the best experience with Uniswap. There is no fee associated with this swap.",
-          "included": "Fees are applied on a few select tokens to ensure the best experience with Uniswap, and have already been factored into this quote."
+          "default": "Fees are applied on a few select tokens to ensure the best experience with Nexis. There is no fee associated with this swap.",
+          "included": "Fees are applied on a few select tokens to ensure the best experience with Nexis, and have already been factored into this quote."
         },
         "title": "Swap fee"
       },
@@ -1468,7 +1468,7 @@
     "safetyLevel": {
       "blocked": {
         "header": "Not available",
-        "message": "You can’t trade this token using the Uniswap Wallet."
+        "message": "You can’t trade this token using the Nexis Wallet."
       },
       "medium": {
         "header": "Caution",
@@ -1476,7 +1476,7 @@
       },
       "strong": {
         "header": "Warning",
-        "message": "This token isn’t traded on leading U.S. centralized exchanges or frequently swapped on Uniswap. Always conduct your own research before trading."
+        "message": "This token isn’t traded on leading U.S. centralized exchanges or frequently swapped on Nexis. Always conduct your own research before trading."
       }
     },
     "selector": {
@@ -1894,7 +1894,7 @@
     },
     "error": {
       "connection": {
-        "message": "Uniswap Wallet currently supports {{chainNames}}. Please only use \"{{dappName}}\" on these chains",
+        "message": "Nexis Wallet currently supports {{chainNames}}. Please only use \"{{dappName}}\" on these chains",
         "title": "Connection Error"
       },
       "general": {

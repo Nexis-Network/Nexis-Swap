@@ -92,7 +92,7 @@ const unsafeReturnValue: CallState[] = [
     valid: true,
     loading: false,
     syncing: false,
-    result: ['Uniswap-LP.org'],
+    result: ['Nexis-LP.org'],
     error: false,
   },
   {

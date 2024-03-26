@@ -7,7 +7,7 @@
 
 import XCTest
 import Argon2Swift
-@testable import Uniswap
+@testable import Nexis
 
 class EncryptionHelperTests: XCTestCase {
   

@@ -1,6 +1,6 @@
 //
 //  EncryptionHelper.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Spencer Yen on 7/26/22.
 //

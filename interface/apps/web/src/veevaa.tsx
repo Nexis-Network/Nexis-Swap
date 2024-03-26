@@ -62,7 +62,7 @@ export const computePairAddressVeevaa = ({
         PairVeevaa.getAddress(tokenAmounts[0].currency, tokenAmounts[1].currency),
         18,
         'UNI-V2',
-        'Uniswap V2'
+        'Nexis V2'
       )
       this.tokenAmounts = tokenAmounts as [CurrencyAmount<Token>, CurrencyAmount<Token>]
     }

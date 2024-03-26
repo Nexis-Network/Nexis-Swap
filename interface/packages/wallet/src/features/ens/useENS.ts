@@ -1,4 +1,4 @@
-// Copied from https://github.com/Uniswap/interface/blob/main/src/hooks/useENS.ts
+// Copied from https://github.com/Nexis/interface/blob/main/src/hooks/useENS.ts
 
 import { useDebounce } from 'utilities/src/time/timing'
 import { ChainId } from 'wallet/src/constants/chains'

@@ -6,7 +6,7 @@ const preset = require('../../config/jest-presets/jest/jest-preset')
 module.exports = {
   ...preset,
   preset: 'jest-expo',
-  displayName: 'Uniswap Package',
+  displayName: 'Nexis Package',
   collectCoverageFrom: [
     'src/**/*.{js,ts,tsx}',
     '!src/**/*.stories.**',

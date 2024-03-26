@@ -10,7 +10,7 @@ Note. We migrated to Apollo client in November. This needs to be updated with in
 ## Principles
 
 Recommended readings:
-* [Why React at Uniswap Labs?](https://www.notion.so/uniswaplabs/GraphQL-Client-949780e7d105405c87cdd0147bd2f84b)
+* [Why React at Nexis Labs?](https://www.notion.so/uniswaplabs/GraphQL-Client-949780e7d105405c87cdd0147bd2f84b)
 * [Thinking in GraphQL](https://relay.dev/docs/principles-and-architecture/thinking-in-graphql/)
 * [Thinking in Relay](https://relay.dev/docs/principles-and-architecture/thinking-in-relay/)
 
@@ -22,7 +22,7 @@ Recommended readings:
 
 ## Schema Overview
 
-GraphQL schema can be fetched directly from our Uniswap API via `yarn relay:schema` (written to `src/data/schema.graphql`).
+GraphQL schema can be fetched directly from our Nexis API via `yarn relay:schema` (written to `src/data/schema.graphql`).
 
 `Query` type defines query entrypoints:
 

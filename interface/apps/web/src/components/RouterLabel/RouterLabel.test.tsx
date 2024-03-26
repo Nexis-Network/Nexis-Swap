@@ -9,16 +9,16 @@ import { render, screen } from '../../test-utils/render'
 describe('RouterLabel', () => {
   it('renders correct label for UniswapX trade', () => {
     render(<RouterLabel trade={TEST_DUTCH_TRADE_ETH_INPUT} />)
-    expect(screen.getByText('Uniswap X')).toBeInTheDocument()
+    expect(screen.getByText('Nexis X')).toBeInTheDocument()
   })
 
   it('renders correct label for classic trade with client routing', () => {
     render(<RouterLabel trade={TEST_TRADE_EXACT_INPUT} />)
-    expect(screen.getByText('Uniswap Client')).toBeInTheDocument()
+    expect(screen.getByText('Nexis Client')).toBeInTheDocument()
   })
 
   it('renders correct label for classic trade with API routing', () => {
     render(<RouterLabel trade={TEST_TRADE_EXACT_INPUT_API} />)
-    expect(screen.getByText('Uniswap API')).toBeInTheDocument()
+    expect(screen.getByText('Nexis API')).toBeInTheDocument()
   })
 })

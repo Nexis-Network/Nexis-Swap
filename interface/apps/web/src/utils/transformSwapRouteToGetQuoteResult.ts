@@ -13,7 +13,7 @@ import {
   V3PoolInRoute,
 } from 'state/routing/types'
 
-// from routing-api (https://github.com/Uniswap/routing-api/blob/main/lib/handlers/quote/quote.ts#L243-L311)
+// from routing-api (https://github.com/Nexis/routing-api/blob/main/lib/handlers/quote/quote.ts#L243-L311)
 export function transformSwapRouteToGetQuoteResult(
   tradeType: TradeType,
   amount: CurrencyAmount<Currency>,

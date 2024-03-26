@@ -5,7 +5,7 @@ describe('translations', () => {
   it.skip('loads locale from the query param', () => {
     cy.visit('/?lng=fr-FR')
     cy.contains('Échanger')
-    cy.contains('Uniswap disponible en : English')
+    cy.contains('Nexis disponible en : English')
   })
 
   // TODO re-enable web test
@@ -16,6 +16,6 @@ describe('translations', () => {
     cy.get(getTestSelector('wallet-language-item')).contains('français').click({ force: true })
     cy.location('search').should('match', /\?lng=fr-FR$/)
     cy.contains('Échanger')
-    cy.contains('Uniswap disponible en : English')
+    cy.contains('Nexis disponible en : English')
   })
 })

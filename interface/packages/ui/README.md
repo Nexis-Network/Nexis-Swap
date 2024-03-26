@@ -1,4 +1,4 @@
-# Uniswap UI
+# Nexis UI
 
 This package holds a component library and themes that can be used across both mobile and web contexts. Below is instructions for both use and development of this package.
 

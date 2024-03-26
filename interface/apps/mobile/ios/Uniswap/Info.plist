@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Uniswap</string>
+	<string>Nexis</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconName</key>
@@ -97,12 +97,12 @@
 	<string>$(PRODUCT_NAME) Wallet does not require access to the microphone.</string>
 	<key>NSUbiquitousContainers</key>
 	<dict>
-		<key>iCloud.Uniswap</key>
+		<key>iCloud.Nexis</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<false/>
 			<key>NSUbiquitousContainerName</key>
-			<string>Uniswap</string>
+			<string>Nexis</string>
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>Any</string>
 		</dict>

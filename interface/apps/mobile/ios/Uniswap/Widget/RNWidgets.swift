@@ -1,6 +1,6 @@
 //
 //  RNWidgets.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Eric Huang on 8/2/23.
 //

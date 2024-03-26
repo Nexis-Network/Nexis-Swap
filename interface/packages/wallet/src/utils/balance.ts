@@ -29,7 +29,7 @@ export const MIN_BNB_FOR_GAS: JSBI = MIN_ARBITRUM_FOR_GAS
 
 /**
  * Given some token amount, return the max that can be spent of it
- * https://github.com/Uniswap/interface/blob/main/src/utils/maxAmountSpend.ts
+ * https://github.com/Nexis/interface/blob/main/src/utils/maxAmountSpend.ts
  * @param currencyAmount to return max of
  */
 export function maxAmountSpend(

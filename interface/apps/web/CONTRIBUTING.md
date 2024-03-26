@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to the Uniswap interface! 🦄
+Thank you for your interest in contributing to the Nexis Interface! 🦄
 
 # Development
 
@@ -106,7 +106,7 @@ The following points should help guide your development:
 Releases are cut automatically from the `main` branch Monday-Thursday in the morning according to the [release workflow](./.github/workflows/release.yaml).
 
 Fix pull requests should be merged whenever ready and tested.
-If a fix is urgently needed in production, releases can be manually triggered on [GitHub](https://github.com/Uniswap/uniswap-interface/actions/workflows/release.yaml)
+If a fix is urgently needed in production, releases can be manually triggered on [GitHub](https://github.com/Nexis/uniswap-interface/actions/workflows/release.yaml)
 after the fix is merged into `main`.
 
 Features should not be merged into `main` until they are ready for users.
@@ -118,11 +118,11 @@ the appropriate UX reviewers (PMs or designers).
 ## Finding a first issue
 
 Start with issues with the label
-[`good first issue`](https://github.com/Uniswap/uniswap-interface/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+[`good first issue`](https://github.com/Nexis/uniswap-interface/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 # Translations
 
-Uniswap uses [Crowdin](https://crowdin.com/project/uniswap-interface) for managing translations.
+Nexis uses [Crowdin](https://crowdin.com/project/uniswap-interface) for managing translations.
 [This workflow](./.github/workflows/crowdin.yaml) uploads new strings for translation to the Crowdin project whenever code using the [lingui translation macros](https://lingui.js.org/ref/macro.html) is merged into `main`.
 
 Every hour, translations are synced back down from Crowdin to the repository in [this other workflow](./.github/workflows/crowdin-sync.yaml).

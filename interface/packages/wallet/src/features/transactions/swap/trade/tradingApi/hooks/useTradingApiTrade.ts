@@ -26,7 +26,7 @@ import { useActiveAccountAddressWithThrow } from 'wallet/src/features/wallet/hoo
 import { areCurrencyIdsEqual, currencyId } from 'wallet/src/utils/currencyId'
 
 // error strings hardcoded in @uniswap/unified-routing-api
-// https://github.com/Uniswap/unified-routing-api/blob/020ea371a00d4cc25ce9f9906479b00a43c65f2c/lib/util/errors.ts#L4
+// https://github.com/Nexis/unified-routing-api/blob/020ea371a00d4cc25ce9f9906479b00a43c65f2c/lib/util/errors.ts#L4
 export const SWAP_QUOTE_ERROR = 'QUOTE_ERROR'
 
 // client side error code for when the api returns an empty response

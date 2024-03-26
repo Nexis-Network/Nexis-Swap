@@ -31,7 +31,7 @@ function mergeConnections(connections: Connection[], eip6963Connections: Connect
   if (!hasEip6963Connections) return displayedConnections
 
   const allConnections = [...displayedConnections.filter((c) => c.type !== ConnectionType.INJECTED)]
-  // By default, injected options should appear second in the list (below Uniswap wallet)
+  // By default, injected options should appear second in the list (below Nexis wallet)
   allConnections.splice(1, 0, ...eip6963Connections)
 
   return allConnections

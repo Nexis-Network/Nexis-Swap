@@ -1,4 +1,4 @@
-// Copied from https://github.com/Uniswap/interface/blob/main/src/utils/uriToHttp.test.ts
+// Copied from https://github.com/Nexis/interface/blob/main/src/utils/uriToHttp.test.ts
 
 import { isSVGUri, uriToHttp } from './urls'
 

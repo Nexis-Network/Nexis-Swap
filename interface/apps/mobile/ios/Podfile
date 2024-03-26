@@ -9,7 +9,7 @@ prepare_react_native_project!
 $FirebaseSDKVersion = '10.15.0'
 $RNFirebaseAnalyticsWithoutAdIdSupport=true
 
-target 'Uniswap' do
+target 'Nexis' do
   use_expo_modules!
   post_integrate do |installer|
     begin

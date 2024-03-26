@@ -189,7 +189,7 @@ const [web3WCV2UniwalletConnect, web3WCV2UniwalletConnectHooks] = initializeConn
 const isNonSupportedDevice = !isWebIOS && !isWebAndroid && isTouchable
 
 export const uniwalletWCV2ConnectConnection: Connection = {
-  getProviderInfo: () => ({ name: 'Uniswap Wallet', icon: UNIWALLET_ICON }),
+  getProviderInfo: () => ({ name: 'Nexis Wallet', icon: UNIWALLET_ICON }),
   connector: web3WCV2UniwalletConnect,
   hooks: web3WCV2UniwalletConnectHooks,
   type: ConnectionType.UNISWAP_WALLET_V2,
@@ -202,7 +202,7 @@ const [web3CoinbaseWallet, web3CoinbaseWalletHooks] = initializeConnector<Coinba
       actions,
       options: {
         url: APP_RPC_URLS[ChainId.MAINNET][0],
-        appName: 'Uniswap',
+        appName: 'Nexis',
         appLogoUrl: UNISWAP_LOGO,
         reloadOnDisconnect: false,
       },

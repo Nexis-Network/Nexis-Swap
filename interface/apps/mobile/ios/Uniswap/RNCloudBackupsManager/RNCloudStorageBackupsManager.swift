@@ -1,6 +1,6 @@
 //
 //  RNCloudStorageBackupsManager.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Spencer Yen on 7/13/22.
 //
@@ -76,7 +76,7 @@ class RNCloudStorageBackupsManager: RCTEventEmitter {
      return reject(RNEthersRSError.retrieveMnemonicError.rawValue, "Failed to retrieve mnemonic", RNEthersRSError.retrieveMnemonicError)
    }
    
-   // Access Uniswap iCloud Documents container
+   // Access Nexis iCloud Documents container
    guard let containerUrl = FileManager.default.url(forUbiquityContainerIdentifier: nil) else {
      return reject(ICloudBackupError.iCloudError.rawValue, "Failed to find iCloud container", ICloudBackupError.iCloudError)
    }
@@ -121,7 +121,7 @@ class RNCloudStorageBackupsManager: RCTEventEmitter {
  @objc(restoreMnemonicFromCloudStorage:password:resolve:reject:)
  func restoreMnemonicFromCloudStorage(mnemonicId: String, password: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock
  ) {
-   // Access Uniswap iCloud Documents container
+   // Access Nexis iCloud Documents container
    guard let containerUrl = FileManager.default.url(forUbiquityContainerIdentifier: nil) else {
      return reject(ICloudBackupError.iCloudError.rawValue, "Failed to find iCloud container", ICloudBackupError.iCloudError)
    }
@@ -165,7 +165,7 @@ class RNCloudStorageBackupsManager: RCTEventEmitter {
   @objc(deleteCloudStorageMnemonicBackup:resolve:reject:)
   func deleteCloudStorageMnemonicBackup(mnemonicId: String, resolve: @escaping RCTPromiseResolveBlock,
                                   reject: @escaping RCTPromiseRejectBlock) {
-    // Access Uniswap iCloud Documents container
+    // Access Nexis iCloud Documents container
     guard let containerUrl = FileManager.default.url(forUbiquityContainerIdentifier: nil) else {
       return reject(ICloudBackupError.iCloudContainerError.rawValue, "Failed to find iCloud container", ICloudBackupError.iCloudContainerError)
     }
@@ -198,7 +198,7 @@ class RNCloudStorageBackupsManager: RCTEventEmitter {
    */
   @objc
   func startFetchingCloudStorageBackups() {
-    // Fetch all JSON files in Uniswap iCloud container
+    // Fetch all JSON files in Nexis iCloud container
     backupsQuery.searchScopes = [NSMetadataQueryUbiquitousDataScope]
     backupsQuery.predicate =
     NSPredicate(format: "%K LIKE %@", NSMetadataItemFSNameKey, "*.json")

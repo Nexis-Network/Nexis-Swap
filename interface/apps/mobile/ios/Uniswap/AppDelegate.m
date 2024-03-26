@@ -3,7 +3,7 @@
 #import "RNFBAppCheckModule.h"
 #import <Firebase.h>
 
-#import "Uniswap-Swift.h"
+#import "Nexis-Swift.h"
 
 #import <React/RCTBundleURLProvider.h>
 #import <ReactNativePerformance/ReactNativePerformance.h>
@@ -35,7 +35,7 @@
     }
   }
   
-  self.moduleName = @"Uniswap";
+  self.moduleName = @"Nexis";
   self.initialProps = @{};
   
   [self.window makeKeyAndVisible];

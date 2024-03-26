@@ -64,14 +64,14 @@ const ConnectWalletButton = styled(ButtonPrimary)`
 
 function getProfilePageTitle(account: string | undefined, ENSName: string | null | undefined): string {
   if (!account) {
-    return t`NFT collection on Uniswap`
+    return t`NFT collection on Nexis`
   }
 
   if (!ENSName) {
-    return t`NFT collection on Uniswap - ${shortenAddress(account)}`
+    return t`NFT collection on Nexis - ${shortenAddress(account)}`
   }
 
-  return t`${ENSName}'s NFT collection on Uniswap`
+  return t`${ENSName}'s NFT collection on Nexis`
 }
 
 export default function Profile() {

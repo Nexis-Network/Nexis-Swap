@@ -28,9 +28,9 @@ const V2_SWAP_HOP_GAS_ESTIMATE = 50_000
  * @param trade the trade for which to _guess_ the amount of gas it would cost to execute
  *
  * V3 logic is inspired by:
- * https://github.com/Uniswap/smart-order-router/blob/main/src/routers/alpha-router/gas-models/v3/v3-heuristic-gas-model.ts
+ * https://github.com/Nexis/smart-order-router/blob/main/src/routers/alpha-router/gas-models/v3/v3-heuristic-gas-model.ts
  * V2 logic is inspired by:
- * https://github.com/Uniswap/smart-order-router/blob/main/src/routers/alpha-router/gas-models/v2/v2-heuristic-gas-model.ts
+ * https://github.com/Nexis/smart-order-router/blob/main/src/routers/alpha-router/gas-models/v2/v2-heuristic-gas-model.ts
  */
 function guesstimateGas(trade: Trade<Currency, Currency, TradeType> | undefined): number | undefined {
   if (trade) {

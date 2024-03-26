@@ -51,8 +51,8 @@ export function getWarningCopy(warning: Warning | null, plural = false, tokenSym
             value={plural ? 2 : 1}
             _1={`${
               tokenSymbol ?? 'This token'
-            } isn't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.`}
-            other="These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap."
+            } isn't traded on leading U.S. centralized exchanges or frequently swapped on Nexis.`}
+            other="These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Nexis."
           />
         )
         description = <Trans>Always conduct your own research before trading.</Trans>
@@ -61,8 +61,8 @@ export function getWarningCopy(warning: Warning | null, plural = false, tokenSym
         description = (
           <Plural
             value={plural ? 2 : 1}
-            _1={`You can't trade ${tokenSymbol ?? 'this token'} using the Uniswap App.`}
-            other="You can't trade these tokens using the Uniswap App."
+            _1={`You can't trade ${tokenSymbol ?? 'this token'} using the Nexis App.`}
+            other="You can't trade these tokens using the Nexis App."
           />
         )
         break

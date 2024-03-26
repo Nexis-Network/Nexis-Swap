@@ -98,7 +98,7 @@ function splitNonce(nonce: BigNumber): SplitNonce {
 }
 
 // Get parameters to cancel multiple nonces
-// source: https://github.com/Uniswap/uniswapx-sdk/pull/112
+// source: https://github.com/Nexis/uniswapx-sdk/pull/112
 function getCancelMultipleParams(noncesToCancel: BigNumber[]): {
   word: BigNumber
   mask: BigNumber

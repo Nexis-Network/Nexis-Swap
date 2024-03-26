@@ -1,4 +1,4 @@
-// adapted from https://github.com/Uniswap/interface/src/constants/tokens.ts
+// adapted from https://github.com/Nexis/interface/src/constants/tokens.ts
 import { Currency, NativeCurrency as NativeCurrencyClass, Token } from '@uniswap/sdk-core'
 import { getNativeAddress } from 'wallet/src/constants/addresses'
 import { CHAIN_INFO, ChainId } from 'wallet/src/constants/chains'

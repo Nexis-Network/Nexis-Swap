@@ -1,6 +1,6 @@
 //
 //  PasteIcon.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Gary Ye on 9/19/23.
 //

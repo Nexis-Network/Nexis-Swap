@@ -19,4 +19,4 @@ If an error does occur, check the errors via building in XCode for more detailed
 To add new graphql queries or fragments to Swift:
 
 1. Ensure the file is listed in `apps/mobile/ios/apollo-codegen-config.json`'s `"operationSearchPaths"` and `"schemaSearchPaths"`
-2. Add the needed generated files to the XCode project. To add new files, right-click the `WidgetsCore` folder in XCode, and select `add files to "Uniswap"...`. Then select the fragments, operations, and schema folder and keep create groups checked. Then click add.
+2. Add the needed generated files to the XCode project. To add new files, right-click the `WidgetsCore` folder in XCode, and select `add files to "Nexis"...`. Then select the fragments, operations, and schema folder and keep create groups checked. Then click add.

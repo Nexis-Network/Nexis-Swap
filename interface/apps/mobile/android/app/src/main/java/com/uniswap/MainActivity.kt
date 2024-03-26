@@ -19,7 +19,7 @@ class MainActivity : ReactActivity() {
    * rendering of the component.
    */
   override fun getMainComponentName(): String {
-    return "Uniswap"
+    return "Nexis"
   }
 
   // Required for react-navigation to work on Android

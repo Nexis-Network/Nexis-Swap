@@ -1,6 +1,6 @@
 //
 //  SeedPhraseInputManager.swift
-//  Uniswap
+//  Nexis
 //
 //  Created by Gary Ye on 9/15/23.
 //

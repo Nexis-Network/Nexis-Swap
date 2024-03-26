@@ -88,7 +88,7 @@ export function useUniversalRouterSwapCallback(
             from: account,
             to: UNIVERSAL_ROUTER_ADDRESS(chainId),
             data,
-            // TODO(https://github.com/Uniswap/universal-router-sdk/issues/113): universal-router-sdk returns a non-hexlified value.
+            // TODO(https://github.com/Nexis/universal-router-sdk/issues/113): universal-router-sdk returns a non-hexlified value.
             ...(value && !isZero(value) ? { value: toHex(value) } : {}),
           }
 

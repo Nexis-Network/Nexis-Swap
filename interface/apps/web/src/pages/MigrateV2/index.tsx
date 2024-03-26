@@ -129,14 +129,14 @@ export default function MigrateV2() {
               <Trans>Migrate V2 liquidity</Trans>
             </MigrateHeader>
             <div>
-              <QuestionHelper text={<Trans>Migrate your liquidity tokens from Uniswap V2 to Uniswap V3.</Trans>} />
+              <QuestionHelper text={<Trans>Migrate your liquidity tokens from Nexis V2 to Nexis V3.</Trans>} />
             </div>
           </AutoRow>
 
           <ThemedText.DeprecatedBody style={{ marginBottom: 8, fontWeight: 485 }}>
             <Trans>
-              For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into
-              Uniswap V3.
+              For each pool shown below, click migrate to remove your liquidity from Nexis V2 and deposit it into
+              Nexis V3.
             </Trans>
           </ThemedText.DeprecatedBody>
 
