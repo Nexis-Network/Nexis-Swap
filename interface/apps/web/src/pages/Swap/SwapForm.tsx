@@ -367,6 +367,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
   const tokenAContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[0]=="NZT"?"0x1f829609216366fe5bb6b98e68441ed6ebbea1a3":(trade as any).pair[0]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
   const tokenBContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[1]=="NZT"?"0x1f829609216366fe5bb6b98e68441ed6ebbea1a3":(trade as any).pair[1]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
 
+  const {account:acc} = useWeb3React();
 
   const handleSwap = useCallback(() => {
     
@@ -403,7 +404,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
       getDeadline().then((deadline)=>{
         tokenAContract?.approve(router?.address!,BigNumber.from("10000000000000000000000000000000000")).then((_hashTx1)=>{
           tokenBContract?.approve(router?.address!,BigNumber.from("10000000000000000000000000000000000")).then((_hashTx2)=>{
-            router?.swapTokensForExactTokens(trade?.outputAmount.quotient.toString(),trade?.inputAmount!.quotient.toString(),tradePair,"0x5e5d5b3f81CD11C080B8E9c46c61234238B4c1D9","1805864834").then((res:any)=>{
+            router?.swapTokensForExactTokens(trade?.outputAmount.quotient.toString(),trade?.inputAmount!.quotient.toString(),tradePair,acc,"1805864834").then((res:any)=>{
               window.location.href="https://evm-testnet.nexscan.io/tx/"+res.hash
             }).catch((err:any)=>console.log("asdf err===",err))
           })
