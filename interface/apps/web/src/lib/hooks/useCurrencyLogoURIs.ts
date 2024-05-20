@@ -11,7 +11,7 @@ import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 import NexisLogo from '../../assets/images/nexis.png'
 import { NATIVE_CHAIN_ID, isCelo, nativeOnChain } from '../../constants/tokens'
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec' | 'base' | 'nexis'
+type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec' | 'base' | 'nexis'|'zeta'
 
 export function chainIdToNetworkName(networkId: ChainId): Network {
   switch (networkId) {
@@ -33,6 +33,8 @@ export function chainIdToNetworkName(networkId: ChainId): Network {
       return 'base'
     case ChainId.NEXIS:
       return 'nexis'
+    case ChainId.ZETA:
+      return 'zeta'
     default:
       return 'ethereum'
   }
@@ -51,6 +53,8 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
     case ChainId.AVALANCHE:
       return AvaxLogo
     case ChainId.NEXIS:
+        return NexisLogo
+    case ChainId.ZETA:
         return NexisLogo
     default:
       return EthereumLogo

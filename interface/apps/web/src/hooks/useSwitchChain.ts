@@ -53,6 +53,7 @@ export function useSwitchChain() {
               // Because this is async, react-router-dom's useSearchParam's bugs out, and would cause an add'l navigation.
               // Instead, we modify the window's history directly to append the SearchParams.
               try {
+     
                 const url = new URL(window.location.href)
                 url.searchParams.set('chain', CHAIN_IDS_TO_NAMES[chainId])
                 window.history.replaceState(window.history.state, '', url)

@@ -29,19 +29,28 @@ export const BASIS_POINTS = JSBI.BigInt(10000)
 export const computePairAddressVeevaa = ({
     factoryAddress,
     tokenA,
-    tokenB
+    tokenB,chainId
   }: {
     factoryAddress: string
     tokenA: Token
     tokenB: Token
+    chainId: Number
   }): string => {
     const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA] // does safety checks
     console.log(token0.address, token1.address)
-    return getCreate2Address(
-      factoryAddress,
-      keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
-      "0xeaa641206730108a5d03240c05597d08a25dff704ff8d9ed22f55c0229a29695"
-    )
+    if(chainId==7001){
+      return getCreate2Address(
+        factoryAddress,
+        keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
+        "0x556ec08c7228cf45fbb748363d84fabf0b61ae4592f850bc811285676871a247"
+      )
+    }else{
+      return getCreate2Address(
+        factoryAddress,
+        keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
+        INIT_CODE_HASH
+      )
+    }
   }
 
   export class PairVeevaa {
@@ -49,8 +58,8 @@ export const computePairAddressVeevaa = ({
     private readonly tokenAmounts: [CurrencyAmount<Token>, CurrencyAmount<Token>]
   
     public static getAddress(tokenA: Token, tokenB: Token): string {
-      const factoryAddress = V2_FACTORY_ADDRESSES[2370];
-      return computePairAddressVeevaa({ factoryAddress, tokenA, tokenB })
+      const factoryAddress =V2_FACTORY_ADDRESSES[tokenA.chainId];
+      return computePairAddressVeevaa({ factoryAddress, tokenA, tokenB,chainId:tokenA.chainId })
     }
   
     public constructor(currencyAmountA: CurrencyAmount<Token>, tokenAmountB: CurrencyAmount<Token>) {

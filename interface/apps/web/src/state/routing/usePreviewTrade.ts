@@ -88,7 +88,7 @@ export function usePreviewTrade(
 
   const results = useMultipleContractSingleData([
     tkA!=undefined && tkB!=undefined?
-    computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn!.chainId], tokenA:tkA, tokenB:tkB }):""
+    computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn!.chainId], tokenA:tkA, tokenB:tkB ,chainId:tkA.chainId}):""
   ], PAIR_INTERFACE, 'getReserves')
 
   const queryArgs = useQuickRouteArguments({
@@ -104,7 +104,7 @@ export function usePreviewTrade(
 
   const { isError, data: tradeResult, error, currentData } = useGetQuickRouteQueryState(queryArgs)
   let raeCustom:any=undefined;
-  if(currencyIn?.chainId==2370 && currencyIn!=undefined && currencyOut!=undefined){
+  if((currencyIn?.chainId==2370 ||currencyIn?.chainId==7001 ) && currencyIn!=undefined && currencyOut!=undefined){
     let _tokenA = {
       chainId:currencyIn.chainId,
       address:currencyAddressForSwapQuote(currencyIn!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyIn!),
@@ -117,7 +117,7 @@ export function usePreviewTrade(
     }
     const tokenA = new Token(_tokenA.chainId,_tokenA.address,_tokenA.decimals);
     const tokenB = new Token(_tokenB.chainId,_tokenB.address,_tokenB.decimals);
-    const poolAddress = computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn.chainId], tokenA, tokenB })
+    const poolAddress = computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[currencyIn.chainId], tokenA, tokenB ,chainId:tokenA.chainId})
     // const results:any=[{result:undefined}]
 
     const { result: reserves } = results[0];

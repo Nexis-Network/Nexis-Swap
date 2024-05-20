@@ -32,7 +32,7 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
           tokenA.chainId === tokenB.chainId &&
           !tokenA.equals(tokenB) &&
           V2_FACTORY_ADDRESSES[tokenA.chainId]
-          ? tokenA.chainId==2370?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }) : computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB })
+          ? tokenA.chainId==2370||tokenA.chainId==7001?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB ,chainId:tokenA.chainId}) : computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB })
           : undefined
       }),
     [tokens]
@@ -55,7 +55,7 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
       const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
       let pair;
       try {
-        pair = tokenA.chainId==2370? new PairVeevaa(
+        pair = tokenA.chainId==2370||tokenA.chainId==7001? new PairVeevaa(
           CurrencyAmount.fromRawAmount(token0, reserve0.toString()),
           CurrencyAmount.fromRawAmount(token1, reserve1.toString())
         ): new Pair(

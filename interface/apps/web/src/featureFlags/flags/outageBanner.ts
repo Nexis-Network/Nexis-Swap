@@ -49,5 +49,6 @@ export function useOutageBanners(): Record<ChainId, boolean> {
     [ChainId.BASE_GOERLI]: false,
     [ChainId.BASE]: false,
     [ChainId.NEXIS]: false,
+    [ChainId.ZETA]: false,
   }
 }

@@ -267,8 +267,8 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #2892D7;
-  stroke: #2892D7;
+  color: #3072f8;
+  stroke: #3072f8;
   font-weight: 500;
 }
 
@@ -388,7 +388,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
 
 .c51 {
   background-color: #FFEFFF;
-  color: #2892D7;
+  color: #3072f8;
   font-size: 20px;
   font-weight: 535;
 }
@@ -883,7 +883,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
 }
 
 .c59 {
-  color: #2892D7;
+  color: #3072f8;
   font-weight: 535;
 }
 
@@ -950,7 +950,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
   border-radius: 900px;
   width: 50%;
   gap: 8px;
-  color: #2892D7;
+  color: #3072f8;
   background-color: #FC72FF1f;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -986,7 +986,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
   border-radius: 900px;
   width: 50%;
   gap: 8px;
-  color: #2892D7;
+  color: #3072f8;
   background-color: #FC72FF1f;
   -webkit-box-pack: center;
   -webkit-justify-content: center;

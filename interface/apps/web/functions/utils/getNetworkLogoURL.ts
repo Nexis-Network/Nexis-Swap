@@ -12,6 +12,8 @@ export default function getNetworkLogoUrl(network: string, origin: string) {
       return origin + '/images/logos/Celo_Logo.png'
     case Chain.Nexis:
       return origin + '/images/logos/Celo_Logo.png'
+    case Chain.Zeta:
+      return origin + '/images/logos/Celo_Logo.png'
     default:
       return ''
   }

@@ -211,6 +211,13 @@ export const WNZT_NEXIS = new Token(
   'WNZT',
   'Wrapped NZT'
 )
+export const WNZT_ZETA = new Token(
+  ChainId.ZETA,
+  '0x17F24D3b8Bc1150553b54Da30B4d993AcB889212',
+  18,
+  'WZETA',
+  'Wrapped ZETA'
+)
 export const CEUR_CELO_ALFAJORES = new Token(
   ChainId.CELO_ALFAJORES,
   '0x10c892A6EC43a53E45D0B916B4b7D383B1b78C0F',
@@ -343,6 +350,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [ChainId.BNB]: new Token(ChainId.BNB, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
   [ChainId.NEXIS]: new Token(ChainId.NEXIS, '0x1f829609216366fe5bb6b98e68441ed6ebbea1a3', 18, 'WNZT', 'Wrapped NZT'),
+  [ChainId.ZETA]: new Token(ChainId.ZETA, '0x17F24D3b8Bc1150553b54Da30B4d993AcB889212', 18, 'WZETA', 'Wrapped ZETA'),
   [ChainId.AVALANCHE]: new Token(
     ChainId.AVALANCHE,
     '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
@@ -414,8 +422,11 @@ class BscNativeCurrency extends NativeCurrency {
 export function isAvalanche(chainId: number): chainId is ChainId.AVALANCHE {
   return chainId === ChainId.AVALANCHE
 }
-export function isNexis(chainId: number): chainId is ChainId.AVALANCHE {
+export function isNexis(chainId: number): chainId is ChainId.NEXIS {
   return chainId === ChainId.NEXIS
+}
+export function isZeta(chainId: number): chainId is ChainId.ZETA {
+  return chainId === ChainId.ZETA
 }
 
 class AvaxNativeCurrency extends NativeCurrency {
@@ -451,6 +462,24 @@ class NexisNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isNexis(chainId)) throw new Error('Not Nexis')
     super(chainId, 18, 'NZT', 'NZT')
+  }
+}
+
+class ZetaNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isZeta(this.chainId)) throw new Error('Not Zeta')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isZeta(chainId)) throw new Error('Not Zeta')
+    super(chainId, 18, 'ZETA', 'ZETA')
   }
 }
 
@@ -490,6 +519,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new AvaxNativeCurrency(chainId)
   } else if(isNexis(chainId)){
     nativeCurrency = new NexisNativeCurrency(chainId)
+  } else if(isZeta(chainId)){
+    nativeCurrency = new ZetaNativeCurrency(chainId)
   }else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }
@@ -536,6 +567,7 @@ const STABLECOINS: { [chainId in ChainId]: Token[] } = {
   [ChainId.OPTIMISM_SEPOLIA]: [USDC_SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: [],
   [ChainId.NEXIS]: [],
+  [ChainId.ZETA]: [],
 }
 
 export function isStablecoin(currency?: Currency): boolean {

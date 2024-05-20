@@ -22,7 +22,8 @@ export enum ChainId {
   ZORA_SEPOLIA = 999999999,
   ROOTSTOCK = 30,
   BLAST = 81457,
-  NEXIS = 2370
+  NEXIS = 2370,
+  ZETA = 7001,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -48,6 +49,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ROOTSTOCK,
   ChainId.BLAST,
   ChainId.NEXIS,
+  ChainId.ZETA
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -61,5 +63,6 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
-  NEXIS= 'NZT'
+  NEXIS= 'NZT',
+  ZETA='ZETA',
 }

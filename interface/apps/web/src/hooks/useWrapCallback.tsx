@@ -101,6 +101,7 @@ export default function useWrapCallback(
           sufficientBalance && inputAmount
             ? () =>
                 trace({ name: 'Wrap', op: 'swap.wrap' }, async (trace) => {
+                  console.log("here")
                   const network = await wethContract.provider.getNetwork()
                   if (
                     network.chainId !== chainId ||

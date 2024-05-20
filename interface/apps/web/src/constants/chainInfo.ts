@@ -26,14 +26,16 @@ export function getBlocksPerMainnetEpochForChainId(chainId: number | undefined):
       return 5
     case ChainId.BASE:
       return 6
-    case ChainId.BNB:
-      return 4
+    // case ChainId.BNB:
+    //   return 4
     case ChainId.AVALANCHE:
       return 6
     case ChainId.CELO:
       return 2
     case ChainId.NEXIS:
       return 2370
+    case ChainId.ZETA:
+      return 7001
     default:
       return 1
   }
@@ -254,6 +256,18 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://info.uniswap.org/#/base/',
     label: 'Nexis',
     nativeCurrency: { name: 'Nexis', symbol: 'NZT', decimals: 18 },
+    color: darkTheme.chain_84531,
+  },
+  [ChainId.ZETA]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: 'https://bridge.nexis.network/',
+    defaultListUrl: NEXIS_LIST,
+    docs: 'https://docs.nexis.network/',
+    explorer: 'https://athens.explorer.zetachain.com/',
+    infoLink: 'https://info.uniswap.org/#/base/',
+    label: 'Zeta',
+    nativeCurrency: { name: 'ZETA', symbol: 'ZETA', decimals: 18 },
     color: darkTheme.chain_84531,
   },
 } as const

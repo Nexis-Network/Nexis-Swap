@@ -10,6 +10,7 @@ const providerFactory = (chainId: SupportedInterfaceChain, i = 0) =>
   new ConfiguredJsonRpcProvider(APP_RPC_URLS[chainId][i], { chainId, name: CHAIN_IDS_TO_NAMES[chainId] })
 
 function getAppProvider(chainId: SupportedInterfaceChain) {
+  console.log('jsdfs',ChainId)
   return new AppJsonRpcProvider(
     APP_RPC_URLS[chainId].map(
       (url) => new ConfiguredJsonRpcProvider(url, { chainId, name: CHAIN_IDS_TO_NAMES[chainId] })
@@ -34,6 +35,7 @@ export const RPC_PROVIDERS = {
   [ChainId.AVALANCHE]: getAppProvider(ChainId.AVALANCHE),
   [ChainId.BASE]: getAppProvider(ChainId.BASE),
   [ChainId.NEXIS]: getAppProvider(ChainId.NEXIS),
+  [ChainId.ZETA]: getAppProvider(ChainId.ZETA),
 } satisfies Record<SupportedInterfaceChain, AppJsonRpcProvider>
 
 export const DEPRECATED_RPC_PROVIDERS = {
@@ -51,5 +53,6 @@ export const DEPRECATED_RPC_PROVIDERS = {
   [ChainId.BNB]: providerFactory(ChainId.BNB),
   [ChainId.AVALANCHE]: providerFactory(ChainId.AVALANCHE),
   [ChainId.BASE]: providerFactory(ChainId.BASE),
-  [ChainId.NEXIS] :providerFactory(ChainId.NEXIS)
+  [ChainId.NEXIS] :providerFactory(ChainId.NEXIS),
+  [ChainId.ZETA] :providerFactory(ChainId.ZETA)
 } satisfies Record<SupportedInterfaceChain, ConfiguredJsonRpcProvider>

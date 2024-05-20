@@ -23,6 +23,7 @@ import {
   USDC_SEPOLIA,
   USDT_BSC,
   WNZT_NEXIS,
+  WNZT_ZETA,
 } from '../constants/tokens'
 
 // Stablecoin amounts used when calculating spot price for a given currency.
@@ -43,6 +44,7 @@ export const STABLECOIN_AMOUNT_OUT: { [key in SupportedInterfaceChain]: Currency
   [ChainId.POLYGON_MUMBAI]: CurrencyAmount.fromRawAmount(USDC_POLYGON_MUMBAI, 10_000e6),
   [ChainId.CELO_ALFAJORES]: CurrencyAmount.fromRawAmount(CUSD_CELO_ALFAJORES, 10_000e6),
   [ChainId.NEXIS]: CurrencyAmount.fromRawAmount(WNZT_NEXIS, 10_000e6),
+  [ChainId.ZETA]: CurrencyAmount.fromRawAmount(WNZT_ZETA, 10_000e6),
 }
 
 /**

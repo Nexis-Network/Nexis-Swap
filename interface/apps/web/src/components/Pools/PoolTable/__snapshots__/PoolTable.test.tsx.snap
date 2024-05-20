@@ -84,7 +84,7 @@ exports[`PoolTable renders data filled state 1`] = `
 }
 
 .c30 path {
-  stroke: #2892D7;
+  stroke: #3072f8;
   background: #7D7D7D;
   fill: none;
 }
@@ -169,7 +169,7 @@ exports[`PoolTable renders data filled state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #2892D7;
+  color: #3072f8;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -755,7 +755,7 @@ exports[`PoolTable renders data filled state 1`] = `
                 <svg
                   class="c30 c31"
                   fill="none"
-                  stroke="#2892D7"
+                  stroke="#3072f8"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -858,7 +858,7 @@ exports[`PoolTable renders error state 1`] = `
 }
 
 .c26 path {
-  stroke: #2892D7;
+  stroke: #3072f8;
   background: #7D7D7D;
   fill: none;
 }
@@ -973,7 +973,7 @@ exports[`PoolTable renders error state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #2892D7;
+  color: #3072f8;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -2043,7 +2043,7 @@ exports[`PoolTable renders error state 1`] = `
                 <svg
                   class="c26 c27"
                   fill="none"
-                  stroke="#2892D7"
+                  stroke="#3072f8"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -2138,7 +2138,7 @@ exports[`PoolTable renders loading state 1`] = `
 }
 
 .c24 path {
-  stroke: #2892D7;
+  stroke: #3072f8;
   background: #7D7D7D;
   fill: none;
 }
@@ -2223,7 +2223,7 @@ exports[`PoolTable renders loading state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #2892D7;
+  color: #3072f8;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -3244,7 +3244,7 @@ exports[`PoolTable renders loading state 1`] = `
                 <svg
                   class="c24 c25"
                   fill="none"
-                  stroke="#2892D7"
+                  stroke="#3072f8"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

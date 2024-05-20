@@ -46,6 +46,7 @@ import {
   WRAPPED_NATIVE_CURRENCY,
   WNZT_NEXIS,
   nativeOnChain,
+  WNZT_ZETA,
 } from './tokens'
 
 type ChainTokenList = {
@@ -125,6 +126,7 @@ export const COMMON_BASES: ChainCurrencyList = {
 
   [ChainId.BNB]: [nativeOnChain(ChainId.BNB), DAI_BSC, USDC_BSC, USDT_BSC, ETH_BSC, BTC_BSC, BUSD_BSC],
   [ChainId.NEXIS]:[nativeOnChain(ChainId.NEXIS),WNZT_NEXIS],
+  [ChainId.ZETA]:[nativeOnChain(ChainId.ZETA),WNZT_ZETA],
 
   [ChainId.AVALANCHE]: [
     nativeOnChain(ChainId.AVALANCHE),

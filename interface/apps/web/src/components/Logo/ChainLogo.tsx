@@ -11,6 +11,7 @@ import { ReactComponent as base } from './ChainSymbols/base.svg'
 import { ReactComponent as nexis } from './ChainSymbols/nexis.svg'
 import { ReactComponent as bnb } from './ChainSymbols/bnb.svg'
 import { ReactComponent as celo } from './ChainSymbols/celo.svg'
+import { ReactComponent as zeta } from './ChainSymbols/zeta.svg'
 import { ReactComponent as celoLight } from './ChainSymbols/celo_light.svg'
 import { ReactComponent as ethereum } from './ChainSymbols/ethereum.svg'
 import { ReactComponent as optimism } from './ChainSymbols/optimism.svg'
@@ -86,6 +87,12 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
       return {
         Symbol: nexis,
         bgColor: 'white',
+        textColor: '#0052FF',
+      }
+    case ChainId.ZETA:
+      return {
+        Symbol: zeta,
+        bgColor: 'black',
         textColor: '#0052FF',
       }
     default:

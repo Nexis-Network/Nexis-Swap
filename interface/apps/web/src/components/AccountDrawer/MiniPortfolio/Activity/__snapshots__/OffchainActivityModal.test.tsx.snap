@@ -96,8 +96,8 @@ exports[`OrderContent should render without error, filled order 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #2892D7;
-  stroke: #2892D7;
+  color: #3072f8;
+  stroke: #3072f8;
   font-weight: 500;
 }
 
@@ -644,8 +644,8 @@ exports[`OrderContent should render without error, limit order 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #2892D7;
-  stroke: #2892D7;
+  color: #3072f8;
+  stroke: #3072f8;
   font-weight: 500;
 }
 
@@ -1271,8 +1271,8 @@ exports[`OrderContent should render without error, open order 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #2892D7;
-  stroke: #2892D7;
+  color: #3072f8;
+  stroke: #3072f8;
   font-weight: 500;
 }
 

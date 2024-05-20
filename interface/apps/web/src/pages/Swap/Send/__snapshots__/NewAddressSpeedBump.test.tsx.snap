@@ -180,8 +180,8 @@ exports[`NewAddressSpeedBumpModal should render correctly 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #2892D7;
-  stroke: #2892D7;
+  color: #3072f8;
+  stroke: #3072f8;
   font-weight: 500;
 }
 
