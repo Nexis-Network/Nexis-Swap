@@ -21,7 +21,7 @@ export function getNativeTokenDBAddress(chain: Chain): string | undefined {
     case Chain.Arbitrum:
     case Chain.EthereumGoerli:
     case Chain.Optimism:
-    case Chain.Zeta:
+    // case Chain.Zeta:
     default:
       return undefined
   }

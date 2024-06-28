@@ -33,7 +33,7 @@ export function getBlocksPerMainnetEpochForChainId(chainId: number | undefined):
     case ChainId.CELO:
       return 2
     case ChainId.NEXIS:
-      return 2370
+      return 2371
     case ChainId.ZETA:
       return 7001
     default:
@@ -252,7 +252,7 @@ const CHAIN_INFO: ChainInfoMap = {
     bridge: 'https://bridge.nexis.network/',
     defaultListUrl: NEXIS_LIST,
     docs: 'https://docs.nexis.network/',
-    explorer: 'https://evm-testnet.nexscan.io/',
+    explorer: 'https://evm-devnet.nexscan.io/',
     infoLink: 'https://info.uniswap.org/#/base/',
     label: 'Nexis',
     nativeCurrency: { name: 'Nexis', symbol: 'NZT', decimals: 18 },

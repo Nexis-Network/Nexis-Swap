@@ -13,7 +13,7 @@
         "address": "0x3bd5fd50d7131dd7979c02b4520042df99835d65",
         "symbol": "LINK",
         "decimals": 18,
-        "chainId": 2370,
+        "chainId": 2371,
         "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0x514910771af9ca62370af840dff83e8264ecf986ca.png"
       },
       {
@@ -21,7 +21,7 @@
         "address": "0xa7dafd83b6b44ed7f7f006ed73bb1f5bbdf09988",
         "symbol": "BUSD",
         "decimals": 18,
-        "chainId": 2370,
+        "chainId": 2371,
         "logoURI": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/BUSD/logo.png"
       },
       {
@@ -29,7 +29,7 @@
         "address": "0x470c6a03fc2a74795dc7e582370177cac6e17671c5",
         "symbol": "SUSHI",
         "decimals": 18,
-        "chainId": 2370,
+        "chainId": 2371,
         "logoURI": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/SUSHI/logo.png"
       },
       {
@@ -37,7 +37,7 @@
         "address": "0x68a91f2eda61ef9ec05973bef2ff93bd5e3c9866",
         "symbol": "USDT",
         "decimals": 18,
-        "chainId": 2370,
+        "chainId": 2371,
         "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"
       },
       {
@@ -45,7 +45,7 @@
         "address": "0xcd748d8a760dc8843fc59183bfbfa357ce798164",
         "symbol": "DAI",
         "decimals": 18,
-        "chainId": 2370,
+        "chainId": 2371,
         "logoURI": "https://raw.githubusercontent.com/plasmadlt/token-list/master/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"
       }
   ],

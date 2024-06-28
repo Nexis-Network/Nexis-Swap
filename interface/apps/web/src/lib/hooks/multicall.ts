@@ -16,6 +16,7 @@ export function useMultipleContractSingleData(
 ) {
   const { chainId, latestBlock } = useCallContext()
   const response = multicall.hooks.useMultipleContractSingleData(chainId, latestBlock, ...args)
+  console.log("response===",args,response);
   return response;
 }
 

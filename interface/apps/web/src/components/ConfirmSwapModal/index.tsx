@@ -208,16 +208,16 @@ export function ConfirmSwapModal({
                   allowance={allowance}
                   swapResult={swapResult} 
                   allowedSlippage={allowedSlippage}
-                  isLoading={ chainId == 2370? false:isPreviewTrade(trade)}
+                  isLoading={ chainId == 2371? false:isPreviewTrade(trade)}
                   disabledConfirm={
-                    chainId == 2370? false:
+                    chainId == 2371? false:
                     showAcceptChanges || isPreviewTrade(trade) || allowance.state === AllowanceState.LOADING
                   }
                   fiatValueInput={fiatValueInput}
                   fiatValueOutput={fiatValueOutput}
                   showAcceptChanges={Boolean(showAcceptChanges)}
                   onAcceptChanges={onAcceptChanges}
-                  swapErrorMessage={chainId!=2370 || swapFailed ? swapError?.message : undefined}
+                  swapErrorMessage={chainId!=2371 || swapFailed ? swapError?.message : undefined}
                 />
               </AutoColumn>
             </FadePresence>

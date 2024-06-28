@@ -144,7 +144,7 @@ export function getChainPriority(chainId: ChainId): number {
     case ChainId.CELO_ALFAJORES:
       return 7
     case ChainId.NEXIS:
-      return 2370
+      return 2371
     case ChainId.ZETA:
       return 7001
     default:

@@ -73,9 +73,9 @@ export function computeRoutes(args: GetQuoteArgs, routes: ClassicQuoteData['rout
       const { chainId: connectedChainId } = useWeb3React()
       return {
         routev3: isOnlyV3 ? new V3Route(route.map(parsePool), currencyIn, currencyOut) : null,
-        routev2: isOnlyV2 ? new V2Route(route.map(connectedChainId==2370 || connectedChainId==7001?parsePairVeevaa as any: parsePair), currencyIn, currencyOut) : null,
+        routev2: isOnlyV2 ? new V2Route(route.map(connectedChainId==2371 || connectedChainId==7001?parsePairVeevaa as any: parsePair), currencyIn, currencyOut) : null,
         mixedRoute:
-          !isOnlyV3 && !isOnlyV2 ? new MixedRouteSDK(route.map(connectedChainId==2370 || connectedChainId==7001?parsePoolOrPairVeevaa as any: parsePoolOrPair ), currencyIn, currencyOut) : null,
+          !isOnlyV3 && !isOnlyV2 ? new MixedRouteSDK(route.map(connectedChainId==2371 || connectedChainId==7001?parsePoolOrPairVeevaa as any: parsePoolOrPair ), currencyIn, currencyOut) : null,
         inputAmount: CurrencyAmount.fromRawAmount(currencyIn, rawAmountIn),
         outputAmount: CurrencyAmount.fromRawAmount(currencyOut, rawAmountOut),
       }

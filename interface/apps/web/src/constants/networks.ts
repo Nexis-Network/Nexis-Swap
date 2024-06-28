@@ -126,7 +126,7 @@ export const PUBLIC_RPC_URLS: Record<SupportedInterfaceChain, string[]> = {
     'https://base.meowrpc.com',
   ],
   [ChainId.NEXIS]:[
-    'https://evm-testnet.nexis.network'
+    'https://evm-devnet.nexis.network'
   ],
   [ChainId.ZETA]:[
     'https://zetachain-athens-evm.blockpi.network/v1/rpc/public'
@@ -152,7 +152,7 @@ export const APP_RPC_URLS: Record<SupportedInterfaceChain, string[]> = {
   [ChainId.BNB]: [QUICKNODE_BNB_RPC_URL],
   [ChainId.AVALANCHE]: [`https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`],
   [ChainId.BASE]: [`https://base-mainnet.infura.io/v3/${INFURA_KEY}`],
-  [ChainId.NEXIS]:['https://evm-testnet.nexis.network'],
+  [ChainId.NEXIS]:['https://evm-devnet.nexis.network'],
   [ChainId.ZETA]:['https://zetachain-athens-evm.blockpi.network/v1/rpc/public']
 }
 

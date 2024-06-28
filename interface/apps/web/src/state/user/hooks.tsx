@@ -218,7 +218,7 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
 
   return new Token(
     tokenA.chainId,
-    tokenA.chainId==2370||tokenA.chainId==7001?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB,chainId:tokenA.chainId }):
+    tokenA.chainId==2371||tokenA.chainId==7001?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB,chainId:tokenA.chainId }):
     computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }),
     18,
     'UNI-V2',

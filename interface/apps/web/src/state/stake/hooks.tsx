@@ -158,7 +158,7 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
 
         // get the LP token
         const tokens = info[index].tokens
-        const dummyPair = connectedChainId==2370|| connectedChainId==7001?
+        const dummyPair = connectedChainId==2371|| connectedChainId==7001?
         new PairVeevaa(
           CurrencyAmount.fromRawAmount(tokens[0], '0'),
           CurrencyAmount.fromRawAmount(tokens[1], '0')

@@ -24,19 +24,24 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
 
 
   const pairAddresses = useMemo(
-    () =>
-      tokens.map(([tokenA, tokenB]) => {
-        console.log("address==",V2_FACTORY_ADDRESSES[tokenA!.chainId])
+    () =>{
+      return  tokens.map(([tokenA, tokenB]) => {
+        if(tokenA && tokenB)
+        console.log("here i am token 1",computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA!.chainId], tokenA, tokenB ,chainId:tokenA!.chainId}),computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }))
+
+
+
         return tokenA &&
           tokenB &&
           tokenA.chainId === tokenB.chainId &&
           !tokenA.equals(tokenB) &&
           V2_FACTORY_ADDRESSES[tokenA.chainId]
-          ? tokenA.chainId==2370||tokenA.chainId==7001?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB ,chainId:tokenA.chainId}) : computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB })
+          ? tokenA.chainId==2371||tokenA.chainId==7001?computePairAddressVeevaa({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB ,chainId:tokenA.chainId}) : computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB })
           : undefined
-      }),
+      })},
     [tokens]
-  )  
+  )
+
 
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
 
@@ -49,13 +54,12 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
 
       if (loading) return [PairState.LOADING, null]
       if (!tokenA || !tokenB || tokenA.equals(tokenB)) return [PairState.INVALID, null]
-      console.log("reserves===",reserves)
       if (!reserves) return [PairState.NOT_EXISTS, null]
       const { reserve0, reserve1 } = reserves
       const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
       let pair;
       try {
-        pair = tokenA.chainId==2370||tokenA.chainId==7001? new PairVeevaa(
+        pair = tokenA.chainId==2371||tokenA.chainId==7001? new PairVeevaa(
           CurrencyAmount.fromRawAmount(token0, reserve0.toString()),
           CurrencyAmount.fromRawAmount(token1, reserve1.toString())
         ): new Pair(
@@ -72,7 +76,6 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
       ]
     })
   }, [results, tokens]);
-  console.log("useV2PairsResponse===",useV2PairsResponse);
   return useV2PairsResponse as any;
 
 }

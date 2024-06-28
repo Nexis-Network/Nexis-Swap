@@ -73,7 +73,6 @@ export const GQL_MAINNET_CHAINS = [
   Chain.Avalanche,
   Chain.Base,
   Chain.Nexis,
-  Chain.Zeta,
 ] as const
 
 const GQL_TESTNET_CHAINS = [Chain.EthereumGoerli, Chain.EthereumSepolia] as const
@@ -97,7 +96,7 @@ export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: InterfaceGqlChain } = {
   [ChainId.AVALANCHE]: Chain.Avalanche,
   [ChainId.BASE]: Chain.Base,
   [ChainId.NEXIS]: Chain.Nexis,
-  [ChainId.ZETA]: Chain.Zeta,
+  // [ChainId.ZETA]: Chain.Zeta,
 }
 
 export function chainIdToBackendName(chainId: number | undefined) {
@@ -185,7 +184,7 @@ const CHAIN_NAME_TO_CHAIN_ID: { [key in InterfaceGqlChain]: ChainId } = {
   [Chain.Avalanche]: ChainId.AVALANCHE,
   [Chain.Base]: ChainId.BASE,
   [Chain.Nexis]:ChainId.NEXIS,
-  [Chain.Zeta]:ChainId.ZETA,
+  // [Chain.Zeta]:ChainId.ZETA,
 }
 
 export function isSupportedGQLChain(chain: Chain): chain is InterfaceGqlChain {

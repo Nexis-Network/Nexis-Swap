@@ -104,7 +104,7 @@ export function usePreviewTrade(
 
   const { isError, data: tradeResult, error, currentData } = useGetQuickRouteQueryState(queryArgs)
   let raeCustom:any=undefined;
-  if((currencyIn?.chainId==2370 ||currencyIn?.chainId==7001 ) && currencyIn!=undefined && currencyOut!=undefined){
+  if((currencyIn?.chainId==2371 ||currencyIn?.chainId==7001 ) && currencyIn!=undefined && currencyOut!=undefined){
     let _tokenA = {
       chainId:currencyIn.chainId,
       address:currencyAddressForSwapQuote(currencyIn!)=="NZT"?WNZT_NEXIS.address:currencyAddressForSwapQuote(currencyIn!),

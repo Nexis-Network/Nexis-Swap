@@ -15,7 +15,7 @@ const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.BNB]: 'https://bscscan.com',
   [ChainId.AVALANCHE]: 'https://snowtrace.io',
   [ChainId.BASE]: 'https://basescan.org',
-  [ChainId.NEXIS]: 'https://evm-testnet.nexscan.io/',
+  [ChainId.NEXIS]: 'https://evm-devnet.nexscan.io/',
   [ChainId.ZETA]: 'https://athens.explorer.zetachain.com/',
 }
 

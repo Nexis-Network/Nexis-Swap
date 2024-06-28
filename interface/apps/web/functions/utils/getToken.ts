@@ -18,7 +18,7 @@ const convertTokenAddress = (networkName: string, tokenAddress: string) => {
       case Chain.Celo:
         return '0x471EcE3750Da237f93B8E339c536989b8978a438'
       case Chain.Nexis:
-        return '0x1f829609216366fe5bb6b98e68441ed6ebbea1a3'
+        return '0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2'
       case Chain.Polygon:
         return '0x0000000000000000000000000000000000001010'
       default:
