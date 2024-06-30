@@ -206,7 +206,7 @@ export const CUSD_CELO_ALFAJORES = new Token(
 )
 export const WNZT_NEXIS = new Token(
   ChainId.NEXIS,
-  '0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2',
+  '0x37513e8a1AFCB7be5Bc4B15003a4dBEf503108A0',
   18,
   'WNZT',
   'Wrapped NZT'
@@ -349,7 +349,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'Celo native asset'
   ),
   [ChainId.BNB]: new Token(ChainId.BNB, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
-  [ChainId.NEXIS]: new Token(ChainId.NEXIS, '0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2', 18, 'WNZT', 'Wrapped NZT'),
+  [ChainId.NEXIS]: new Token(ChainId.NEXIS, '0x37513e8a1AFCB7be5Bc4B15003a4dBEf503108A0', 18, 'WNZT', 'Wrapped NZT'),
   [ChainId.ZETA]: new Token(ChainId.ZETA, '0x17F24D3b8Bc1150553b54Da30B4d993AcB889212', 18, 'WZETA', 'Wrapped ZETA'),
   [ChainId.AVALANCHE]: new Token(
     ChainId.AVALANCHE,

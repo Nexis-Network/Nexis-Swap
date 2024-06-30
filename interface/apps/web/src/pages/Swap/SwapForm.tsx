@@ -364,8 +364,8 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
 
   const getDeadline = useGetTransactionDeadline()
 
-  const tokenAContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[0]=="NZT"?"0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2":(trade as any).pair[0]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
-  const tokenBContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[1]=="NZT"?"0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2":(trade as any).pair[1]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+  const tokenAContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[0]=="NZT"?"0x37513e8a1AFCB7be5Bc4B15003a4dBEf503108A0":(trade as any).pair[0]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
+  const tokenBContract = useTokenContract(trade && (trade as any).pair?(trade as any).pair[1]=="NZT"?"0x37513e8a1AFCB7be5Bc4B15003a4dBEf503108A0":(trade as any).pair[1]:"0x470c6a03fc2a74795dc7e5856177cac6e17671c5")
 
   const {account:acc} = useWeb3React();
 
@@ -396,7 +396,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
     }else{
       let tradePair:any = [];
       for(let i=0;i<(trade as any).pair.length;i++){
-        if((trade as any).pair[i]=="NZT")tradePair.push("0xd2b5Ad859c61ddA7BF867a35eD0f0b6d8beE34F2");
+        if((trade as any).pair[i]=="NZT")tradePair.push("0x37513e8a1AFCB7be5Bc4B15003a4dBEf503108A0");
         else{
           tradePair.push((trade as any).pair[i]);
         }
