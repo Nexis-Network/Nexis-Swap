@@ -117,7 +117,7 @@
     "react": "18.2.0",
     "react-freeze": "1.0.3",
     "react-i18next": "14.0.5",
-    "react-native": "0.71.13",
+    "react-native": "0.73.0",
     "react-native-appsflyer": "6.10.3",
     "react-native-context-menu-view": "1.6.0",
     "react-native-device-info": "10.0.2",
@@ -151,9 +151,9 @@
     "rive-react-native": "6.1.1",
     "statsig-react-native": "4.11.0",
     "typed-redux-saga": "1.5.0",
-    "uniswap": "workspace:^",
-    "utilities": "workspace:^",
-    "wallet": "workspace:^"
+    "uniswap": "0.0.1",
+    "utilities": "1.0.6",
+    "wallet": "0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
