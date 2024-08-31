@@ -110,8 +110,8 @@ exports[`CancelLimitsDialog should render correctly 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 

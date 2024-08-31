@@ -11,6 +11,7 @@ export const PageWrapper = styled.div`
   padding: 68px 8px 0px;
   max-width: 480px;
   width: 100%;
+  padding-bottom: 15px;
 
   @media only screen and (max-width: ${({ theme }) => `${theme.breakpoint.md}px`}) {
     padding-top: 48px;
@@ -26,7 +27,14 @@ export const SwapWrapperOuter = styled.main<{ isDark?: boolean }>`
   position: relative;
   z-index: ${Z_INDEX.default};
   transition: transform 250ms ease;
-  border-radius: 24px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-shadow: 0px 2.78px 5.57px rgba(0, 0, 0, 0.05);
+  blur: 5px;
 `
 
 export const SwapWrapper = (props: React.ComponentProps<typeof SwapWrapperOuter>) => {
@@ -90,7 +98,7 @@ export const Dots = styled.span`
 `
 
 const SwapCallbackErrorInner = styled.div`
-  background-color: ${({ theme }) => transparentize(0.9, theme.critical)};
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -108,7 +116,7 @@ const SwapCallbackErrorInner = styled.div`
 `
 
 const SwapCallbackErrorInnerAlertTriangle = styled.div`
-  background-color: ${({ theme }) => transparentize(0.9, theme.critical)};
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +147,7 @@ export const SwapShowAcceptChanges = styled(AutoColumn)`
 export const SwapSection = styled.div`
   background-color: ${({ theme }) => theme.surface2};
   border-radius: 16px;
-  color: ${({ theme }) => theme.neutral2};
+  color: #000;
   font-size: 14px;
   font-weight: 500;
   height: 120px;
@@ -160,10 +168,12 @@ export const SwapSection = styled.div`
     border: 1px solid ${({ theme }) => theme.surface2};
   }
   &:hover:before {
-    border-color: ${({ theme }) => theme.deprecated_stateOverlayHover};
+    border-color: rgba(215, 255, 54, 0.1);
+    border: 0.5px solid rgba(215, 255, 54, 0.1);
   }
   &:focus-within:before {
     border-color: ${({ theme }) => theme.deprecated_stateOverlayPressed};
+    border: 0.4px solid rgba(215, 255, 54, 0.1);
   }
 `
 

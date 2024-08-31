@@ -26732,6 +26732,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:latest":
+  version: 9.1.5
+  resolution: "husky@npm:9.1.5"
+  bin:
+    husky: bin.js
+  checksum: c240018e852666dc12a93ca84751f1440bdf436468ba872c7b7b3cee54f5f1d7b4222a117988b27ca437093efdeb128778897ab0e409361336676a2c3012c8a7
+  languageName: node
+  linkType: hard
+
 "hyperlinker@npm:^1.0.0":
   version: 1.0.0
   resolution: "hyperlinker@npm:1.0.0"
@@ -43697,7 +43706,7 @@ __metadata:
     danger: 11.2.6
     depcheck: 1.4.7
     dotenv-cli: ^7.0.0
-    husky: ^8.0.3
+    husky: latest
     i18next: 23.10.0
     i18next-parser: 8.6.0
     syncpack: ^8.5.14

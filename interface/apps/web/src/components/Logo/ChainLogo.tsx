@@ -23,6 +23,12 @@ type ChainUI = { Symbol: SVG; bgColor: string; textColor: string }
 export function getChainUI(chainId: SupportedInterfaceChain, darkMode: boolean): ChainUI
 export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undefined {
   switch (chainId) {
+    case ChainId.NEXIS:
+      return {
+        Symbol: nexis,
+        bgColor: 'rgba(168, 189, 39, 0.25)',
+        textColor: '#D7FF36',
+      }
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
@@ -83,16 +89,10 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
         bgColor: '#0052FF33',
         textColor: '#0052FF',
       }
-    case ChainId.NEXIS:
-      return {
-        Symbol: nexis,
-        bgColor: 'white',
-        textColor: '#0052FF',
-      }
     case ChainId.ZETA:
       return {
         Symbol: zeta,
-        bgColor: 'black',
+        bgColor: 'rgba(0, 87, 65, 0.4)',
         textColor: '#0052FF',
       }
     default:

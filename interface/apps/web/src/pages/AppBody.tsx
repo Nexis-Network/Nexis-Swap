@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react'
 import styled from 'styled-components'
 import { Z_INDEX } from 'theme/zIndex'
+import backgroundImage from 'interface/apps/web/src/assets/svg/nexswap.png'
 
 interface BodyWrapperProps {
   $margin?: string
@@ -12,7 +13,8 @@ export const BodyWrapper = styled.main<BodyWrapperProps>`
   margin-top: ${({ $margin }) => $margin ?? '0px'};
   max-width: ${({ $maxWidth }) => $maxWidth ?? '420px'};
   width: 100%;
-  background: ${({ theme }) => theme.surface1};
+  background: ${({ theme }) => `url(${backgroundImage}), ${theme.surface1}`};
+  background-size: cover;
   border-radius: 16px;
   border: 1px solid ${({ theme }) => theme.surface3};
   margin-top: 1rem;

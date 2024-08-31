@@ -63,8 +63,8 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 0
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -134,7 +134,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 0
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -435,8 +435,8 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 1
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -506,7 +506,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 1
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -807,8 +807,8 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 2
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -878,7 +878,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 2
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -1179,8 +1179,8 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 3
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -1250,7 +1250,7 @@ exports[`ConfirmSwapModal/Error renders "classic trade" correctly, with error= 3
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -1551,8 +1551,8 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 2 1
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -1622,7 +1622,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 2 1
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -1923,8 +1923,8 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 3 1
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -1994,7 +1994,7 @@ exports[`ConfirmSwapModal/Error renders "limit order" correctly, with error= 3 1
 }
 
 .c14 {
-  background-color: #3072f8;
+  background-color: #D7FF36;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;

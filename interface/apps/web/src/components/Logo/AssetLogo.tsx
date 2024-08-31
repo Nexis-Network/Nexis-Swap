@@ -38,7 +38,7 @@ const LogoContainer = styled.div`
  */
 export default function AssetLogo({
   currency,
-  chainId = ChainId.MAINNET,
+  chainId = ChainId.NEXIS,
   size = '24px',
   style,
 }: AssetLogoProps) {

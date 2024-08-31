@@ -31,7 +31,7 @@ exports[`LearnMoreLink renders without error 1`] = `
     maxFontSizeMultiplier={1.2}
     style={
       {
-        "color": "#3072f8",
+        "color": "#D7FF36",
         "fontFamily": "Basel-Medium",
         "fontSize": 17,
         "fontWeight": "500",

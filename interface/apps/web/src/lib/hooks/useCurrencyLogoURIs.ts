@@ -8,7 +8,7 @@ import AvaxLogo from '../../assets/svg/avax_logo.svg'
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
-import NexisLogo from '../../assets/images/nexis.png'
+import NexisLogo from '../../assets/images/nexistoken.svg'
 import { NATIVE_CHAIN_ID, isCelo, nativeOnChain } from '../../constants/tokens'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec' | 'base' | 'nexis'|'zeta'

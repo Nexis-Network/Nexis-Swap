@@ -71,8 +71,8 @@ exports[`LimitsMenu should render when there are two open orders 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -676,8 +676,8 @@ exports[`LimitsMenu should render when there is one open order 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 

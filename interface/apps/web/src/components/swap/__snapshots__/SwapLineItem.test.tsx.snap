@@ -122,8 +122,8 @@ exports[`SwapLineItem.tsx dutch order eth input 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -867,8 +867,8 @@ exports[`SwapLineItem.tsx exact input 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -1909,8 +1909,8 @@ exports[`SwapLineItem.tsx exact input api 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -2951,8 +2951,8 @@ exports[`SwapLineItem.tsx exact output 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -3993,8 +3993,8 @@ exports[`SwapLineItem.tsx fee on buy 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -5088,8 +5088,8 @@ exports[`SwapLineItem.tsx fee on sell 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -6115,8 +6115,8 @@ exports[`SwapLineItem.tsx preview exact in 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 

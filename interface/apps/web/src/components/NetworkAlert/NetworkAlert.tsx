@@ -12,8 +12,8 @@ import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import Column from '../Column'
 
 const BridgeLink = styled(ExternalLink)<{ bgColor: string }>`
-  color: ${({ color }) => color};
-  background: ${({ bgColor }) => bgColor};
+  color: #f4f4f4;
+  background: rgba(0, 0, 0, 0.45);
   align-items: center;
   border-radius: 8px;
   color: white;
@@ -37,12 +37,12 @@ const BridgeLink = styled(ExternalLink)<{ bgColor: string }>`
 
 const TitleText = styled(ThemedText.BodyPrimary)<{ $color: string }>`
   font-weight: 535;
-  color: ${({ $color }) => $color};
+  color: #ffffff;
 `
 
 const SubtitleText = styled(ThemedText.BodySmall)<{ $color: string }>`
   line-height: 20px;
-  color: ${({ $color }) => $color};
+  color: #f4f4f4
 `
 
 export function NetworkAlert() {

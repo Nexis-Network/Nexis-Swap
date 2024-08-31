@@ -56,8 +56,8 @@ exports[`PoolDetailsHeader renders link for pool address 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -407,8 +407,8 @@ exports[`PoolDetailsHeader renders link for token address 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 

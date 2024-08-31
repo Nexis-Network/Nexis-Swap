@@ -207,7 +207,7 @@ exports[`GenericImportForm renders a placeholder when there is no value 1`] = `
               maxFontSizeMultiplier={1.2}
               style={
                 {
-                  "color": "#3072f8",
+                  "color": "#D7FF36",
                   "fontFamily": "Basel-Medium",
                   "fontSize": 15,
                   "fontWeight": "500",
@@ -235,7 +235,7 @@ exports[`GenericImportForm renders a placeholder when there is no value 1`] = `
                     "borderWidth": 0,
                   },
                   {
-                    "color": "#3072f8",
+                    "color": "#D7FF36",
                     "height": 16,
                     "width": 16,
                   },
@@ -246,7 +246,7 @@ exports[`GenericImportForm renders a placeholder when there is no value 1`] = `
                   },
                 ]
               }
-              tintColor="#3072f8"
+              tintColor="#D7FF36"
               vbHeight={16}
               vbWidth={16}
             >

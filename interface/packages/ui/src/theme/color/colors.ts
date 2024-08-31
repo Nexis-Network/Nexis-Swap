@@ -119,7 +119,7 @@ export const colors = {
   magenta700: '#550D56',
   magenta800: '#330733',
   magenta900: '#250225',
-  magentaVibrant: '#3072f8',
+  magentaVibrant: '#D7FF36',
   violet50: '#F1EFFE',
   violet100: '#E2DEFD',
   violet200: '#BDB8FA',
@@ -181,7 +181,7 @@ const sporeLight = {
   neutral2: '#7D7D7D',
   neutral3: '#CECECE',
 
-  accent1: '#3072f8',
+  accent1: '#D7FF36',
   accent2: '#FFEFFF',
 
   accentSoft: '#FC72FF33', //33 = 20%
@@ -207,8 +207,8 @@ const sporeDark = {
   neutral2: '#9B9B9B',
   neutral3: '#5E5E5E',
 
-  accent1: '#3072f8',
-  accent2: '#3072f854',
+  accent1: '#D7FF36',
+  accent2: '#D7FF3654',
 
   accentSoft: '#FC72FF33', //33 = 20%
 

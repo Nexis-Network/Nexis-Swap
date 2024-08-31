@@ -1,5 +1,5 @@
 import { Connector } from '@web3-react/types'
-import UNIWALLET_ICON from 'assets/images/uniwallet.png'
+import UNIWALLET_ICON from 'assets/images/nexwallet.png'
 import { useToggleAccountDrawer } from 'components/AccountDrawer/MiniPortfolio/hooks'
 import { Connection, ConnectionType } from 'connection/types'
 import { mocked } from 'test-utils/mocked'

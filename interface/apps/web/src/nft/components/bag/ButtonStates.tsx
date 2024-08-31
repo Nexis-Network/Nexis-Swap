@@ -49,8 +49,8 @@ export function getBuyButtonStateData(
     warningTextColor: theme.deprecated_accentWarning,
     helperText: undefined,
     helperTextColor: theme.neutral2,
-    buttonColor: theme.accent1,
-    buttonTextColor: theme.deprecated_accentTextLightPrimary,
+    buttonColor: '#D7FF36',
+    buttonTextColor: '#000',
   }
 
   const buyButtonStateData: Record<BuyButtonStates, BuyButtonStateData> = {

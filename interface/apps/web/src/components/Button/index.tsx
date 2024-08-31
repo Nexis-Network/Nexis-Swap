@@ -68,8 +68,9 @@ export const BaseButton = styled(RebassButton)<BaseButtonProps>`
 `
 
 export const ButtonPrimary = styled(BaseButton)`
-  background-color: ${({ theme }) => theme.accent1};
+  background-color: rgba(0, 0, 0, 0.50);
   font-size: 20px;
+  blur: 5px;
   font-weight: 535;
   padding: 16px;
   color: ${({ theme }) => theme.neutralContrast};
@@ -91,7 +92,7 @@ export const ButtonPrimary = styled(BaseButton)`
       altDisabledStyle ? (disabled ? theme.neutralContrast : theme.neutral2) : theme.neutral2};
     cursor: auto;
     box-shadow: none;
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     outline: none;
   }
 `

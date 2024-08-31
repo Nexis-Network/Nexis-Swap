@@ -73,8 +73,8 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #3072f8;
-  stroke: #3072f8;
+  color: #D7FF36;
+  stroke: #D7FF36;
   font-weight: 500;
 }
 
@@ -92,7 +92,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
 }
 
 .c33 path {
-  stroke: #3072f8;
+  stroke: #D7FF36;
   background: #7D7D7D;
   fill: none;
 }
@@ -191,7 +191,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #3072f8;
+  color: #D7FF36;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -729,7 +729,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
                 <svg
                   class="c33 c34"
                   fill="none"
-                  stroke="#3072f8"
+                  stroke="#D7FF36"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -816,7 +816,7 @@ exports[`PoolDetailsTransactionsTable renders error state 1`] = `
 }
 
 .c27 path {
-  stroke: #3072f8;
+  stroke: #D7FF36;
   background: #7D7D7D;
   fill: none;
 }
@@ -940,7 +940,7 @@ exports[`PoolDetailsTransactionsTable renders error state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #3072f8;
+  color: #D7FF36;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -1903,7 +1903,7 @@ exports[`PoolDetailsTransactionsTable renders error state 1`] = `
                 <svg
                   class="c27 c28"
                   fill="none"
-                  stroke="#3072f8"
+                  stroke="#D7FF36"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1982,7 +1982,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
 }
 
 .c25 path {
-  stroke: #3072f8;
+  stroke: #D7FF36;
   background: #7D7D7D;
   fill: none;
 }
@@ -2076,7 +2076,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #3072f8;
+  color: #D7FF36;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -2990,7 +2990,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
                 <svg
                   class="c25 c26"
                   fill="none"
-                  stroke="#3072f8"
+                  stroke="#D7FF36"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
