@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 import styled from 'styled-components'
 import { Z_INDEX } from 'theme/zIndex'
-import backgroundImage from 'interface/apps/web/src/assets/svg/nexswap.png'
+import backgroundImage from '../assets/svg/nexswap.png'
 
 interface BodyWrapperProps {
   $margin?: string
