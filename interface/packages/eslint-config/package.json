@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "6.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-turbo": "latest",
-    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-import-resolver-typescript": "^3.6.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-detox": "1.0.0",
     "eslint-plugin-import": "2.27.5",
