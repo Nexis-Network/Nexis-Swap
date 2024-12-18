@@ -69,7 +69,7 @@
     "@react-native-firebase/auth": "18.4.0",
     "@react-native-firebase/firestore": "18.4.0",
     "@react-native-masked-view/masked-view": "0.2.9",
-    "@react-navigation/core": "6.2.2",
+    "@react-navigation/core": "7.3.1",
     "@react-navigation/native": "6.0.11",
     "@react-navigation/native-stack": "6.7.0",
     "@react-navigation/stack": "6.2.2",
@@ -153,7 +153,7 @@
     "typed-redux-saga": "1.5.0",
     "uniswap": "workspace:^",
     "utilities": "workspace:^",
-    "wallet": "workspace:^"
+    "wallet": "0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
