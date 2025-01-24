@@ -71,7 +71,7 @@
     "statsig-react-native": "4.11.0",
     "typed-redux-saga": "1.5.0",
     "ui": "workspace:^",
-    "uniswap": "workspace:^",
+    "uniswap": "0.0.1",
     "utilities": "workspace:^",
     "uuid": "9.0.0",
     "wcag-contrast": "3.0.0",
