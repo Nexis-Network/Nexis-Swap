@@ -88,7 +88,7 @@
     "@walletconnect/core": "2.11.2",
     "@walletconnect/react-native-compat": "2.11.2",
     "@walletconnect/utils": "2.11.2",
-    "@walletconnect/web3wallet": "1.10.2",
+    "@walletconnect/web3wallet": "1.16.1",
     "apollo3-cache-persist": "0.14.1",
     "babel-plugin-transform-inline-environment-variables": "0.4.4",
     "babel-plugin-transform-remove-console": "6.9.4",
